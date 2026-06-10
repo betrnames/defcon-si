@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>DEFCON.si — Super Intelligence DEFCON Monitor</title>
+  <meta name="description" content="Autonomous OSINT estimates of global defense readiness. Unofficial DEFCON level tracking and SI Readiness scoring from open-source intelligence signals." />
+  <meta name="keywords" content="DEFCON, DEFCON level, OSINT, threat intelligence, defense readiness, global tensions, AI monitoring" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://defcon.si/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://defcon.si/" />
+  <meta property="og:title" content="DEFCON.si — Super Intelligence DEFCON Monitor" />
+  <meta property="og:description" content="Autonomous OSINT estimates • Real-time global threat intelligence. Unofficial, AI-assisted readiness tracking." />
+  <meta property="og:site_name" content="DEFCON.si" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DEFCON.si — Super Intelligence DEFCON Monitor" />
+  <meta name="twitter:description" content="Autonomous OSINT estimates • Real-time global threat intelligence." />
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ===== Tailwind (CDN) ===== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base:   '#0A0E12',
+            panel:  '#11161D',
+            line:   '#1E2630',
+            ink:    '#C9D4DE',
+            muted:  '#6B7A8A',
+            amber:  '#FFB000',
+            lvl5:   '#2ECC71',
+            lvl4:   '#F1C40F',
+            lvl3:   '#E67E22',
+            lvl2:   '#E74C3C',
+            lvl1:   '#FF3B30',
+          },
+          fontFamily: {
+            display: ['"Big Shoulders Display"', 'sans-serif'],
+            mono:    ['"IBM Plex Mono"', 'monospace'],
+            sans:    ['"IBM Plex Sans"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- ===== Chart.js (CDN) ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0A0E12; }
+
+    /* Subtle scanline texture — hero only */
+    .scanlines::before {
+      content: '';
+      position: absolute; inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.015) 0px,
+        rgba(255,255,255,0.015) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+    }
+
+    /* Active gauge segment pulse */
+    @keyframes segpulse {
+      0%, 100% { filter: brightness(1); }
+      50%      { filter: brightness(1.45); }
+    }
+    .seg-active { animation: segpulse 2.4s ease-in-out infinite; }
+
+    /* Blinking live dot */
+    @keyframes blink { 0%,100% {opacity:1} 50% {opacity:.25} }
+    .live-dot { animation: blink 1.6s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .seg-active, .live-dot { animation: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid #FFB000; outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="bg-base text-ink font-sans antialiased">
+
+  <!-- ================= COMMAND BAR ================= -->
+  <header class="sticky top-0 z-50 border-b border-line bg-base/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-display text-2xl font-800 tracking-wide text-amber" style="font-weight:800">DEFCON.SI</span>
+        <span class="hidden font-mono text-[10px] uppercase tracking-widest text-muted sm:inline">SI Monitor</span>
+      </a>
+      <div class="flex items-center gap-4 font-mono text-xs">
+        <span class="hidden items-center gap-2 text-muted md:flex">
+          <span class="live-dot inline-block h-2 w-2 rounded-full bg-amber"></span>
+          MONITORING
+        </span>
+        <span id="utc-clock" class="tabular-nums text-ink">--:--:-- UTC</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO / STATUS BOARDS ================= -->
+    <section class="scanlines relative border-b border-line">
+      <div class="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
+        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial OSINT Estimate</p>
+        <h1 class="font-display mt-3 text-5xl font-800 uppercase leading-none tracking-wide sm:text-7xl" style="font-weight:800">
+          Super Intelligence<br />DEFCON Monitor
+        </h1>
+        <p class="mt-4 max-w-2xl text-muted">
+          Autonomous OSINT estimates &bull; Real-time global threat intelligence.
+          Machine-assisted reading of open-source signals — not an official government feed.
+        </p>
+
+        <!-- Dual status boards -->
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+
+          <!-- US DEFCON board -->
+          <div class="rounded-sm border border-line bg-panel p-6">
+            <div class="flex items-start justify-between">
+              <div>
+                <h2 class="font-mono text-xs uppercase tracking-widest text-muted">Estimated US Military Posture</h2>
+                <p class="font-display mt-1 text-3xl font-700 uppercase tracking-wide" style="font-weight:700">DEFCON Level</p>
+              </div>
+              <div class="text-right">
+                <span id="defcon-number" class="font-display text-7xl font-800 leading-none" style="font-weight:800">–</span>
+              </div>
+            </div>
+
+            <!-- Segmented gauge: 5 (left, safe) → 1 (right, max) -->
+            <div id="defcon-gauge" class="mt-6 grid grid-cols-5 gap-1.5" role="img" aria-label="DEFCON level gauge"></div>
+            <div class="mt-2 flex justify-between font-mono text-[10px] uppercase tracking-wider text-muted">
+              <span>5 · Normal</span><span>1 · Maximum</span>
+            </div>
+
+            <p id="defcon-label" class="mt-5 font-mono text-sm"></p>
+            <p id="defcon-desc" class="mt-1 text-sm text-muted"></p>
+          </div>
+
+          <!-- SI Readiness board -->
+          <div class="rounded-sm border border-line bg-panel p-6">
+            <div class="flex items-start justify-between">
+              <div>
+                <h2 class="font-mono text-xs uppercase tracking-widest text-muted">Machine Threat Composite</h2>
+                <p class="font-display mt-1 text-3xl font-700 uppercase tracking-wide" style="font-weight:700">SI Readiness</p>
+              </div>
+              <div class="text-right">
+                <span id="si-number" class="font-display text-7xl font-800 leading-none" style="font-weight:800">–</span>
+              </div>
+            </div>
+
+            <!-- Segmented gauge: 0 (left, dormant) → 5 (right, critical) -->
+            <div id="si-gauge" class="mt-6 grid grid-cols-6 gap-1.5" role="img" aria-label="SI Readiness gauge"></div>
+            <div class="mt-2 flex justify-between font-mono text-[10px] uppercase tracking-wider text-muted">
+              <span>0 · Dormant</span><span>5 · Critical</span>
+            </div>
+
+            <p id="si-label" class="mt-5 font-mono text-sm"></p>
+            <p class="mt-1 text-sm text-muted">
+              SI Readiness is this monitor's own 0–5 composite: how strongly the aggregate signal set
+              (military movement, diplomatic language, markets, AI-capability events) deviates from baseline.
+              It is independent of, and not a prediction of, any official DEFCON change.
+            </p>
+          </div>
+        </div>
+
+        <p class="mt-4 font-mono text-[11px] text-muted">
+          Last assessment: <span id="last-updated" class="text-ink"></span> &middot; Actual DEFCON status is classified. This is an estimate.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= LIVE SIGNALS ================= -->
+    <section class="border-b border-line">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <div class="flex items-baseline justify-between">
+          <h2 class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">Live Signals</h2>
+          <span class="font-mono text-xs uppercase tracking-widest text-muted">OSINT Feed · Curated</span>
+        </div>
+        <div id="signals-grid" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- ================= TREND ================= -->
+    <section class="border-b border-line">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <h2 class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">30-Day Trend</h2>
+        <p class="mt-2 max-w-2xl text-sm text-muted">
+          Estimated DEFCON (lower = higher readiness) and SI Readiness composite (higher = more anomalous signal volume).
+        </p>
+        <div class="mt-6 rounded-sm border border-line bg-panel p-4">
+          <div class="relative h-72">
+            <canvas id="trend-chart" aria-label="30 day trend of DEFCON estimate and SI Readiness"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= METHODOLOGY + DISCLAIMERS ================= -->
+    <section class="border-b border-line">
+      <div class="mx-auto max-w-6xl gap-10 px-4 py-12 lg:grid lg:grid-cols-2">
+        <div>
+          <h2 class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">Methodology</h2>
+          <ul class="mt-4 space-y-3 text-sm text-muted">
+            <li><span class="font-mono text-amber">SRC&nbsp;</span> Open sources only: news wires, government releases, flight/maritime trackers, official social channels, public research.</li>
+            <li><span class="font-mono text-amber">EST&nbsp;</span> The DEFCON figure is an <span class="text-ink">estimate</span> inferred from observable posture (deployments, alerts, rhetoric, exercises). The real level is classified and frequently differs by command.</li>
+            <li><span class="font-mono text-amber">SI&nbsp;&nbsp;</span> SI Readiness is a machine-scored composite (0–5) weighing signal volume, severity, corroboration, and rate of change against a rolling baseline.</li>
+            <li><span class="font-mono text-amber">REV&nbsp;</span> Assessments are revised as signals are corroborated or retracted. Confidence tags on each card reflect sourcing quality, not certainty of outcome.</li>
+          </ul>
+        </div>
+        <div class="mt-10 lg:mt-0">
+          <h2 class="font-display text-4xl font-700 uppercase tracking-wide text-lvl2" style="font-weight:700">Disclaimers</h2>
+          <div class="mt-4 space-y-3 rounded-sm border border-lvl2/40 bg-lvl2/5 p-5 text-sm text-muted">
+            <p><span class="font-semibold text-ink">Not affiliated</span> with the U.S. Department of Defense, NORAD, or any government. "DEFCON" is referenced descriptively.</p>
+            <p><span class="font-semibold text-ink">Not an alert system.</span> Do not use this site for emergency, safety, financial, or travel decisions. Consult official channels.</p>
+            <p><span class="font-semibold text-ink">Estimates can be wrong.</span> OSINT is noisy; AI-assisted scoring can misread context, satire, or disinformation.</p>
+            <p><span class="font-semibold text-ink">Educational use only.</span> This project demonstrates autonomous open-source monitoring. No warranty of accuracy or timeliness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="mx-auto max-w-6xl px-4 py-8 text-center font-mono text-xs text-muted">
+      <p>DEFCON.SI — Super Intelligence DEFCON Monitor &middot; Unofficial OSINT estimates</p>
+      <p class="mt-1">&copy; <span id="year"></span> DEFCON.si &middot; Built by <a href="https://github.com/betrnames" class="text-amber hover:underline">BetrNames</a></p>
+    </footer>
+  </main>
+
+  <script>
+  /* ============================================================
+     DEFCON.SI — EDIT YOUR DATA HERE
+     Everything the page renders lives in this CONFIG object.
+     (Later: replace CONFIG with a fetch of /data.json — see README.)
+     ============================================================ */
+  const CONFIG = {
+    // --- Current levels ---
+    defconLevel: 3,        // 1 (max readiness) … 5 (normal)
+    siLevel: 2,            // 0 (dormant) … 5 (critical)
+    lastUpdated: "2026-06-10 14:00 UTC",
+
+    // --- Live signal cards ---
+    signals: [
+      {
+        title: "Iran–Israel tensions elevated",
+        region: "Middle East",
+        severity: "high",
+        confidence: "Corroborated",
+        time: "2h ago",
+        summary: "Multiple wire services report increased IRGC naval activity in the Strait of Hormuz; U.S. CENTCOM acknowledges 'heightened force-protection posture' in the region."
+      },
+      {
+        title: "Carrier strike group repositioning",
+        region: "Eastern Mediterranean",
+        severity: "moderate",
+        confidence: "Corroborated",
+        time: "6h ago",
+        summary: "Open-source ship tracking shows a CSG departing scheduled exercise area ahead of plan. No official statement; consistent with contingency positioning."
+      },
+      {
+        title: "Frontier AI lab announces autonomous-agent milestone",
+        region: "Global / Technology",
+        severity: "moderate",
+        confidence: "Developing",
+        time: "11h ago",
+        summary: "Published benchmarks claim sustained multi-day autonomous operation. Relevance: capability jumps feed the SI Readiness composite, not the DEFCON estimate."
+      },
+      {
+        title: "NATO eastern-flank exercise begins",
+        region: "Baltics",
+        severity: "low",
+        confidence: "Corroborated",
+        time: "1d ago",
+        summary: "Pre-announced joint exercise involving ~9,000 personnel. Scheduled and notified under Vienna Document; treated as baseline activity."
+      },
+      {
+        title: "Unusual military cargo flight cluster",
+        region: "Indo-Pacific",
+        severity: "moderate",
+        confidence: "Single-source",
+        time: "1d ago",
+        summary: "ADS-B watchers flag an above-baseline cluster of strategic-airlift flights to Guam. Unverified; could reflect routine rotation."
+      },
+      {
+        title: "Diplomatic language hardening",
+        region: "East Asia",
+        severity: "low",
+        confidence: "Developing",
+        time: "2d ago",
+        summary: "Foreign-ministry statements shift from 'concern' to 'consequences' in NLP tone scoring. Watching for follow-through actions."
+      }
+    ],
+
+    // --- 30-day history (oldest → newest, equal lengths) ---
+    history: {
+      labels: ["May 12","May 14","May 16","May 18","May 20","May 22","May 24","May 26","May 28","May 30","Jun 1","Jun 3","Jun 5","Jun 7","Jun 9","Jun 10"],
+      defcon: [4, 4, 4, 4, 4, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3, 3],
+      si:     [1, 1, 1, 2, 2, 2, 3, 2, 2, 1, 2, 2, 3, 3, 2, 2]
+    }
+  };
+  /* ================== END EDITABLE DATA ===================== */
+
+
+  // ---- Level metadata ----
+  const DEFCON_META = {
+    5: { label: "DEFCON 5 — FADE OUT",     desc: "Lowest state of readiness. Normal peacetime posture.",            color: "#2ECC71" },
+    4: { label: "DEFCON 4 — DOUBLE TAKE",  desc: "Increased intelligence watch and strengthened security measures.", color: "#F1C40F" },
+    3: { label: "DEFCON 3 — ROUND HOUSE",  desc: "Increase in force readiness above normal.",                        color: "#E67E22" },
+    2: { label: "DEFCON 2 — FAST PACE",    desc: "Further increase; armed forces ready to deploy in under 6 hours.", color: "#E74C3C" },
+    1: { label: "DEFCON 1 — COCKED PISTOL",desc: "Maximum readiness. Imminent or ongoing major conflict.",           color: "#FF3B30" }
+  };
+  const SI_META = {
+    0: { label: "SI-0 — DORMANT",   color: "#2ECC71" },
+    1: { label: "SI-1 — BASELINE",  color: "#2ECC71" },
+    2: { label: "SI-2 — WATCH",     color: "#F1C40F" },
+    3: { label: "SI-3 — ELEVATED",  color: "#E67E22" },
+    4: { label: "SI-4 — SEVERE",    color: "#E74C3C" },
+    5: { label: "SI-5 — CRITICAL",  color: "#FF3B30" }
+  };
+  const SEVERITY_COLORS = { low: "#2ECC71", moderate: "#F1C40F", high: "#E67E22", critical: "#FF3B30" };
+
+  // ---- Render: DEFCON board (segments run 5 → 1, left to right) ----
+  function renderDefcon(level) {
+    const meta = DEFCON_META[level];
+    document.getElementById("defcon-number").textContent = level;
+    document.getElementById("defcon-number").style.color = meta.color;
+    document.getElementById("defcon-label").textContent = meta.label;
+    document.getElementById("defcon-label").style.color = meta.color;
+    document.getElementById("defcon-desc").textContent = meta.desc;
+
+    const gauge = document.getElementById("defcon-gauge");
+    gauge.innerHTML = "";
+    for (let seg = 5; seg >= 1; seg--) {
+      const el = document.createElement("div");
+      const active = seg === level;
+      el.className = "h-8 rounded-[2px] border" + (active ? " seg-active" : "");
+      el.style.borderColor = DEFCON_META[seg].color + "55";
+      el.style.background = active ? DEFCON_META[seg].color : DEFCON_META[seg].color + "14";
+      el.style.boxShadow = active ? `0 0 16px ${DEFCON_META[seg].color}66` : "none";
+      gauge.appendChild(el);
+    }
+  }
+
+  // ---- Render: SI board (segments run 0 → 5, left to right) ----
+  function renderSI(level) {
+    const meta = SI_META[level];
+    document.getElementById("si-number").textContent = level;
+    document.getElementById("si-number").style.color = meta.color;
+    document.getElementById("si-label").textContent = meta.label;
+    document.getElementById("si-label").style.color = meta.color;
+
+    const gauge = document.getElementById("si-gauge");
+    gauge.innerHTML = "";
+    for (let seg = 0; seg <= 5; seg++) {
+      const el = document.createElement("div");
+      const filled = seg <= level;
+      const active = seg === level;
+      el.className = "h-8 rounded-[2px] border" + (active ? " seg-active" : "");
+      el.style.borderColor = SI_META[seg].color + "55";
+      el.style.background = filled ? SI_META[seg].color : SI_META[seg].color + "14";
+      el.style.boxShadow = active ? `0 0 16px ${SI_META[seg].color}66` : "none";
+      gauge.appendChild(el);
+    }
+  }
+
+  // ---- Render: signal cards ----
+  function renderSignals(signals) {
+    const grid = document.getElementById("signals-grid");
+    grid.innerHTML = "";
+    signals.forEach(s => {
+      const sev = SEVERITY_COLORS[s.severity] || "#6B7A8A";
+      const card = document.createElement("article");
+      card.className = "rounded-sm border border-line bg-panel p-5 transition-colors hover:border-amber/40";
+      card.innerHTML = `
+        <div class="flex items-center justify-between gap-2">
+          <span class="font-mono text-[10px] uppercase tracking-widest" style="color:${sev}">
+            ● ${s.severity}
+          </span>
+          <span class="font-mono text-[10px] text-muted">${s.time}</span>
+        </div>
+        <h3 class="mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide" style="font-weight:700">${s.title}</h3>
+        <p class="mt-2 text-sm text-muted">${s.summary}</p>
+        <div class="mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-wider text-muted">
+          <span>${s.region}</span>
+          <span class="rounded-sm border border-line px-1.5 py-0.5">${s.confidence}</span>
+        </div>`;
+      grid.appendChild(card);
+    });
+  }
+
+  // ---- Render: trend chart ----
+  function renderChart(history) {
+    const ctx = document.getElementById("trend-chart");
+    new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: history.labels,
+        datasets: [
+          {
+            label: "DEFCON estimate (1=max, 5=normal)",
+            data: history.defcon,
+            borderColor: "#E67E22",
+            backgroundColor: "transparent",
+            stepped: true,
+            borderWidth: 2,
+            pointRadius: 2,
+            pointBackgroundColor: "#E67E22"
+          },
+          {
+            label: "SI Readiness (0–5)",
+            data: history.si,
+            borderColor: "#FFB000",
+            backgroundColor: "rgba(255,176,0,0.08)",
+            fill: true,
+            tension: 0.3,
+            borderWidth: 2,
+            pointRadius: 2,
+            pointBackgroundColor: "#FFB000"
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: {
+            min: 0, max: 5,
+            ticks: { stepSize: 1, color: "#6B7A8A", font: { family: "'IBM Plex Mono', monospace", size: 10 } },
+            grid: { color: "#1E2630" }
+          },
+          x: {
+            ticks: { color: "#6B7A8A", font: { family: "'IBM Plex Mono', monospace", size: 10 }, maxRotation: 0, autoSkip: true },
+            grid: { display: false }
+          }
+        },
+        plugins: {
+          legend: { labels: { color: "#C9D4DE", font: { family: "'IBM Plex Mono', monospace", size: 11 }, boxWidth: 18 } },
+          tooltip: { backgroundColor: "#11161D", borderColor: "#1E2630", borderWidth: 1, titleColor: "#FFB000", bodyColor: "#C9D4DE" }
+        }
+      }
+    });
+  }
+
+  // ---- UTC clock ----
+  function tickClock() {
+    const now = new Date();
+    const pad = n => String(n).padStart(2, "0");
+    document.getElementById("utc-clock").textContent =
+      `${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())} UTC`;
+  }
+
+  // ---- Init ----
+  document.addEventListener("DOMContentLoaded", () => {
+    renderDefcon(Math.min(5, Math.max(1, CONFIG.defconLevel)));
+    renderSI(Math.min(5, Math.max(0, CONFIG.siLevel)));
+    renderSignals(CONFIG.signals);
+    renderChart(CONFIG.history);
+    document.getElementById("last-updated").textContent = CONFIG.lastUpdated;
+    document.getElementById("year").textContent = new Date().getFullYear();
+    tickClock();
+    setInterval(tickClock, 1000);
+  });
+  </script>
+
+</body>
+</html>
