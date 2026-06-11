@@ -122,9 +122,6 @@
 </head>
 <body class="bg-base text-ink font-sans antialiased">
 
-  <!-- 3D Background -->
-  <canvas id="globe-bg" class="fixed inset-0 -z-10 opacity-20 pointer-events-none"></canvas>
-
   <!-- ================= HEADER ================= -->
   <header class="sticky top-0 z-50 border-b border-line bg-base/95 backdrop-blur">
     <div class="mx-auto max-w-6xl px-4 py-4">
@@ -170,8 +167,9 @@
   <main id="top">
 
     <!-- HERO -->
-    <section class="scanlines relative border-b border-line">
-      <div class="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
+    <section id="hero" class="scanlines relative overflow-hidden border-b border-line">
+      <canvas id="globe-bg" class="pointer-events-none absolute right-4 top-1/2 z-0 hidden h-48 w-48 -translate-y-1/2 opacity-25 md:right-8 md:block md:h-64 md:w-64 lg:h-72 lg:w-72" aria-hidden="true"></canvas>
+      <div class="relative z-10 mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
         <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial • Autonomous OSINT Estimate</p>
 
         <h1 class="font-display mt-3 text-5xl font-800 uppercase leading-none tracking-wide sm:text-7xl">
@@ -585,32 +583,36 @@
     const canvas = document.getElementById("globe-bg");
     if (!canvas || typeof THREE === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
+    const globeGroup = new THREE.Group();
+    globeGroup.position.x = 0.15;
+
     renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100);
-    camera.position.z = 2.5;
+    camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+    camera.position.z = 2.2;
 
-    const geometry = new THREE.SphereGeometry(1, 48, 48);
-    const material = new THREE.MeshPhongMaterial({
-      color: 0x1a2633,
-      emissive: 0x112233,
-      shininess: 5,
-      transparent: true,
-      opacity: 0.85
-    });
-    globe = new THREE.Mesh(geometry, material);
-    scene.add(globe);
+    const radius = 0.55;
+    globe = new THREE.Mesh(
+      new THREE.SphereGeometry(radius, 40, 40),
+      new THREE.MeshPhongMaterial({
+        color: 0x1a2633,
+        emissive: 0x112233,
+        shininess: 5,
+        transparent: true,
+        opacity: 0.85
+      })
+    );
+    globeGroup.add(globe);
 
     const pointsGeometry = new THREE.BufferGeometry();
-    const pointsCount = 25;
+    const pointsCount = 18;
     const positions = new Float32Array(pointsCount * 3);
     for (let i = 0; i < pointsCount * 3; i += 3) {
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(2 * Math.random() - 1);
-      const r = 1.01;
+      const r = radius + 0.01;
       positions[i]     = r * Math.sin(phi) * Math.cos(theta);
       positions[i + 1] = r * Math.sin(phi) * Math.sin(theta);
       positions[i + 2] = r * Math.cos(phi);
@@ -619,28 +621,32 @@
 
     const hotspots = new THREE.Points(
       pointsGeometry,
-      new THREE.PointsMaterial({ color: 0xffaa00, size: 0.025, transparent: true, opacity: 0.8 })
+      new THREE.PointsMaterial({ color: 0xffaa00, size: 0.02, transparent: true, opacity: 0.8 })
     );
-    scene.add(hotspots);
+    globeGroup.add(hotspots);
+    scene.add(globeGroup);
 
     scene.add(new THREE.AmbientLight(0xaaaaaa, 0.6));
     const directional = new THREE.DirectionalLight(0xffeecc, 0.8);
     directional.position.set(5, 3, 5);
     scene.add(directional);
 
+    function resizeGlobe() {
+      if (canvas.clientWidth === 0 || canvas.clientHeight === 0) return;
+      renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+      camera.aspect = canvas.clientWidth / canvas.clientHeight;
+      camera.updateProjectionMatrix();
+    }
+
     function animate() {
       requestAnimationFrame(animate);
-      globe.rotation.y += 0.0008;
-      hotspots.rotation.y += 0.0008;
+      globeGroup.rotation.y += 0.0008;
       renderer.render(scene, camera);
     }
-    animate();
 
-    window.addEventListener("resize", () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    });
+    resizeGlobe();
+    animate();
+    window.addEventListener("resize", resizeGlobe);
   }
 
   // ---- UTC clock ----
