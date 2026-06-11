@@ -614,6 +614,52 @@
     );
   }
 
+  function addCoastlineRing(ring, r, material, group) {
+    if (!ring || ring.length < 2) return;
+    const step = Math.max(1, Math.floor(ring.length / 120));
+    const points = [];
+    for (let i = 0; i < ring.length; i += step) {
+      const [lng, lat] = ring[i];
+      points.push(latLngToVec3(lat, lng, r));
+    }
+    if (points.length < 2) return;
+    const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
+    group.add(line);
+  }
+
+  function loadCoastlines(radius, group) {
+    const glowMat = new THREE.LineBasicMaterial({
+      color: 0xffb000,
+      transparent: true,
+      opacity: 0.14,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false
+    });
+    const lineMat = new THREE.LineBasicMaterial({
+      color: 0xc9d4de,
+      transparent: true,
+      opacity: 0.32
+    });
+
+    fetch("https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/geojson/ne_110m_coastline.geojson")
+      .then((res) => res.json())
+      .then((geo) => {
+        geo.features.forEach((feature) => {
+          const { type, coordinates } = feature.geometry;
+          if (type === "LineString") {
+            addCoastlineRing(coordinates, radius * 1.008, glowMat, group);
+            addCoastlineRing(coordinates, radius * 1.003, lineMat, group);
+          } else if (type === "MultiLineString") {
+            coordinates.forEach((ring) => {
+              addCoastlineRing(ring, radius * 1.008, glowMat, group);
+              addCoastlineRing(ring, radius * 1.003, lineMat, group);
+            });
+          }
+        });
+      })
+      .catch(() => {});
+  }
+
   function initGlobe() {
     const canvas = document.getElementById("globe-bg");
     const tooltip = document.getElementById("globe-tooltip");
@@ -648,6 +694,10 @@
         opacity: 0.85
       })
     ));
+
+    const coastlines = new THREE.Group();
+    globeGroup.add(coastlines);
+    loadCoastlines(radius, coastlines);
 
     aiMarkerMeshes = [];
     AI_HUBS.forEach((hub) => {
