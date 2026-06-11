@@ -259,6 +259,27 @@
       </div>
     </section>
 
+    <!-- ================= OSINT NEWS TRACKER ================= -->
+    <section id="news-tracker" class="border-b border-line">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <div class="flex flex-wrap items-baseline justify-between gap-4">
+          <h2 class="font-display text-4xl font-700 uppercase tracking-wide">OSINT News Tracker</h2>
+          <a href="https://defconlevel.com/alerts" target="_blank" rel="noopener noreferrer" class="font-mono text-xs uppercase tracking-widest text-amber hover:underline">
+            defconlevel.com/alerts →
+          </a>
+        </div>
+        <p class="mt-2 max-w-3xl text-sm text-muted">
+          Regional military and geopolitical alerts sourced from
+          <a href="https://defconlevel.com" target="_blank" rel="noopener noreferrer" class="text-amber hover:underline">defconlevel.com</a>
+          — independent OSINT since 2013. Click any headline for the full report.
+        </p>
+        <div id="news-tracker-list" class="mt-6 space-y-3"></div>
+        <p class="mt-6 font-mono text-[10px] text-muted">
+          Source attribution: alerts curated from <a href="https://defconlevel.com/alerts" target="_blank" rel="noopener noreferrer" class="text-amber hover:underline">Defcon Level</a>. Not affiliated. Updated Jun 11, 2026.
+        </p>
+      </div>
+    </section>
+
     <!-- ================= TREND ================= -->
     <section class="border-b border-line">
       <div class="mx-auto max-w-6xl px-4 py-12">
@@ -375,6 +396,74 @@
         confidence: "Developing",
         time: "2d ago",
         summary: "Foreign-ministry statements shift from 'concern' to 'consequences' in NLP tone scoring. Watching for follow-through actions."
+      }
+    ],
+
+    // --- OSINT news tracker (sourced from defconlevel.com/alerts) ---
+    newsTracker: [
+      {
+        title: "Pentagon Enacts Precautionary Shelter-in-Place After Air Quality Issue",
+        summary: "Pentagon spokesman confirmed sophisticated building systems detected an air quality issue, triggering shelter-in-place and hazmat deployment.",
+        time: "Jun 11, 2026 · 4:53 PM",
+        command: "NORTHCOM",
+        commandLevel: 3,
+        url: "https://defconlevel.com/alert/2026-06-11-pentagon-enacts-precautionary-shelter-in-place-and-lock-down-after-internal-systems-detect-air-quality-issue"
+      },
+      {
+        title: "U.S. Strikes Iran for Second Day; Air Defenses Engage in Kuwait, Bahrain, Jordan",
+        summary: "U.S. forces struck targets inside Iran for a second consecutive day while regional air defenses engaged Iranian missiles and drones.",
+        time: "Jun 11, 2026 · 6:34 AM",
+        command: "CENTCOM",
+        commandLevel: 2,
+        url: "https://defconlevel.com/alert/2026-06-11-u-s-strikes-iran-for-second-day-air-defenses-in-kuwait-bahrain-and-jordan-engage-iranian-missiles-and-drones"
+      },
+      {
+        title: "CENTCOM Completes Strikes on Iranian Targets After Apache Downing",
+        summary: "Strikes targeted air defense, ground control stations, and surveillance radar sites near the Strait of Hormuz.",
+        time: "Jun 10, 2026 · 4:27 AM",
+        command: "CENTCOM",
+        commandLevel: 2,
+        url: "https://defconlevel.com/alert/2026-06-10-u-s-central-command-completes-strikes-on-iranian-targets-following-apache-helicopter-downing"
+      },
+      {
+        title: "U.S. Forces Launch Strikes on Iran After Apache Helicopter Downed",
+        summary: "CENTCOM reported U.S. forces began self-defense strikes against Iran following the downing of a U.S. Army AH-64 Apache.",
+        time: "Jun 9, 2026 · 9:29 PM",
+        command: "CENTCOM",
+        commandLevel: 2,
+        url: "https://defconlevel.com/alert/2026-06-09-us-forces-begin-launching-strikes-on-iran-in-response-to-downing-of-u-s-army-apache-helicopter"
+      },
+      {
+        title: "U.S. Forces Rescue Apache Crew After Helicopter Shot Down Near Oman",
+        summary: "Two crew members rescued after AH-64 Apache went down near the coast of Oman while patrolling regional waters.",
+        time: "Jun 9, 2026 · 2:38 PM",
+        command: "CENTCOM",
+        commandLevel: 2,
+        url: "https://defconlevel.com/alert/2026-06-09-u-s-forces-rescue-army-apache-crew-after-helicopter-shot-down-near-oman-coast"
+      },
+      {
+        title: "NATO Baltic Air Policing Jets Shoot Down Drone in Latvian Airspace",
+        summary: "Latvia issued orange-level air threat alert after foreign UAV incursion attributed to Russian electromagnetic warfare.",
+        time: "Jun 8, 2026 · 5:04 PM",
+        command: "EUCOM",
+        commandLevel: 3,
+        url: "https://defconlevel.com/alert/2026-06-08-nato-baltic-air-policing-jets-shoot-down-drone-in-latvian-airspace"
+      },
+      {
+        title: "Iran Fires Ballistic Missiles Toward Israel; U.S. Forces at Heightened Alert",
+        summary: "Multiple waves of ballistic missiles toward Israeli territory; air defense systems engaged across several areas.",
+        time: "Jun 8, 2026 · 5:28 AM",
+        command: "CENTCOM",
+        commandLevel: 2,
+        url: "https://defconlevel.com/alert/2026-06-08-iran-fires-ballistic-missiles-toward-israel-u-s-regional-forces-at-heightened-alert"
+      },
+      {
+        title: "U.S. Embassy Issues Security Alert for Middle East",
+        summary: "U.S. Embassy in Jerusalem directed citizens across the Middle East to exercise increased caution.",
+        time: "Jun 4, 2026 · 7:53 PM",
+        command: "NORTHCOM",
+        commandLevel: 3,
+        url: "https://defconlevel.com/alert/2026-06-04-u-s-embassy-issues-security-alert-urging-increased-caution-in-the-middle-east"
       }
     ],
 
@@ -512,6 +601,63 @@
       card.appendChild(summary);
       card.appendChild(footer);
       grid.appendChild(card);
+    });
+  }
+
+  const COMMAND_LEVEL_COLORS = { 1: "#FF3B30", 2: "#E74C3C", 3: "#E67E22", 4: "#F1C40F", 5: "#2ECC71" };
+
+  // ---- Render: OSINT news tracker (defconlevel.com backlinks) ----
+  function renderNewsTracker(items) {
+    const list = document.getElementById("news-tracker-list");
+    if (!list) return;
+    list.innerHTML = "";
+
+    items.forEach((item) => {
+      const level = Math.min(5, Math.max(1, item.commandLevel || 5));
+      const levelColor = COMMAND_LEVEL_COLORS[level] || "#6B7A8A";
+
+      const article = document.createElement("article");
+      article.className = "rounded-sm border border-line bg-panel p-4 transition-colors hover:border-amber/40";
+
+      const header = document.createElement("div");
+      header.className = "flex flex-wrap items-center justify-between gap-2";
+
+      const badge = document.createElement("span");
+      badge.className = "font-mono text-[10px] uppercase tracking-widest";
+      badge.style.color = levelColor;
+      badge.textContent = `${item.command || "OSINT"} · DEFCON ${level}`;
+
+      const time = document.createElement("span");
+      time.className = "font-mono text-[10px] text-muted";
+      time.textContent = item.time;
+
+      header.appendChild(badge);
+      header.appendChild(time);
+
+      const link = document.createElement("a");
+      link.href = item.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.className = "group mt-2 block";
+
+      const title = document.createElement("h3");
+      title.className = "font-display text-lg font-700 uppercase leading-tight tracking-wide text-ink group-hover:text-amber";
+      title.textContent = item.title;
+
+      const summary = document.createElement("p");
+      summary.className = "mt-2 text-sm text-muted";
+      summary.textContent = item.summary;
+
+      const source = document.createElement("span");
+      source.className = "mt-3 inline-block font-mono text-[10px] uppercase tracking-wider text-amber";
+      source.textContent = "Read on defconlevel.com →";
+
+      link.appendChild(title);
+      link.appendChild(summary);
+      link.appendChild(source);
+      article.appendChild(header);
+      article.appendChild(link);
+      list.appendChild(article);
     });
   }
 
@@ -855,6 +1001,7 @@
     renderDefcon(Math.min(5, Math.max(1, CONFIG.defconLevel)));
     renderRiskOutlook(CONFIG.defconLevel, CONFIG.siLevel);
     renderSignals(CONFIG.signals);
+    renderNewsTracker(CONFIG.newsTracker);
     renderChart(CONFIG.history);
     document.getElementById("last-updated").textContent = CONFIG.lastUpdated;
     document.getElementById("year").textContent = new Date().getFullYear();
