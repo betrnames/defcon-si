@@ -116,17 +116,23 @@
 </head>
 <body class="bg-base text-ink font-sans antialiased">
 
-  <!-- ================= COMMAND BAR ================= -->
   <header class="sticky top-0 z-50 border-b border-line bg-base/90 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-      <a href="#top" class="flex items-baseline gap-2">
+      <a href="index.html" class="flex items-baseline gap-2">
         <span class="font-display text-2xl font-800 tracking-wide text-amber">DEFCON.SI</span>
-        <span class="hidden font-mono text-[10px] uppercase tracking-widest text-muted sm:inline">SI MONITOR</span>
       </a>
+
+      <nav class="flex items-center gap-6 font-mono text-sm">
+        <a href="index.html" class="hover:text-amber">Monitor</a>
+        <a href="about.html" class="hover:text-amber">What is DEFCON?</a>
+        <a href="about.html#osint" class="hover:text-amber">OSINT</a>
+        <a href="about.html#faq" class="hover:text-amber">FAQ</a>
+      </nav>
+
       <div class="flex items-center gap-4 font-mono text-xs">
         <span class="hidden items-center gap-2 text-muted md:flex">
           <span class="live-dot inline-block h-2 w-2 rounded-full bg-amber"></span>
-          LIVE MONITORING
+          LIVE
         </span>
         <span id="utc-clock" class="tabular-nums text-ink">--:--:-- UTC</span>
       </div>
