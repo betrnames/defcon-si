@@ -167,9 +167,10 @@
   <main id="top">
 
     <!-- HERO -->
-    <section id="hero" class="scanlines relative min-h-[min(88vh,44rem)] overflow-hidden border-b border-line">
-      <canvas id="globe-bg" class="absolute right-0 top-6 z-0 h-64 w-64 cursor-grab opacity-15 transition-opacity duration-300 hover:opacity-35 active:cursor-grabbing sm:top-10 sm:h-80 sm:w-80 sm:opacity-20 md:right-2 md:top-12 md:h-[24rem] md:w-[24rem] lg:right-6 lg:top-10 lg:h-[30rem] lg:w-[30rem]" aria-hidden="true"></canvas>
-      <div class="relative z-10 mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
+    <section id="hero" class="scanlines relative min-h-[min(88vh,44rem)] border-b border-line">
+      <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
+        <canvas id="globe-bg" class="absolute right-0 top-6 z-0 h-64 w-64 cursor-grab opacity-15 transition-opacity duration-300 hover:opacity-35 active:cursor-grabbing sm:top-10 sm:h-80 sm:w-80 sm:opacity-20 md:top-12 md:h-[24rem] md:w-[24rem] lg:top-10 lg:h-[30rem] lg:w-[30rem]" aria-hidden="true"></canvas>
+        <div class="relative z-10">
         <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial • Autonomous OSINT Estimate</p>
 
         <h1 class="font-display mt-3 text-5xl font-800 uppercase leading-none tracking-wide sm:text-7xl">
@@ -227,6 +228,7 @@
           <button type="button" onclick="refreshData()" class="rounded border border-amber/50 bg-transparent px-4 py-1.5 text-xs uppercase tracking-widest text-amber transition-colors hover:bg-amber/10">
             ↻ Refresh Signals
           </button>
+        </div>
         </div>
       </div>
     </section>
