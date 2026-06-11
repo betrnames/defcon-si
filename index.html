@@ -699,9 +699,8 @@
     canvas.addEventListener("mouseenter", () => { isHovering = true; });
     canvas.addEventListener("mouseleave", () => {
       isHovering = false;
-      targetRotX = 0;
-      targetRotY = globeGroup.rotation.y;
       hideTooltip();
+      canvas.style.cursor = "default";
     });
     canvas.addEventListener("mousemove", (e) => {
       const rect = canvas.getBoundingClientRect();
@@ -742,6 +741,7 @@
         globeGroup.rotation.y += (targetRotY - globeGroup.rotation.y) * 0.1;
         globeGroup.rotation.x += (targetRotX - globeGroup.rotation.x) * 0.1;
       } else {
+        globeGroup.rotation.y += 0.0012;
         globeGroup.rotation.x += (0 - globeGroup.rotation.x) * 0.04;
       }
 
