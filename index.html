@@ -200,14 +200,18 @@
     <!-- HERO -->
     <section id="hero" class="scanlines relative min-h-[min(88vh,44rem)] border-b border-line">
       <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
-        <canvas id="globe-bg" class="absolute right-0 top-6 z-0 h-64 w-64 cursor-grab opacity-15 transition-opacity duration-300 hover:opacity-35 active:cursor-grabbing sm:top-10 sm:h-80 sm:w-80 sm:opacity-20 md:top-12 md:h-[24rem] md:w-[24rem] lg:top-10 lg:h-[30rem] lg:w-[30rem]" aria-hidden="true"></canvas>
+        <canvas id="globe-bg" class="hero-visual absolute right-0 top-6 z-0 h-64 w-64 cursor-grab opacity-15 transition-opacity duration-300 hover:opacity-35 active:cursor-grabbing sm:top-10 sm:h-80 sm:w-80 sm:opacity-20 md:top-12 md:h-[24rem] md:w-[24rem] lg:top-10 lg:h-[30rem] lg:w-[30rem]" aria-hidden="true"></canvas>
+        <canvas id="military-radar-bg" class="hero-visual hidden absolute right-0 top-6 z-0 h-64 w-64 cursor-crosshair opacity-15 transition-opacity duration-300 hover:opacity-35 sm:top-10 sm:h-80 sm:w-80 sm:opacity-20 md:top-12 md:h-[24rem] md:w-[24rem] lg:top-10 lg:h-[30rem] lg:w-[30rem]" aria-hidden="true"></canvas>
         <div id="globe-tooltip" class="pointer-events-none absolute z-20 hidden max-w-[12rem] rounded border border-amber/40 bg-panel/95 px-2.5 py-2 font-mono text-[10px] leading-snug text-ink shadow-lg backdrop-blur"></div>
-        <p id="globe-label" class="absolute right-0 top-2 z-10 hidden font-mono text-[9px] uppercase tracking-widest text-muted md:block">AI / AGI Hubs · OSINT Map</p>
+        <div id="radar-tooltip" class="pointer-events-none absolute z-20 hidden max-w-[12rem] rounded border border-lvl2/40 bg-panel/95 px-2.5 py-2 font-mono text-[10px] leading-snug text-ink shadow-lg backdrop-blur"></div>
+        <p id="globe-label" class="hero-visual-label absolute right-0 top-2 z-10 hidden font-mono text-[9px] uppercase tracking-widest text-muted md:block">AI / AGI Hubs · OSINT Map</p>
+        <p id="radar-label" class="hero-visual-label hidden absolute right-0 top-2 z-10 font-mono text-[9px] uppercase tracking-widest text-muted md:block">Theater Posture · Command Map</p>
         <div class="relative z-10">
         <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial • Independent OSINT</p>
 
         <h1 class="font-display mt-3 text-5xl font-800 uppercase leading-none tracking-wide sm:text-7xl">
-          Super Intelligence<br />DEFCON Monitor
+          <span id="hero-title-line1">Super Intelligence</span><br />
+          <span id="hero-title-line2">DEFCON Monitor</span>
         </h1>
 
         <p id="hero-subtitle" class="mt-4 max-w-2xl text-lg text-muted">
@@ -887,16 +891,21 @@
   }
 
   function updateViewCopy(mode) {
+    const heroTitleLine1 = document.getElementById("hero-title-line1");
+    const heroTitleLine2 = document.getElementById("hero-title-line2");
     const heroSubtitle = document.getElementById("hero-subtitle");
     const signalsTitle = document.getElementById("signals-title");
     const signalsSubtitle = document.getElementById("signals-subtitle");
     const trendTitle = document.getElementById("trend-title");
     const trendDesc = document.getElementById("trend-desc");
     const globeLabel = document.getElementById("globe-label");
+    const radarLabel = document.getElementById("radar-label");
     const riskOutlookLabel = document.getElementById("risk-outlook-label");
 
     const copy = {
       si: {
+        titleLine1: "Race to AGI",
+        titleLine2: "Threat Monitor",
         hero: "Focused on the race to AGI — tracking capability jumps, autonomous systems, and Super Intelligence readiness signals.",
         signalsTitle: "SI Threat Signals",
         signalsSubtitle: "AGI / Capability Feed",
@@ -905,6 +914,8 @@
         riskLabel: "SI RISK OUTLOOK"
       },
       military: {
+        titleLine1: "Military DEFCON",
+        titleLine2: "Risk Monitor",
         hero: "Focused on military DEFCON risk — tracking force posture, regional alerts, and geopolitical readiness signals.",
         signalsTitle: "Military Signals",
         signalsSubtitle: "DEFCON / OSINT Feed",
@@ -913,6 +924,8 @@
         riskLabel: "MILITARY RISK OUTLOOK"
       },
       both: {
+        titleLine1: "Super Intelligence",
+        titleLine2: "DEFCON Monitor",
         hero: "Tracking the two most critical signals in modern defense: traditional military readiness and the accelerating race toward Super Intelligence.",
         signalsTitle: "Live Signals",
         signalsSubtitle: "OSINT Feed · Curated",
@@ -923,15 +936,16 @@
     };
 
     const c = copy[mode] || copy.both;
+    if (heroTitleLine1) heroTitleLine1.textContent = c.titleLine1;
+    if (heroTitleLine2) heroTitleLine2.textContent = c.titleLine2;
     if (heroSubtitle) heroSubtitle.textContent = c.hero;
     if (signalsTitle) signalsTitle.textContent = c.signalsTitle;
     if (signalsSubtitle) signalsSubtitle.textContent = c.signalsSubtitle;
     if (trendTitle) trendTitle.textContent = c.trendTitle;
     if (trendDesc) trendDesc.textContent = c.trendDesc;
     if (riskOutlookLabel) riskOutlookLabel.textContent = c.riskLabel;
-    if (globeLabel) {
-      globeLabel.classList.toggle("!hidden", mode === "military");
-    }
+    if (globeLabel) globeLabel.classList.toggle("!hidden", mode === "military");
+    if (radarLabel) radarLabel.classList.toggle("!hidden", mode !== "military");
   }
 
   function updateViewPanels(mode) {
@@ -939,10 +953,14 @@
     const defconPanel = document.getElementById("defcon-panel");
     const levelPanels = document.getElementById("level-panels");
     const globe = document.getElementById("globe-bg");
+    const radar = document.getElementById("military-radar-bg");
     const globeTooltip = document.getElementById("globe-tooltip");
+    const radarTooltip = document.getElementById("radar-tooltip");
 
     const showSI = mode === "si" || mode === "both";
     const showMilitary = mode === "military" || mode === "both";
+    const showGlobe = mode === "si" || mode === "both";
+    const showRadar = mode === "military";
 
     if (siPanel) {
       siPanel.classList.toggle("view-panel-hidden", !showSI);
@@ -964,8 +982,10 @@
       levelPanels.classList.toggle("md:grid-cols-1", mode !== "both");
       levelPanels.classList.toggle("md:grid-cols-2", mode === "both");
     }
-    if (globe) globe.classList.toggle("hidden", mode === "military");
-    if (globeTooltip && mode === "military") globeTooltip.classList.add("hidden");
+    if (globe) globe.classList.toggle("hidden", !showGlobe);
+    if (radar) radar.classList.toggle("hidden", !showRadar);
+    if (globeTooltip && !showGlobe) globeTooltip.classList.add("hidden");
+    if (radarTooltip && !showRadar) radarTooltip.classList.add("hidden");
   }
 
   function setViewMode(mode) {
@@ -1259,6 +1279,148 @@
     window.addEventListener("resize", resizeGlobe);
   }
 
+  // ---- Military radar: theater posture map (hero, military mode) ----
+  const MILITARY_THEATERS = [
+    { command: "CENTCOM", region: "Middle East / Iran", level: 2, x: 0.58, y: 0.54 },
+    { command: "EUCOM", region: "Baltics / Eastern Flank", level: 3, x: 0.52, y: 0.30 },
+    { command: "INDOPACOM", region: "Indo-Pacific / Guam", level: 3, x: 0.76, y: 0.46 },
+    { command: "NORTHCOM", region: "Continental U.S.", level: 3, x: 0.30, y: 0.36 },
+    { command: "SOUTHCOM", region: "Caribbean / LATAM", level: 4, x: 0.34, y: 0.58 },
+    { command: "AFRICOM", region: "Horn of Africa", level: 4, x: 0.56, y: 0.62 }
+  ];
+
+  function initMilitaryRadar() {
+    const canvas = document.getElementById("military-radar-bg");
+    const tooltip = document.getElementById("radar-tooltip");
+    const heroBox = canvas && canvas.parentElement;
+    if (!canvas || !tooltip || !heroBox || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const ctx = canvas.getContext("2d");
+    let hoveredTheater = null;
+    const startTime = performance.now();
+
+    function theaterPixel(th, cx, cy, maxR) {
+      return {
+        x: cx + (th.x - 0.5) * maxR * 1.75,
+        y: cy + (th.y - 0.5) * maxR * 1.75
+      };
+    }
+
+    function drawFrame(t) {
+      const dpr = Math.min(window.devicePixelRatio, 2);
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      if (w === 0 || h === 0) return;
+
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, w, h);
+
+      const cx = w / 2;
+      const cy = h / 2;
+      const maxR = Math.min(w, h) * 0.42;
+
+      for (let i = 1; i <= 4; i++) {
+        ctx.strokeStyle = "rgba(230, 126, 34, 0.14)";
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(cx, cy, (maxR * i) / 4, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      ctx.strokeStyle = "rgba(201, 212, 222, 0.08)";
+      ctx.beginPath();
+      ctx.moveTo(cx - maxR, cy);
+      ctx.lineTo(cx + maxR, cy);
+      ctx.moveTo(cx, cy - maxR);
+      ctx.lineTo(cx, cy + maxR);
+      ctx.stroke();
+
+      const sweep = (t * 1.1) % (Math.PI * 2);
+      for (let a = 0; a < 0.55; a += 0.02) {
+        const alpha = 0.22 * (1 - a / 0.55);
+        ctx.strokeStyle = `rgba(231, 76, 60, ${alpha})`;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(cx + Math.cos(sweep - a) * maxR, cy + Math.sin(sweep - a) * maxR);
+        ctx.stroke();
+      }
+
+      MILITARY_THEATERS.forEach((th) => {
+        const pos = theaterPixel(th, cx, cy, maxR);
+        const color = COMMAND_LEVEL_COLORS[th.level] || "#6B7A8A";
+        const pulse = th.level <= 2 ? 1 + Math.sin(t * 4) * 0.35 : 1;
+        const r = (th.level <= 2 ? 5 : 4) * pulse;
+        const isHover = hoveredTheater === th;
+
+        ctx.fillStyle = color + (isHover ? "ff" : "cc");
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, r, 0, Math.PI * 2);
+        ctx.fill();
+
+        if (th.level <= 2) {
+          ctx.strokeStyle = color + "44";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.arc(pos.x, pos.y, r + 6 + Math.sin(t * 3) * 2, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+      });
+    }
+
+    function showRadarTooltip(th, clientX, clientY) {
+      const box = heroBox.getBoundingClientRect();
+      const color = COMMAND_LEVEL_COLORS[th.level] || "#6B7A8A";
+      tooltip.innerHTML =
+        `<span style="color:${color}">${th.command}</span> · ${th.region}<br>` +
+        `<span class="text-muted">Estimated posture</span><br>` +
+        `<span style="color:${color}">DEFCON ${th.level}</span>`;
+      tooltip.classList.remove("hidden");
+      tooltip.style.left = `${clientX - box.left + 12}px`;
+      tooltip.style.top = `${clientY - box.top - 8}px`;
+    }
+
+    canvas.addEventListener("mousemove", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const mx = e.clientX - rect.left;
+      const my = e.clientY - rect.top;
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      const maxR = Math.min(rect.width, rect.height) * 0.42;
+
+      hoveredTheater = null;
+      for (const th of MILITARY_THEATERS) {
+        const pos = theaterPixel(th, cx, cy, maxR);
+        const dx = mx - pos.x;
+        const dy = my - pos.y;
+        if (Math.hypot(dx, dy) < 14) {
+          hoveredTheater = th;
+          showRadarTooltip(th, e.clientX, e.clientY);
+          canvas.style.cursor = "pointer";
+          return;
+        }
+      }
+      tooltip.classList.add("hidden");
+      canvas.style.cursor = "crosshair";
+    });
+
+    canvas.addEventListener("mouseleave", () => {
+      hoveredTheater = null;
+      tooltip.classList.add("hidden");
+      canvas.style.cursor = "crosshair";
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      drawFrame((performance.now() - startTime) * 0.001);
+    }
+
+    animate();
+    window.addEventListener("resize", () => drawFrame((performance.now() - startTime) * 0.001));
+  }
+
   // ---- UTC clock ----
   function tickClock() {
     const now = new Date();
@@ -1270,6 +1432,7 @@
   // ---- Init ----
   document.addEventListener("DOMContentLoaded", () => {
     initGlobe();
+    initMilitaryRadar();
     initMobileMenu();
     renderSI(Math.min(5, Math.max(0, CONFIG.siLevel)));
     renderDefcon(Math.min(5, Math.max(1, CONFIG.defconLevel)));
