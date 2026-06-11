@@ -180,10 +180,21 @@
         </h1>
 
         <p class="mt-4 max-w-2xl text-muted text-lg">
-          Tracking the race toward AGI and Super Intelligence — with military DEFCON context for real-world perspective.
+          Tracking the race toward AGI and Super Intelligence — with military context.
         </p>
 
-        <div class="mt-10 grid gap-6 md:grid-cols-2">
+        <div class="mb-10 mt-8 rounded border border-amber/30 bg-panel/70 p-5 text-center">
+          <p class="mb-1 font-mono text-xs uppercase tracking-widest text-amber">GLOBAL RISK OUTLOOK</p>
+          <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <span id="risk-level" class="font-display text-5xl font-800 text-amber">ELEVATED</span>
+            <div class="hidden h-6 w-px bg-line sm:block"></div>
+            <span class="max-w-md text-sm text-muted">
+              Military tensions rising • SI acceleration continues • Combined risk: <span id="risk-summary" class="font-medium text-amber">Elevated</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
           <!-- SI Readiness — primary panel -->
           <div class="rounded-sm border border-amber/50 bg-panel p-6 ring-1 ring-amber/20">
             <div class="flex items-start justify-between">
@@ -555,6 +566,24 @@
     });
   }
 
+  // ---- Global Risk Outlook banner ----
+  function renderRiskOutlook(defcon, si) {
+    const levelEl = document.getElementById("risk-level");
+    const summaryEl = document.getElementById("risk-summary");
+    if (!levelEl) return;
+
+    const militaryRisk = 6 - defcon;
+    const combined = (militaryRisk + si) / 2;
+    let label = "NORMAL";
+    if (combined >= 4) label = "CRITICAL";
+    else if (combined >= 3) label = "ELEVATED";
+    else if (combined >= 2) label = "WATCH";
+
+    const title = label.charAt(0) + label.slice(1).toLowerCase();
+    levelEl.textContent = label;
+    if (summaryEl) summaryEl.textContent = title;
+  }
+
   // ---- Refresh (reload for latest inline CONFIG; swap for fetch('/data.json') later) ----
   function refreshData() {
     window.location.reload();
@@ -822,6 +851,7 @@
     initMobileMenu();
     renderSI(Math.min(5, Math.max(0, CONFIG.siLevel)));
     renderDefcon(Math.min(5, Math.max(1, CONFIG.defconLevel)));
+    renderRiskOutlook(CONFIG.defconLevel, CONFIG.siLevel);
     renderSignals(CONFIG.signals);
     renderChart(CONFIG.history);
     document.getElementById("last-updated").textContent = CONFIG.lastUpdated;
