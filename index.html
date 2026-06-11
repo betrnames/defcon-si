@@ -114,7 +114,7 @@
   <header class="sticky top-0 z-50 border-b border-line bg-base/90 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
       <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-display text-2xl font-800 tracking-wide text-amber" style="font-weight:800">DEFCON.SI</span>
+        <span class="font-display text-2xl font-800 tracking-wide text-amber">DEFCON.SI</span>
         <span class="hidden font-mono text-[10px] uppercase tracking-widest text-muted sm:inline">SI MONITOR</span>
       </a>
       <div class="flex items-center gap-4 font-mono text-xs">
@@ -145,19 +145,18 @@
         <!-- Dual status boards -->
         <div class="mt-10 grid gap-6 md:grid-cols-2">
 
-          <!-- US DEFCON board -->
+          <!-- Military DEFCON -->
           <div class="rounded-sm border border-line bg-panel p-6">
             <div class="flex items-start justify-between">
               <div>
-                <h2 class="font-mono text-xs uppercase tracking-widest text-muted">Estimated US Military Posture</h2>
-                <p class="font-display mt-1 text-3xl font-700 uppercase tracking-wide" style="font-weight:700">DEFCON Level</p>
+                <h2 class="font-mono text-xs uppercase tracking-widest text-muted">US MILITARY POSTURE</h2>
+                <p class="font-display mt-1 text-3xl font-700 uppercase">DEFCON Level</p>
               </div>
               <div class="text-right">
-                <span id="defcon-number" class="font-display text-7xl font-800 leading-none" style="font-weight:800">–</span>
+                <span id="defcon-number" class="font-display text-7xl font-800 leading-none">–</span>
               </div>
             </div>
 
-            <!-- Segmented gauge: 5 (left, safe) → 1 (right, max) -->
             <div id="defcon-gauge" class="mt-6 grid grid-cols-5 gap-1.5" role="img" aria-label="DEFCON level gauge"></div>
             <div class="mt-2 flex justify-between font-mono text-[10px] uppercase tracking-wider text-muted">
               <span>5 · Normal</span><span>1 · Maximum</span>
@@ -167,19 +166,18 @@
             <p id="defcon-desc" class="mt-1 text-sm text-muted"></p>
           </div>
 
-          <!-- SI Readiness board -->
+          <!-- SI Readiness -->
           <div class="rounded-sm border border-line bg-panel p-6">
             <div class="flex items-start justify-between">
               <div>
-                <h2 class="font-mono text-xs uppercase tracking-widest text-muted">Machine Threat Composite</h2>
-                <p class="font-display mt-1 text-3xl font-700 uppercase tracking-wide" style="font-weight:700">SI Readiness</p>
+                <h2 class="font-mono text-xs uppercase tracking-widest text-muted">SUPER INTELLIGENCE RISK</h2>
+                <p class="font-display mt-1 text-3xl font-700 uppercase">SI Readiness</p>
               </div>
               <div class="text-right">
-                <span id="si-number" class="font-display text-7xl font-800 leading-none" style="font-weight:800">–</span>
+                <span id="si-number" class="font-display text-7xl font-800 leading-none">–</span>
               </div>
             </div>
 
-            <!-- Segmented gauge: 0 (left, dormant) → 5 (right, critical) -->
             <div id="si-gauge" class="mt-6 grid grid-cols-6 gap-1.5" role="img" aria-label="SI Readiness gauge"></div>
             <div class="mt-2 flex justify-between font-mono text-[10px] uppercase tracking-wider text-muted">
               <span>0 · Dormant</span><span>5 · Critical</span>
@@ -187,16 +185,18 @@
 
             <p id="si-label" class="mt-5 font-mono text-sm"></p>
             <p class="mt-1 text-sm text-muted">
-              SI Readiness is this monitor's own 0–5 composite: how strongly the aggregate signal set
-              (military movement, diplomatic language, markets, AI-capability events) deviates from baseline.
-              It is independent of, and not a prediction of, any official DEFCON change.
+              Composite score tracking the acceleration toward AGI / Super Intelligence, autonomous systems, AI-driven conflict potential, and loss-of-control risks.
             </p>
           </div>
         </div>
 
-        <p class="mt-4 font-mono text-[11px] text-muted">
-          Last assessment: <span id="last-updated" class="text-ink"></span> &middot; Actual DEFCON status is classified. This is an estimate.
-        </p>
+        <div class="mt-6 flex flex-wrap items-center justify-between gap-4 font-mono text-sm">
+          <p>Last assessment: <span id="last-updated" class="text-amber"></span></p>
+          <button type="button" onclick="refreshData()"
+                  class="rounded border border-amber/50 bg-transparent px-4 py-1.5 text-xs uppercase tracking-widest text-amber transition-colors hover:bg-amber/10">
+            ↻ Refresh Signals
+          </button>
+        </div>
       </div>
     </section>
 
@@ -266,8 +266,8 @@
   const CONFIG = {
     // --- Current levels ---
     defconLevel: 3,        // 1 (max readiness) … 5 (normal)
-    siLevel: 2,            // 0 (dormant) … 5 (critical)
-    lastUpdated: "2026-06-10 14:00 UTC",
+    siLevel: 3,            // 0 (dormant) … 5 (critical)
+    lastUpdated: "2026-06-10 17:00 UTC",
 
     // --- Live signal cards ---
     signals: [
@@ -325,7 +325,7 @@
     history: {
       labels: ["May 12","May 14","May 16","May 18","May 20","May 22","May 24","May 26","May 28","May 30","Jun 1","Jun 3","Jun 5","Jun 7","Jun 9","Jun 10"],
       defcon: [4, 4, 4, 4, 4, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3, 3],
-      si:     [1, 1, 1, 2, 2, 2, 3, 2, 2, 1, 2, 2, 3, 3, 2, 2]
+      si:     [1, 1, 1, 2, 2, 2, 3, 2, 2, 1, 2, 2, 3, 3, 2, 3]
     }
   };
   /* ================== END EDITABLE DATA ===================== */
@@ -497,6 +497,11 @@
         }
       }
     });
+  }
+
+  // ---- Refresh (reload for latest inline CONFIG; swap for fetch('/data.json') later) ----
+  function refreshData() {
+    window.location.reload();
   }
 
   // ---- UTC clock ----
