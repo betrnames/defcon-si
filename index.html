@@ -4,10 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- ===== Google Analytics ===== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL1LTNSCJL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TL1LTNSCJL');
+  </script>
+
   <!-- ===== SEO ===== -->
   <title>DEFCON.si — Super Intelligence DEFCON Monitor</title>
-  <meta name="description" content="Autonomous OSINT estimates of global defense readiness. Unofficial DEFCON level tracking and SI Readiness scoring from open-source intelligence signals." />
-  <meta name="keywords" content="DEFCON, DEFCON level, OSINT, threat intelligence, defense readiness, global tensions, AI monitoring" />
+  <meta name="description" content="Tracking two existential races: Military DEFCON readiness and the acceleration toward Super Intelligence / AGI risk." />
+  <meta name="keywords" content="DEFCON, DEFCON level, OSINT, super intelligence, AGI risk, AI monitoring, threat intelligence" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://defcon.si/" />
 
@@ -15,7 +24,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://defcon.si/" />
   <meta property="og:title" content="DEFCON.si — Super Intelligence DEFCON Monitor" />
-  <meta property="og:description" content="Autonomous OSINT estimates • Real-time global threat intelligence. Unofficial, AI-assisted readiness tracking." />
+  <meta property="og:description" content="Military readiness and the race to Super Intelligence — tracked in parallel." />
   <meta property="og:site_name" content="DEFCON.si" />
 
   <!-- Twitter -->
@@ -106,12 +115,12 @@
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
       <a href="#top" class="flex items-baseline gap-2">
         <span class="font-display text-2xl font-800 tracking-wide text-amber" style="font-weight:800">DEFCON.SI</span>
-        <span class="hidden font-mono text-[10px] uppercase tracking-widest text-muted sm:inline">SI Monitor</span>
+        <span class="hidden font-mono text-[10px] uppercase tracking-widest text-muted sm:inline">SI MONITOR</span>
       </a>
       <div class="flex items-center gap-4 font-mono text-xs">
         <span class="hidden items-center gap-2 text-muted md:flex">
           <span class="live-dot inline-block h-2 w-2 rounded-full bg-amber"></span>
-          MONITORING
+          LIVE MONITORING
         </span>
         <span id="utc-clock" class="tabular-nums text-ink">--:--:-- UTC</span>
       </div>
@@ -123,13 +132,14 @@
     <!-- ================= HERO / STATUS BOARDS ================= -->
     <section class="scanlines relative border-b border-line">
       <div class="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
-        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial OSINT Estimate</p>
-        <h1 class="font-display mt-3 text-5xl font-800 uppercase leading-none tracking-wide sm:text-7xl" style="font-weight:800">
+        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial • Autonomous OSINT Estimate</p>
+        <h1 class="font-display mt-3 text-5xl font-800 uppercase leading-none tracking-wide sm:text-7xl">
           Super Intelligence<br />DEFCON Monitor
         </h1>
-        <p class="mt-4 max-w-2xl text-muted">
-          Autonomous OSINT estimates &bull; Real-time global threat intelligence.
-          Machine-assisted reading of open-source signals — not an official government feed.
+        <p class="mt-4 max-w-2xl text-muted text-lg">
+          Tracking two parallel existential races:
+          <span class="text-amber">Military readiness</span> and the
+          <span class="text-amber">race toward Super Intelligence</span>.
         </p>
 
         <!-- Dual status boards -->
