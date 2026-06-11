@@ -91,25 +91,44 @@
 </head>
 <body class="bg-base text-ink font-sans antialiased">
 
-  <header class="sticky top-0 z-50 border-b border-line bg-base/90 backdrop-blur">
-    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-      <a href="index.html" class="flex items-baseline gap-2">
-        <span class="font-display text-2xl font-800 tracking-wide text-amber">DEFCON.SI</span>
-      </a>
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-50 border-b border-line bg-base/95 backdrop-blur">
+    <div class="mx-auto max-w-6xl px-4 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-baseline gap-2">
+          <span class="font-display text-2xl font-800 tracking-wide text-amber">DEFCON.SI</span>
+        </a>
 
-      <nav class="hidden items-center gap-6 font-mono text-sm sm:flex">
-        <a href="index.html" class="text-muted transition-colors hover:text-amber">Monitor</a>
-        <a href="about.html" class="text-amber">What is DEFCON?</a>
-        <a href="about.html#osint" class="text-muted transition-colors hover:text-amber">OSINT</a>
-        <a href="about.html#faq" class="text-muted transition-colors hover:text-amber">FAQ</a>
-      </nav>
+        <nav class="hidden items-center gap-8 font-mono text-sm md:flex">
+          <a href="index.html" class="transition-colors hover:text-amber">Live Monitor</a>
+          <a href="about.html" class="text-amber transition-colors hover:text-amber">What is DEFCON?</a>
+          <a href="about.html#osint" class="transition-colors hover:text-amber">OSINT</a>
+          <a href="about.html#faq" class="transition-colors hover:text-amber">FAQ</a>
+        </nav>
 
-      <div class="flex items-center gap-4 font-mono text-xs">
-        <span class="hidden items-center gap-2 text-muted md:flex">
-          <span class="live-dot inline-block h-2 w-2 rounded-full bg-amber"></span>
-          LIVE
-        </span>
-        <span id="utc-clock" class="tabular-nums text-ink">--:--:-- UTC</span>
+        <div class="flex items-center gap-4">
+          <span class="hidden items-center gap-2 font-mono text-xs text-muted md:flex">
+            <span class="live-dot inline-block h-2 w-2 rounded-full bg-amber"></span>
+            LIVE
+          </span>
+          <span id="utc-clock" class="tabular-nums text-xs text-ink">--:--:-- UTC</span>
+
+          <button type="button" id="menu-toggle" aria-label="Open menu" class="p-2 text-ink transition-colors hover:text-amber md:hidden">
+            <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-line bg-base md:hidden">
+      <div class="flex flex-col gap-6 px-4 py-6 font-mono text-lg">
+        <a href="index.html" class="hover:text-amber">Live Monitor</a>
+        <a href="about.html" class="hover:text-amber">What is DEFCON?</a>
+        <a href="about.html#osint" class="hover:text-amber">What is OSINT?</a>
+        <a href="about.html#faq" class="hover:text-amber">FAQ</a>
+        <a href="https://x.com/defconsi" target="_blank" rel="noopener" class="hover:text-amber">Follow @defconsi on X</a>
       </div>
     </div>
   </header>
@@ -273,6 +292,13 @@
   </footer>
 
   <script>
+    function initMobileMenu() {
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      if (!toggle || !menu) return;
+      toggle.addEventListener("click", () => menu.classList.toggle("hidden"));
+    }
+
     function tickClock() {
       const now = new Date();
       const pad = n => String(n).padStart(2, "0");
@@ -281,6 +307,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+      initMobileMenu();
       document.getElementById("year").textContent = new Date().getFullYear();
       tickClock();
       setInterval(tickClock, 1000);
