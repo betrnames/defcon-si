@@ -168,7 +168,7 @@
 
     <!-- HERO -->
     <section id="hero" class="scanlines relative overflow-hidden border-b border-line">
-      <canvas id="globe-bg" class="pointer-events-none absolute right-4 top-1/2 z-0 hidden h-48 w-48 -translate-y-1/2 opacity-25 md:right-8 md:block md:h-64 md:w-64 lg:h-72 lg:w-72" aria-hidden="true"></canvas>
+      <canvas id="globe-bg" class="absolute right-0 top-20 z-0 hidden h-80 w-80 cursor-grab opacity-20 transition-opacity duration-300 hover:opacity-40 active:cursor-grabbing md:right-4 md:top-24 md:block md:h-[22rem] md:w-[22rem] lg:right-8 lg:top-20 lg:h-[26rem] lg:w-[26rem]" aria-hidden="true"></canvas>
       <div class="relative z-10 mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
         <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial • Autonomous OSINT Estimate</p>
 
@@ -576,26 +576,30 @@
     });
   }
 
-  // ---- Simple Threat Globe Background ----
-  let scene, camera, renderer, globe;
+  // ---- Threat Globe (hero only, mouse-hover rotation) ----
+  let scene, camera, renderer, globeGroup;
 
   function initGlobe() {
     const canvas = document.getElementById("globe-bg");
     if (!canvas || typeof THREE === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const globeGroup = new THREE.Group();
-    globeGroup.position.x = 0.15;
+    let isHovering = false;
+    let targetRotX = 0;
+    let targetRotY = 0;
+
+    globeGroup = new THREE.Group();
+    globeGroup.position.set(0.2, -0.05, 0);
 
     renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
-    camera.position.z = 2.2;
+    camera = new THREE.PerspectiveCamera(48, 1, 0.1, 100);
+    camera.position.z = 2.6;
 
-    const radius = 0.55;
-    globe = new THREE.Mesh(
-      new THREE.SphereGeometry(radius, 40, 40),
+    const radius = 0.82;
+    globeGroup.add(new THREE.Mesh(
+      new THREE.SphereGeometry(radius, 48, 48),
       new THREE.MeshPhongMaterial({
         color: 0x1a2633,
         emissive: 0x112233,
@@ -603,11 +607,10 @@
         transparent: true,
         opacity: 0.85
       })
-    );
-    globeGroup.add(globe);
+    ));
 
     const pointsGeometry = new THREE.BufferGeometry();
-    const pointsCount = 18;
+    const pointsCount = 22;
     const positions = new Float32Array(pointsCount * 3);
     for (let i = 0; i < pointsCount * 3; i += 3) {
       const theta = Math.random() * Math.PI * 2;
@@ -618,18 +621,30 @@
       positions[i + 2] = r * Math.cos(phi);
     }
     pointsGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-
-    const hotspots = new THREE.Points(
+    globeGroup.add(new THREE.Points(
       pointsGeometry,
-      new THREE.PointsMaterial({ color: 0xffaa00, size: 0.02, transparent: true, opacity: 0.8 })
-    );
-    globeGroup.add(hotspots);
+      new THREE.PointsMaterial({ color: 0xffaa00, size: 0.022, transparent: true, opacity: 0.85 })
+    ));
     scene.add(globeGroup);
 
     scene.add(new THREE.AmbientLight(0xaaaaaa, 0.6));
     const directional = new THREE.DirectionalLight(0xffeecc, 0.8);
     directional.position.set(5, 3, 5);
     scene.add(directional);
+
+    canvas.addEventListener("mouseenter", () => { isHovering = true; });
+    canvas.addEventListener("mouseleave", () => {
+      isHovering = false;
+      targetRotX = 0;
+      targetRotY = globeGroup.rotation.y;
+    });
+    canvas.addEventListener("mousemove", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      const y = ((e.clientY - rect.top) / rect.height) * 2 - 1;
+      targetRotY = x * 1.4;
+      targetRotX = y * 0.7;
+    });
 
     function resizeGlobe() {
       if (canvas.clientWidth === 0 || canvas.clientHeight === 0) return;
@@ -640,7 +655,12 @@
 
     function animate() {
       requestAnimationFrame(animate);
-      globeGroup.rotation.y += 0.0008;
+      if (isHovering) {
+        globeGroup.rotation.y += (targetRotY - globeGroup.rotation.y) * 0.1;
+        globeGroup.rotation.x += (targetRotX - globeGroup.rotation.x) * 0.1;
+      } else {
+        globeGroup.rotation.x += (0 - globeGroup.rotation.x) * 0.04;
+      }
       renderer.render(scene, camera);
     }
 
