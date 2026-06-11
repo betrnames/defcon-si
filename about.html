@@ -293,10 +293,20 @@
 
   <script>
     function initMobileMenu() {
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("mobile-menu");
-      if (!toggle || !menu) return;
-      toggle.addEventListener("click", () => menu.classList.toggle("hidden"));
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      if (!menuToggle || !mobileMenu || !hamburgerIcon) return;
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+
+        if (!mobileMenu.classList.contains('hidden')) {
+          hamburgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6h12v12" />`;
+        } else {
+          hamburgerIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
+        }
+      });
     }
 
     function tickClock() {
