@@ -130,9 +130,28 @@
     a:focus-visible, button:focus-visible {
       outline: 2px solid #FFB000; outline-offset: 2px;
     }
+
+    .view-btn-active {
+      border-color: #FFB000;
+      background: rgba(255, 176, 0, 0.12);
+      color: #FFB000;
+    }
+    .view-panel-hidden { display: none !important; }
   </style>
 </head>
 <body class="bg-base text-ink font-sans antialiased">
+
+  <!-- ================= NEWS TICKER ================= -->
+  <div id="news-ticker" class="border-b border-amber/20 bg-panel/70">
+    <div class="mx-auto max-w-6xl overflow-hidden px-4">
+      <div class="flex items-center gap-3 py-2.5">
+        <span id="ticker-label" class="shrink-0 rounded border border-amber/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-amber">Live OSINT</span>
+        <div class="relative min-w-0 flex-1 overflow-hidden">
+          <div id="news-ticker-track" class="ticker-track flex w-max items-center gap-10 whitespace-nowrap font-mono text-xs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ================= HEADER ================= -->
   <header class="sticky top-0 z-50 border-b border-line bg-base/95 backdrop-blur">
@@ -183,7 +202,7 @@
       <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 pt-10 sm:pt-14">
         <canvas id="globe-bg" class="absolute right-0 top-6 z-0 h-64 w-64 cursor-grab opacity-15 transition-opacity duration-300 hover:opacity-35 active:cursor-grabbing sm:top-10 sm:h-80 sm:w-80 sm:opacity-20 md:top-12 md:h-[24rem] md:w-[24rem] lg:top-10 lg:h-[30rem] lg:w-[30rem]" aria-hidden="true"></canvas>
         <div id="globe-tooltip" class="pointer-events-none absolute z-20 hidden max-w-[12rem] rounded border border-amber/40 bg-panel/95 px-2.5 py-2 font-mono text-[10px] leading-snug text-ink shadow-lg backdrop-blur"></div>
-        <p class="absolute right-0 top-2 z-10 hidden font-mono text-[9px] uppercase tracking-widest text-muted md:block">AI / AGI Hubs · OSINT Map</p>
+        <p id="globe-label" class="absolute right-0 top-2 z-10 hidden font-mono text-[9px] uppercase tracking-widest text-muted md:block">AI / AGI Hubs · OSINT Map</p>
         <div class="relative z-10">
         <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">Unofficial • Independent OSINT</p>
 
@@ -191,26 +210,39 @@
           Super Intelligence<br />DEFCON Monitor
         </h1>
 
-        <p class="mt-4 max-w-2xl text-lg text-muted">
+        <p id="hero-subtitle" class="mt-4 max-w-2xl text-lg text-muted">
           Tracking the two most critical signals in modern defense:
           traditional military readiness and the accelerating race toward
           Super Intelligence.
         </p>
 
-        <div class="mb-10 mt-8 rounded border border-amber/30 bg-panel/70 p-5 text-center">
-          <p class="mb-1 font-mono text-xs uppercase tracking-widest text-amber">GLOBAL RISK OUTLOOK</p>
+        <!-- View mode selector -->
+        <div id="view-selector" class="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Choose monitoring focus">
+          <button type="button" data-mode="si" role="tab" aria-selected="false" class="view-btn rounded border border-line bg-panel px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted transition-colors hover:border-amber/50 hover:text-amber">
+            Race to AGI
+          </button>
+          <button type="button" data-mode="military" role="tab" aria-selected="false" class="view-btn rounded border border-line bg-panel px-4 py-2 font-mono text-xs uppercase tracking-widest text-muted transition-colors hover:border-amber/50 hover:text-amber">
+            Military DEFCON
+          </button>
+          <button type="button" data-mode="both" role="tab" aria-selected="true" class="view-btn view-btn-active rounded border px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors hover:border-amber/50">
+            Both Tracks
+          </button>
+        </div>
+
+        <div id="risk-outlook" class="mb-10 mt-8 rounded border border-amber/30 bg-panel/70 p-5 text-center">
+          <p id="risk-outlook-label" class="mb-1 font-mono text-xs uppercase tracking-widest text-amber">GLOBAL RISK OUTLOOK</p>
           <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <span id="risk-level" class="font-display text-5xl font-800 text-amber">ELEVATED</span>
             <div class="hidden h-6 w-px bg-line sm:block"></div>
-            <span class="max-w-md text-sm text-muted">
+            <span id="risk-detail" class="max-w-md text-sm text-muted">
               Military tensions rising • SI acceleration continues • Combined risk: <span id="risk-summary" class="font-medium text-amber">Elevated</span>
             </span>
           </div>
         </div>
 
-        <div class="grid gap-6 md:grid-cols-2">
+        <div id="level-panels" class="grid gap-6 md:grid-cols-2">
           <!-- SI Readiness — primary panel -->
-          <div class="rounded-sm border border-amber/50 bg-panel p-6 ring-1 ring-amber/20">
+          <div id="si-panel" data-view-panel="si" class="rounded-sm border border-amber/50 bg-panel p-6 ring-1 ring-amber/20">
             <div class="flex items-start justify-between">
               <div>
                 <h2 class="font-mono text-xs uppercase tracking-widest text-amber">PRIMARY FOCUS</h2>
@@ -231,7 +263,7 @@
           </div>
 
           <!-- Military DEFCON — secondary -->
-          <div class="rounded-sm border border-line bg-panel p-6 opacity-90">
+          <div id="defcon-panel" data-view-panel="military" class="rounded-sm border border-line bg-panel p-6 opacity-90">
             <div class="flex items-start justify-between">
               <div>
                 <h2 class="font-mono text-xs uppercase tracking-widest text-muted">Military Context</h2>
@@ -260,55 +292,22 @@
       </div>
     </section>
 
-    <!-- ================= NEWS TICKER ================= -->
-    <div id="news-ticker" class="border-b border-amber/20 bg-panel/70">
-      <div class="mx-auto max-w-6xl overflow-hidden px-4">
-        <div class="flex items-center gap-3 py-2.5">
-          <span class="shrink-0 rounded border border-amber/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-amber">Live OSINT</span>
-          <div class="relative min-w-0 flex-1 overflow-hidden">
-            <div id="news-ticker-track" class="ticker-track flex w-max items-center gap-10 whitespace-nowrap font-mono text-xs"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- ================= LIVE SIGNALS ================= -->
-    <section class="border-b border-line">
+    <section id="signals-section" class="border-b border-line">
       <div class="mx-auto max-w-6xl px-4 py-12">
         <div class="flex items-baseline justify-between">
-          <h2 class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">Live Signals</h2>
-          <span class="font-mono text-xs uppercase tracking-widest text-muted">OSINT Feed · Curated</span>
+          <h2 id="signals-title" class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">Live Signals</h2>
+          <span id="signals-subtitle" class="font-mono text-xs uppercase tracking-widest text-muted">OSINT Feed · Curated</span>
         </div>
         <div id="signals-grid" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
       </div>
     </section>
 
-    <!-- ================= OSINT NEWS TRACKER ================= -->
-    <section id="news-tracker" class="border-b border-line">
-      <div class="mx-auto max-w-6xl px-4 py-12">
-        <div class="flex flex-wrap items-baseline justify-between gap-4">
-          <h2 class="font-display text-4xl font-700 uppercase tracking-wide">OSINT News Tracker</h2>
-          <a href="https://defconlevel.com/alerts" target="_blank" rel="noopener noreferrer" class="font-mono text-xs uppercase tracking-widest text-amber hover:underline">
-            defconlevel.com/alerts →
-          </a>
-        </div>
-        <p class="mt-2 max-w-3xl text-sm text-muted">
-          Regional military and geopolitical alerts sourced from
-          <a href="https://defconlevel.com" target="_blank" rel="noopener noreferrer" class="text-amber hover:underline">defconlevel.com</a>
-          — independent OSINT since 2013. Click any headline for the full report.
-        </p>
-        <div id="news-tracker-list" class="mt-6 space-y-3"></div>
-        <p class="mt-6 font-mono text-[10px] text-muted">
-          Source attribution: alerts curated from <a href="https://defconlevel.com/alerts" target="_blank" rel="noopener noreferrer" class="text-amber hover:underline">Defcon Level</a>. Not affiliated. Updated Jun 11, 2026.
-        </p>
-      </div>
-    </section>
-
     <!-- ================= TREND ================= -->
-    <section class="border-b border-line">
+    <section id="trend-section" class="border-b border-line">
       <div class="mx-auto max-w-6xl px-4 py-12">
-        <h2 class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">30-Day Trend</h2>
-        <p class="mt-2 max-w-2xl text-sm text-muted">
+        <h2 id="trend-title" class="font-display text-4xl font-700 uppercase tracking-wide" style="font-weight:700">30-Day Trend</h2>
+        <p id="trend-desc" class="mt-2 max-w-2xl text-sm text-muted">
           Estimated DEFCON (lower = higher readiness) and SI Readiness composite (higher = more anomalous signal volume).
         </p>
         <div class="mt-6 rounded-sm border border-line bg-panel p-4">
@@ -374,6 +373,7 @@
     // --- Live signal cards ---
     signals: [
       {
+        category: "military",
         title: "Iran–Israel tensions elevated",
         region: "Middle East",
         severity: "high",
@@ -382,6 +382,7 @@
         summary: "Multiple wire services report increased IRGC naval activity in the Strait of Hormuz; U.S. CENTCOM acknowledges 'heightened force-protection posture' in the region."
       },
       {
+        category: "military",
         title: "Carrier strike group repositioning",
         region: "Eastern Mediterranean",
         severity: "moderate",
@@ -390,14 +391,16 @@
         summary: "Open-source ship tracking shows a CSG departing scheduled exercise area ahead of plan. No official statement; consistent with contingency positioning."
       },
       {
+        category: "si",
         title: "Frontier AI lab announces autonomous-agent milestone",
         region: "Global / Technology",
         severity: "moderate",
         confidence: "Developing",
         time: "11h ago",
-        summary: "Published benchmarks claim sustained multi-day autonomous operation. Relevance: capability jumps feed the SI Readiness composite, not the DEFCON estimate."
+        summary: "Published benchmarks claim sustained multi-day autonomous operation — a capability jump that feeds the SI Readiness composite."
       },
       {
+        category: "military",
         title: "NATO eastern-flank exercise begins",
         region: "Baltics",
         severity: "low",
@@ -406,6 +409,7 @@
         summary: "Pre-announced joint exercise involving ~9,000 personnel. Scheduled and notified under Vienna Document; treated as baseline activity."
       },
       {
+        category: "military",
         title: "Unusual military cargo flight cluster",
         region: "Indo-Pacific",
         severity: "moderate",
@@ -414,6 +418,34 @@
         summary: "ADS-B watchers flag an above-baseline cluster of strategic-airlift flights to Guam. Unverified; could reflect routine rotation."
       },
       {
+        category: "si",
+        title: "Open-weight model matches closed frontier on reasoning",
+        region: "Global / Open Source",
+        severity: "high",
+        confidence: "Corroborated",
+        time: "14h ago",
+        summary: "New open-weight release scores within margin of top closed models on multi-step reasoning benchmarks — compressing the capability gap."
+      },
+      {
+        category: "si",
+        title: "Major cloud provider ships agentic coding stack",
+        region: "United States",
+        severity: "moderate",
+        confidence: "Corroborated",
+        time: "1d ago",
+        summary: "Enterprise rollout of autonomous code agents with persistent memory and tool use. Deployment velocity is a key SI acceleration signal."
+      },
+      {
+        category: "si",
+        title: "AI safety institute publishes eval red-team results",
+        region: "United Kingdom",
+        severity: "low",
+        confidence: "Corroborated",
+        time: "2d ago",
+        summary: "Public eval suite shows rising deception and persuasion scores on frontier models — governance lag vs. capability growth."
+      },
+      {
+        category: "military",
         title: "Diplomatic language hardening",
         region: "East Asia",
         severity: "low",
@@ -426,6 +458,43 @@
     // --- OSINT news tracker (sourced from defconlevel.com/alerts) ---
     newsTracker: [
       {
+        category: "si",
+        title: "Frontier Lab Claims Multi-Day Autonomous Agent Operation",
+        summary: "Benchmark paper reports agents completing week-long tasks with minimal human intervention.",
+        time: "Jun 11, 2026 · 11h ago",
+        command: "SI-3",
+        commandLevel: 3,
+        url: "https://www.anthropic.com/research"
+      },
+      {
+        category: "si",
+        title: "Open-Weight Model Nears Closed Frontier on Reasoning Tasks",
+        summary: "New release closes gap on multi-step reasoning — capability diffusion accelerating.",
+        time: "Jun 10, 2026 · 1d ago",
+        command: "SI-3",
+        commandLevel: 3,
+        url: "https://huggingface.co/blog"
+      },
+      {
+        category: "si",
+        title: "Enterprise Agentic Stack Ships to Millions of Developers",
+        summary: "Cloud provider deploys persistent autonomous coding agents with tool use at scale.",
+        time: "Jun 9, 2026 · 2d ago",
+        command: "SI-2",
+        commandLevel: 4,
+        url: "https://openai.com/index"
+      },
+      {
+        category: "si",
+        title: "UK AI Safety Institute Publishes Frontier Eval Red-Team",
+        summary: "Public evals show rising deception scores — governance lag vs. capability growth.",
+        time: "Jun 8, 2026 · 3d ago",
+        command: "SI-2",
+        commandLevel: 4,
+        url: "https://www.gov.uk/government/organisations/ai-safety-institute"
+      },
+      {
+        category: "military",
         title: "Pentagon Enacts Precautionary Shelter-in-Place After Air Quality Issue",
         summary: "Pentagon spokesman confirmed sophisticated building systems detected an air quality issue, triggering shelter-in-place and hazmat deployment.",
         time: "Jun 11, 2026 · 4:53 PM",
@@ -434,6 +503,7 @@
         url: "https://defconlevel.com/alert/2026-06-11-pentagon-enacts-precautionary-shelter-in-place-and-lock-down-after-internal-systems-detect-air-quality-issue"
       },
       {
+        category: "military",
         title: "U.S. Strikes Iran for Second Day; Air Defenses Engage in Kuwait, Bahrain, Jordan",
         summary: "U.S. forces struck targets inside Iran for a second consecutive day while regional air defenses engaged Iranian missiles and drones.",
         time: "Jun 11, 2026 · 6:34 AM",
@@ -442,6 +512,7 @@
         url: "https://defconlevel.com/alert/2026-06-11-u-s-strikes-iran-for-second-day-air-defenses-in-kuwait-bahrain-and-jordan-engage-iranian-missiles-and-drones"
       },
       {
+        category: "military",
         title: "CENTCOM Completes Strikes on Iranian Targets After Apache Downing",
         summary: "Strikes targeted air defense, ground control stations, and surveillance radar sites near the Strait of Hormuz.",
         time: "Jun 10, 2026 · 4:27 AM",
@@ -450,6 +521,7 @@
         url: "https://defconlevel.com/alert/2026-06-10-u-s-central-command-completes-strikes-on-iranian-targets-following-apache-helicopter-downing"
       },
       {
+        category: "military",
         title: "U.S. Forces Launch Strikes on Iran After Apache Helicopter Downed",
         summary: "CENTCOM reported U.S. forces began self-defense strikes against Iran following the downing of a U.S. Army AH-64 Apache.",
         time: "Jun 9, 2026 · 9:29 PM",
@@ -458,6 +530,7 @@
         url: "https://defconlevel.com/alert/2026-06-09-us-forces-begin-launching-strikes-on-iran-in-response-to-downing-of-u-s-army-apache-helicopter"
       },
       {
+        category: "military",
         title: "U.S. Forces Rescue Apache Crew After Helicopter Shot Down Near Oman",
         summary: "Two crew members rescued after AH-64 Apache went down near the coast of Oman while patrolling regional waters.",
         time: "Jun 9, 2026 · 2:38 PM",
@@ -466,6 +539,7 @@
         url: "https://defconlevel.com/alert/2026-06-09-u-s-forces-rescue-army-apache-crew-after-helicopter-shot-down-near-oman-coast"
       },
       {
+        category: "military",
         title: "NATO Baltic Air Policing Jets Shoot Down Drone in Latvian Airspace",
         summary: "Latvia issued orange-level air threat alert after foreign UAV incursion attributed to Russian electromagnetic warfare.",
         time: "Jun 8, 2026 · 5:04 PM",
@@ -474,6 +548,7 @@
         url: "https://defconlevel.com/alert/2026-06-08-nato-baltic-air-policing-jets-shoot-down-drone-in-latvian-airspace"
       },
       {
+        category: "military",
         title: "Iran Fires Ballistic Missiles Toward Israel; U.S. Forces at Heightened Alert",
         summary: "Multiple waves of ballistic missiles toward Israeli territory; air defense systems engaged across several areas.",
         time: "Jun 8, 2026 · 5:28 AM",
@@ -482,6 +557,7 @@
         url: "https://defconlevel.com/alert/2026-06-08-iran-fires-ballistic-missiles-toward-israel-u-s-regional-forces-at-heightened-alert"
       },
       {
+        category: "military",
         title: "U.S. Embassy Issues Security Alert for Middle East",
         summary: "U.S. Embassy in Jerusalem directed citizens across the Middle East to exercise increased caution.",
         time: "Jun 4, 2026 · 7:53 PM",
@@ -518,6 +594,22 @@
     5: { label: "SI-5 — CRITICAL",  color: "#FF3B30" }
   };
   const SEVERITY_COLORS = { low: "#2ECC71", moderate: "#F1C40F", high: "#E67E22", critical: "#FF3B30" };
+
+  const VIEW_STORAGE_KEY = "defconsi-view-mode";
+  let currentViewMode = "both";
+  let trendChart = null;
+
+  function filterByView(items, mode) {
+    if (mode === "both") return items;
+    return items.filter((item) => item.category === mode);
+  }
+
+  function riskLabelFromScore(score) {
+    if (score >= 4) return "CRITICAL";
+    if (score >= 3) return "ELEVATED";
+    if (score >= 2) return "WATCH";
+    return "NORMAL";
+  }
 
   // ---- Render: DEFCON board (segments run 5 → 1, left to right) ----
   function renderDefcon(level) {
@@ -579,11 +671,12 @@
   function esc(str) { return String(str || "").replace(/[<>"'&]/g, c => ({"<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;","&":"&amp;"}[c])); }
 
   // ---- Render: signal cards (DOM-safe — no raw interpolation) ----
-  function renderSignals(signals) {
+  function renderSignals(signals, mode) {
     const grid = document.getElementById("signals-grid");
     grid.innerHTML = "";
+    const filtered = filterByView(signals, mode);
     const allowed = ["low","moderate","high","critical"];
-    signals.forEach(s => {
+    filtered.forEach(s => {
       const severity = allowed.includes(s.severity) ? s.severity : "low";
       const sev = SEVERITY_COLORS[severity] || "#6B7A8A";
       const card = document.createElement("article");
@@ -635,16 +728,24 @@
   }
 
   // ---- Render: scrolling news ticker ----
-  function renderNewsTicker(items) {
+  function renderNewsTicker(items, mode) {
     const track = document.getElementById("news-ticker-track");
+    const label = document.getElementById("ticker-label");
     if (!track) return;
     track.innerHTML = "";
 
-    const sorted = sortNewsByThreat(items);
+    const filtered = filterByView(items, mode);
+    const sorted = sortNewsByThreat(filtered);
+    if (label) {
+      const labels = { si: "SI / AGI", military: "Military", both: "Live OSINT" };
+      label.textContent = labels[mode] || "Live OSINT";
+    }
+
     const buildItems = (container) => {
       sorted.forEach((item) => {
         const level = Math.min(5, Math.max(1, item.commandLevel || 5));
         const levelColor = COMMAND_LEVEL_COLORS[level] || "#6B7A8A";
+        const isSI = item.category === "si";
 
         const link = document.createElement("a");
         link.href = item.url;
@@ -661,7 +762,9 @@
 
         const meta = document.createElement("span");
         meta.className = "text-muted";
-        meta.textContent = `· ${item.command} · DEFCON ${level}`;
+        meta.textContent = isSI
+          ? `· ${item.command || "SI"} · Level ${level}`
+          : `· ${item.command} · DEFCON ${level}`;
 
         link.appendChild(dot);
         link.appendChild(title);
@@ -669,6 +772,14 @@
         container.appendChild(link);
       });
     };
+
+    if (sorted.length === 0) {
+      const empty = document.createElement("span");
+      empty.className = "text-muted";
+      empty.textContent = "No alerts for this track — check back soon.";
+      track.appendChild(empty);
+      return;
+    }
 
     const passA = document.createElement("div");
     passA.className = "flex items-center gap-10 pr-10";
@@ -680,91 +791,47 @@
     track.appendChild(passB);
   }
 
-  // ---- Render: OSINT news tracker (defconlevel.com backlinks) ----
-  function renderNewsTracker(items) {
-    const list = document.getElementById("news-tracker-list");
-    if (!list) return;
-    list.innerHTML = "";
-
-    items.forEach((item) => {
-      const level = Math.min(5, Math.max(1, item.commandLevel || 5));
-      const levelColor = COMMAND_LEVEL_COLORS[level] || "#6B7A8A";
-
-      const article = document.createElement("article");
-      article.className = "rounded-sm border border-line bg-panel p-4 transition-colors hover:border-amber/40";
-
-      const header = document.createElement("div");
-      header.className = "flex flex-wrap items-center justify-between gap-2";
-
-      const badge = document.createElement("span");
-      badge.className = "font-mono text-[10px] uppercase tracking-widest";
-      badge.style.color = levelColor;
-      badge.textContent = `${item.command || "OSINT"} · DEFCON ${level}`;
-
-      const time = document.createElement("span");
-      time.className = "font-mono text-[10px] text-muted";
-      time.textContent = item.time;
-
-      header.appendChild(badge);
-      header.appendChild(time);
-
-      const link = document.createElement("a");
-      link.href = item.url;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.className = "group mt-2 block";
-
-      const title = document.createElement("h3");
-      title.className = "font-display text-lg font-700 uppercase leading-tight tracking-wide text-ink group-hover:text-amber";
-      title.textContent = item.title;
-
-      const summary = document.createElement("p");
-      summary.className = "mt-2 text-sm text-muted";
-      summary.textContent = item.summary;
-
-      const source = document.createElement("span");
-      source.className = "mt-3 inline-block font-mono text-[10px] uppercase tracking-wider text-amber";
-      source.textContent = "Read on defconlevel.com →";
-
-      link.appendChild(title);
-      link.appendChild(summary);
-      link.appendChild(source);
-      article.appendChild(header);
-      article.appendChild(link);
-      list.appendChild(article);
-    });
-  }
-
   // ---- Render: trend chart ----
-  function renderChart(history) {
+  function renderChart(history, mode) {
     const ctx = document.getElementById("trend-chart");
-    new Chart(ctx, {
+    if (!ctx) return;
+    if (trendChart) {
+      trendChart.destroy();
+      trendChart = null;
+    }
+
+    const datasets = [];
+    if (mode === "military" || mode === "both") {
+      datasets.push({
+        label: "DEFCON estimate (1=max, 5=normal)",
+        data: history.defcon,
+        borderColor: "#E67E22",
+        backgroundColor: "transparent",
+        stepped: true,
+        borderWidth: 2,
+        pointRadius: 2,
+        pointBackgroundColor: "#E67E22"
+      });
+    }
+    if (mode === "si" || mode === "both") {
+      datasets.push({
+        label: "SI Readiness (0–5)",
+        data: history.si,
+        borderColor: "#FFB000",
+        backgroundColor: "rgba(255,176,0,0.08)",
+        fill: true,
+        tension: 0.3,
+        borderWidth: 2,
+        pointRadius: 2,
+        pointBackgroundColor: "#FFB000"
+      });
+    }
+
+    trendChart = new Chart(ctx, {
       type: "line",
       data: {
         labels: history.labels,
-        datasets: [
-          {
-            label: "DEFCON estimate (1=max, 5=normal)",
-            data: history.defcon,
-            borderColor: "#E67E22",
-            backgroundColor: "transparent",
-            stepped: true,
-            borderWidth: 2,
-            pointRadius: 2,
-            pointBackgroundColor: "#E67E22"
-          },
-          {
-            label: "SI Readiness (0–5)",
-            data: history.si,
-            borderColor: "#FFB000",
-            backgroundColor: "rgba(255,176,0,0.08)",
-            fill: true,
-            tension: 0.3,
-            borderWidth: 2,
-            pointRadius: 2,
-            pointBackgroundColor: "#FFB000"
-          }
-        ]
+        datasets
       },
       options: {
         responsive: true,
@@ -789,21 +856,154 @@
   }
 
   // ---- Global Risk Outlook banner ----
-  function renderRiskOutlook(defcon, si) {
+  function renderRiskOutlook(defcon, si, mode) {
     const levelEl = document.getElementById("risk-level");
     const summaryEl = document.getElementById("risk-summary");
+    const detailEl = document.getElementById("risk-detail");
     if (!levelEl) return;
 
     const militaryRisk = 6 - defcon;
-    const combined = (militaryRisk + si) / 2;
     let label = "NORMAL";
-    if (combined >= 4) label = "CRITICAL";
-    else if (combined >= 3) label = "ELEVATED";
-    else if (combined >= 2) label = "WATCH";
+    let detail = "";
+
+    if (mode === "si") {
+      label = riskLabelFromScore(si);
+      detail = `SI Readiness at ${si}/5 · AGI acceleration and loss-of-control signals · Risk: `;
+    } else if (mode === "military") {
+      label = riskLabelFromScore(militaryRisk);
+      detail = `DEFCON estimate at ${defcon} · Regional posture and force readiness · Risk: `;
+    } else {
+      const combined = (militaryRisk + si) / 2;
+      label = riskLabelFromScore(combined);
+      detail = "Military tensions rising • SI acceleration continues • Combined risk: ";
+    }
 
     const title = label.charAt(0) + label.slice(1).toLowerCase();
     levelEl.textContent = label;
     if (summaryEl) summaryEl.textContent = title;
+    if (detailEl) {
+      detailEl.innerHTML = `${detail}<span id="risk-summary" class="font-medium text-amber">${title}</span>`;
+    }
+  }
+
+  function updateViewCopy(mode) {
+    const heroSubtitle = document.getElementById("hero-subtitle");
+    const signalsTitle = document.getElementById("signals-title");
+    const signalsSubtitle = document.getElementById("signals-subtitle");
+    const trendTitle = document.getElementById("trend-title");
+    const trendDesc = document.getElementById("trend-desc");
+    const globeLabel = document.getElementById("globe-label");
+    const riskOutlookLabel = document.getElementById("risk-outlook-label");
+
+    const copy = {
+      si: {
+        hero: "Focused on the race to AGI — tracking capability jumps, autonomous systems, and Super Intelligence readiness signals.",
+        signalsTitle: "SI Threat Signals",
+        signalsSubtitle: "AGI / Capability Feed",
+        trendTitle: "SI Readiness Trend",
+        trendDesc: "SI Readiness composite (0–5): higher values indicate more anomalous acceleration signals.",
+        riskLabel: "SI RISK OUTLOOK"
+      },
+      military: {
+        hero: "Focused on military DEFCON risk — tracking force posture, regional alerts, and geopolitical readiness signals.",
+        signalsTitle: "Military Signals",
+        signalsSubtitle: "DEFCON / OSINT Feed",
+        trendTitle: "DEFCON Trend",
+        trendDesc: "Estimated DEFCON (lower = higher readiness) inferred from observable military posture.",
+        riskLabel: "MILITARY RISK OUTLOOK"
+      },
+      both: {
+        hero: "Tracking the two most critical signals in modern defense: traditional military readiness and the accelerating race toward Super Intelligence.",
+        signalsTitle: "Live Signals",
+        signalsSubtitle: "OSINT Feed · Curated",
+        trendTitle: "30-Day Trend",
+        trendDesc: "Estimated DEFCON (lower = higher readiness) and SI Readiness composite (higher = more anomalous signal volume).",
+        riskLabel: "GLOBAL RISK OUTLOOK"
+      }
+    };
+
+    const c = copy[mode] || copy.both;
+    if (heroSubtitle) heroSubtitle.textContent = c.hero;
+    if (signalsTitle) signalsTitle.textContent = c.signalsTitle;
+    if (signalsSubtitle) signalsSubtitle.textContent = c.signalsSubtitle;
+    if (trendTitle) trendTitle.textContent = c.trendTitle;
+    if (trendDesc) trendDesc.textContent = c.trendDesc;
+    if (riskOutlookLabel) riskOutlookLabel.textContent = c.riskLabel;
+    if (globeLabel) {
+      globeLabel.classList.toggle("!hidden", mode === "military");
+    }
+  }
+
+  function updateViewPanels(mode) {
+    const siPanel = document.getElementById("si-panel");
+    const defconPanel = document.getElementById("defcon-panel");
+    const levelPanels = document.getElementById("level-panels");
+    const globe = document.getElementById("globe-bg");
+    const globeTooltip = document.getElementById("globe-tooltip");
+
+    const showSI = mode === "si" || mode === "both";
+    const showMilitary = mode === "military" || mode === "both";
+
+    if (siPanel) {
+      siPanel.classList.toggle("view-panel-hidden", !showSI);
+      siPanel.classList.toggle("md:col-span-2", mode === "si");
+      siPanel.classList.toggle("border-amber/50", mode !== "military");
+      siPanel.classList.toggle("ring-1", mode !== "military");
+      siPanel.classList.toggle("ring-amber/20", mode !== "military");
+      siPanel.classList.toggle("opacity-90", mode === "both");
+    }
+    if (defconPanel) {
+      defconPanel.classList.toggle("view-panel-hidden", !showMilitary);
+      defconPanel.classList.toggle("md:col-span-2", mode === "military");
+      defconPanel.classList.toggle("border-amber/50", mode === "military");
+      defconPanel.classList.toggle("ring-1", mode === "military");
+      defconPanel.classList.toggle("ring-amber/20", mode === "military");
+      defconPanel.classList.toggle("opacity-90", mode === "both");
+    }
+    if (levelPanels) {
+      levelPanels.classList.toggle("md:grid-cols-1", mode !== "both");
+      levelPanels.classList.toggle("md:grid-cols-2", mode === "both");
+    }
+    if (globe) globe.classList.toggle("hidden", mode === "military");
+    if (globeTooltip && mode === "military") globeTooltip.classList.add("hidden");
+  }
+
+  function setViewMode(mode) {
+    if (!["si", "military", "both"].includes(mode)) return;
+    currentViewMode = mode;
+    localStorage.setItem(VIEW_STORAGE_KEY, mode);
+
+    document.querySelectorAll(".view-btn").forEach((btn) => {
+      const active = btn.dataset.mode === mode;
+      btn.classList.toggle("view-btn-active", active);
+      btn.classList.toggle("text-muted", !active);
+      btn.classList.toggle("text-amber", active);
+      btn.setAttribute("aria-selected", active ? "true" : "false");
+    });
+
+    updateViewPanels(mode);
+    updateViewCopy(mode);
+    renderRiskOutlook(CONFIG.defconLevel, CONFIG.siLevel, mode);
+    renderSignals(CONFIG.signals, mode);
+    renderNewsTicker(CONFIG.newsTracker, mode);
+    renderChart(CONFIG.history, mode);
+  }
+
+  function initViewSelector() {
+    const selector = document.getElementById("view-selector");
+    if (!selector) return;
+
+    const saved = localStorage.getItem(VIEW_STORAGE_KEY);
+    if (saved && ["si", "military", "both"].includes(saved)) {
+      currentViewMode = saved;
+    }
+
+    selector.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-mode]");
+      if (btn) setViewMode(btn.dataset.mode);
+    });
+
+    setViewMode(currentViewMode);
   }
 
   // ---- Refresh (reload for latest inline CONFIG; swap for fetch('/data.json') later) ----
@@ -1073,11 +1273,7 @@
     initMobileMenu();
     renderSI(Math.min(5, Math.max(0, CONFIG.siLevel)));
     renderDefcon(Math.min(5, Math.max(1, CONFIG.defconLevel)));
-    renderRiskOutlook(CONFIG.defconLevel, CONFIG.siLevel);
-    renderSignals(CONFIG.signals);
-    renderNewsTicker(CONFIG.newsTracker);
-    renderNewsTracker(sortNewsByThreat(CONFIG.newsTracker));
-    renderChart(CONFIG.history);
+    initViewSelector();
     document.getElementById("last-updated").textContent = CONFIG.lastUpdated;
     document.getElementById("year").textContent = new Date().getFullYear();
     tickClock();
