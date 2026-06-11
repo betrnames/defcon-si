@@ -108,6 +108,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       .seg-active, .live-dot { animation: none; }
+      .scale-110 { transform: none; }
       html { scroll-behavior: auto; }
     }
 
@@ -391,8 +392,10 @@
   // ---- Render: DEFCON board (segments run 5 → 1, left to right) ----
   function renderDefcon(level) {
     const meta = DEFCON_META[level];
-    document.getElementById("defcon-number").textContent = level;
-    document.getElementById("defcon-number").style.color = meta.color;
+    const numberEl = document.getElementById("defcon-number");
+    numberEl.textContent = level;
+    numberEl.style.color = meta.color;
+    numberEl.style.textShadow = `0 0 20px ${meta.color}88`;
     document.getElementById("defcon-label").textContent = meta.label;
     document.getElementById("defcon-label").style.color = meta.color;
     document.getElementById("defcon-desc").textContent = meta.desc;
@@ -402,10 +405,13 @@
     for (let seg = 5; seg >= 1; seg--) {
       const el = document.createElement("div");
       const active = seg === level;
-      el.className = "h-8 rounded-[2px] border" + (active ? " seg-active" : "");
-      el.style.borderColor = DEFCON_META[seg].color + "55";
-      el.style.background = active ? DEFCON_META[seg].color : DEFCON_META[seg].color + "14";
-      el.style.boxShadow = active ? `0 0 16px ${DEFCON_META[seg].color}66` : "none";
+      const color = DEFCON_META[seg].color;
+      el.className = `h-9 rounded border transition-all duration-700${active ? " seg-active scale-110 shadow-2xl" : ""}`;
+      el.style.borderColor = color + "66";
+      el.style.background = active
+        ? `linear-gradient(145deg, ${color}, ${color}88)`
+        : color + "22";
+      el.style.boxShadow = active ? `0 0 25px ${color}99` : "none";
       gauge.appendChild(el);
     }
   }
@@ -413,8 +419,10 @@
   // ---- Render: SI board (segments run 0 → 5, left to right) ----
   function renderSI(level) {
     const meta = SI_META[level];
-    document.getElementById("si-number").textContent = level;
-    document.getElementById("si-number").style.color = meta.color;
+    const numberEl = document.getElementById("si-number");
+    numberEl.textContent = level;
+    numberEl.style.color = meta.color;
+    numberEl.style.textShadow = `0 0 20px ${meta.color}88`;
     document.getElementById("si-label").textContent = meta.label;
     document.getElementById("si-label").style.color = meta.color;
 
@@ -424,10 +432,15 @@
       const el = document.createElement("div");
       const filled = seg <= level;
       const active = seg === level;
-      el.className = "h-8 rounded-[2px] border" + (active ? " seg-active" : "");
-      el.style.borderColor = SI_META[seg].color + "55";
-      el.style.background = filled ? SI_META[seg].color : SI_META[seg].color + "14";
-      el.style.boxShadow = active ? `0 0 16px ${SI_META[seg].color}66` : "none";
+      const color = SI_META[seg].color;
+      el.className = `h-9 rounded border transition-all duration-700${active ? " seg-active scale-110 shadow-2xl" : ""}`;
+      el.style.borderColor = color + "66";
+      el.style.background = active
+        ? `linear-gradient(145deg, ${color}, ${color}88)`
+        : filled
+          ? color + "55"
+          : color + "22";
+      el.style.boxShadow = active ? `0 0 25px ${color}99` : filled ? `0 0 8px ${color}44` : "none";
       gauge.appendChild(el);
     }
   }
