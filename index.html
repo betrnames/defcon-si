@@ -109,9 +109,21 @@
     @keyframes blink { 0%,100% {opacity:1} 50% {opacity:.25} }
     .live-dot { animation: blink 1.6s ease-in-out infinite; }
 
+    @keyframes ticker-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .ticker-track {
+      animation: ticker-scroll 55s linear infinite;
+    }
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .seg-active, .live-dot { animation: none; }
       .scale-110 { transform: none; }
+      .ticker-track { animation: none; }
       html { scroll-behavior: auto; }
     }
 
@@ -247,6 +259,18 @@
         </div>
       </div>
     </section>
+
+    <!-- ================= NEWS TICKER ================= -->
+    <div id="news-ticker" class="border-b border-amber/20 bg-panel/70">
+      <div class="mx-auto max-w-6xl overflow-hidden px-4">
+        <div class="flex items-center gap-3 py-2.5">
+          <span class="shrink-0 rounded border border-amber/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-amber">Live OSINT</span>
+          <div class="relative min-w-0 flex-1 overflow-hidden">
+            <div id="news-ticker-track" class="ticker-track flex w-max items-center gap-10 whitespace-nowrap font-mono text-xs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ================= LIVE SIGNALS ================= -->
     <section class="border-b border-line">
@@ -605,6 +629,56 @@
   }
 
   const COMMAND_LEVEL_COLORS = { 1: "#FF3B30", 2: "#E74C3C", 3: "#E67E22", 4: "#F1C40F", 5: "#2ECC71" };
+
+  function sortNewsByThreat(items) {
+    return [...items].sort((a, b) => (a.commandLevel || 5) - (b.commandLevel || 5));
+  }
+
+  // ---- Render: scrolling news ticker ----
+  function renderNewsTicker(items) {
+    const track = document.getElementById("news-ticker-track");
+    if (!track) return;
+    track.innerHTML = "";
+
+    const sorted = sortNewsByThreat(items);
+    const buildItems = (container) => {
+      sorted.forEach((item) => {
+        const level = Math.min(5, Math.max(1, item.commandLevel || 5));
+        const levelColor = COMMAND_LEVEL_COLORS[level] || "#6B7A8A";
+
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.className = "inline-flex items-center gap-2 text-ink transition-colors hover:text-amber";
+
+        const dot = document.createElement("span");
+        dot.textContent = "●";
+        dot.style.color = levelColor;
+
+        const title = document.createElement("span");
+        title.textContent = item.title;
+
+        const meta = document.createElement("span");
+        meta.className = "text-muted";
+        meta.textContent = `· ${item.command} · DEFCON ${level}`;
+
+        link.appendChild(dot);
+        link.appendChild(title);
+        link.appendChild(meta);
+        container.appendChild(link);
+      });
+    };
+
+    const passA = document.createElement("div");
+    passA.className = "flex items-center gap-10 pr-10";
+    const passB = document.createElement("div");
+    passB.className = "flex items-center gap-10 pr-10";
+    buildItems(passA);
+    buildItems(passB);
+    track.appendChild(passA);
+    track.appendChild(passB);
+  }
 
   // ---- Render: OSINT news tracker (defconlevel.com backlinks) ----
   function renderNewsTracker(items) {
@@ -1001,7 +1075,8 @@
     renderDefcon(Math.min(5, Math.max(1, CONFIG.defconLevel)));
     renderRiskOutlook(CONFIG.defconLevel, CONFIG.siLevel);
     renderSignals(CONFIG.signals);
-    renderNewsTracker(CONFIG.newsTracker);
+    renderNewsTicker(CONFIG.newsTracker);
+    renderNewsTracker(sortNewsByThreat(CONFIG.newsTracker));
     renderChart(CONFIG.history);
     document.getElementById("last-updated").textContent = CONFIG.lastUpdated;
     document.getElementById("year").textContent = new Date().getFullYear();
