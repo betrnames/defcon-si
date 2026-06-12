@@ -34,7 +34,7 @@
       z-index: 1;
       width: 1200px;
       height: 630px;
-      padding: 48px 56px;
+      padding: 44px 56px 88px;
       display: grid;
       grid-template-columns: 1fr 280px;
       gap: 32px;
@@ -156,15 +156,44 @@
       margin-top: 12px;
       color: #E67E22;
     }
-    .domain {
+    .cta-bar {
       position: absolute;
-      bottom: 36px;
-      left: 56px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 72px;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      background: linear-gradient(90deg, #FFB000 0%, #E67E22 100%);
+      box-shadow: 0 -8px 32px rgba(255, 176, 0, 0.25);
+    }
+    .cta-action {
+      font-family: "Big Shoulders Display", sans-serif;
+      font-weight: 800;
+      font-size: 34px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #0A0E12;
+    }
+    .cta-arrow {
+      font-family: "Big Shoulders Display", sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      color: #0A0E12;
+      line-height: 1;
+    }
+    .cta-url {
       font-family: "IBM Plex Mono", monospace;
       font-size: 18px;
-      letter-spacing: 0.12em;
-      color: #FFB000;
-      z-index: 3;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(10, 14, 18, 0.75);
+      padding-left: 18px;
+      border-left: 2px solid rgba(10, 14, 18, 0.25);
     }
     .globe-wrap {
       position: relative;
@@ -291,7 +320,11 @@
       </div>
     </div>
   </div>
-  <p class="domain">DEFCON.SI</p>
+  <div class="cta-bar">
+    <span class="cta-action">View Live Monitor</span>
+    <span class="cta-arrow">→</span>
+    <span class="cta-url">defcon.si</span>
+  </div>
   <div class="border-bottom"></div>
 </body>
 </html>
