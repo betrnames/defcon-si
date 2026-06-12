@@ -2,6 +2,10 @@
   command = "# no build command"
   publish = ""
 
+[[edge_functions]]
+  function = "og-rotate"
+  path = "/*"
+
 # ---- Security headers ----
 [[headers]]
   for = "/*"

@@ -4,3 +4,4 @@
 # OG image generation
 node_modules/
 package-lock.json
+scripts/.og-tmp/
