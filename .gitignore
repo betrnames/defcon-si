@@ -1,2 +1,6 @@
 # Local Netlify folder
 .netlify
+
+# OG image generation
+node_modules/
+package-lock.json
