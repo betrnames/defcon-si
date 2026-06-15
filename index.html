@@ -422,9 +422,10 @@
 
   <script>
   /* ============================================================
-     DEFCON.SI — EDIT YOUR DATA HERE
-     Everything the page renders lives in this CONFIG object.
-     (Later: replace CONFIG with a fetch of /data.json — see README.)
+     DEFCON.SI — DATA SOURCE
+     The inline CONFIG below is the fallback.
+     When data.json exists (produced by scripts/agent-update.js), it takes precedence.
+     See README for the upgrade path and automation loop.
      ============================================================ */
   const CONFIG = {
     // --- Current levels ---
@@ -1084,8 +1085,33 @@
     setViewMode(currentViewMode);
   }
 
-  // ---- Refresh (reload for latest inline CONFIG; swap for fetch('/data.json') later) ----
-  function refreshData() {
+  // ---- Refresh using the autonomous loop output (data.json) ----
+  async function refreshData() {
+    try {
+      const res = await fetch("/data.json", { cache: "no-store" });
+      if (res.ok) {
+        const fresh = await res.json();
+        if (typeof fresh.defconLevel === 'number') CONFIG.defconLevel = fresh.defconLevel;
+        if (typeof fresh.siLevel === 'number') CONFIG.siLevel = fresh.siLevel;
+        if (fresh.lastUpdated) CONFIG.lastUpdated = fresh.lastUpdated;
+        if (Array.isArray(fresh.signals)) CONFIG.signals = fresh.signals;
+        if (Array.isArray(fresh.newsTracker)) CONFIG.newsTracker = fresh.newsTracker;
+        if (fresh.history) CONFIG.history = fresh.history;
+
+        // Re-render current view
+        const mode = currentViewMode || 'both';
+        renderRiskOutlook(CONFIG.defconLevel, CONFIG.siLevel, mode);
+        renderSignals(CONFIG.signals, mode);
+        renderNewsTicker(CONFIG.newsTracker, mode);
+        renderChart(CONFIG.history, mode);
+        document.getElementById("last-updated").textContent = CONFIG.lastUpdated;
+
+        console.log('%c[defcon.si] Data refreshed from data.json (autonomous loop)', 'color:#6B7A8A');
+        return;
+      }
+    } catch (_) {}
+
+    // Fallback to hard reload if something goes wrong
     window.location.reload();
   }
 
@@ -1674,8 +1700,26 @@
       `${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())} UTC`;
   }
 
-  // ---- Init ----
-  document.addEventListener("DOMContentLoaded", () => {
+  // ---- Init (with optional data.json override for the autonomous loop) ----
+  document.addEventListener("DOMContentLoaded", async () => {
+    // Try to load fresh data from the autonomous updater.
+    // Falls back silently to the inline CONFIG if data.json is missing or fetch fails.
+    try {
+      const res = await fetch("/data.json", { cache: "no-store" });
+      if (res.ok) {
+        const fresh = await res.json();
+        // Overwrite only the dynamic fields so the rest of the app (which reads CONFIG) continues to work unchanged.
+        if (typeof fresh.defconLevel === 'number') CONFIG.defconLevel = fresh.defconLevel;
+        if (typeof fresh.siLevel === 'number') CONFIG.siLevel = fresh.siLevel;
+        if (fresh.lastUpdated) CONFIG.lastUpdated = fresh.lastUpdated;
+        if (Array.isArray(fresh.signals)) CONFIG.signals = fresh.signals;
+        if (Array.isArray(fresh.newsTracker)) CONFIG.newsTracker = fresh.newsTracker;
+        if (fresh.history) CONFIG.history = fresh.history;
+      }
+    } catch (_) {
+      // silent fallback to inline CONFIG
+    }
+
     initGlobe();
     initMilitaryRadar();
     initMobileMenu();

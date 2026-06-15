@@ -1,0 +1,254 @@
+{
+  "defconLevel": 3,
+  "siLevel": 4,
+  "lastUpdated": "2026-06-15 03:52 UTC",
+  "signals": [
+    {
+      "category": "military",
+      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
+      "region": "Middle East / Strait of Hormuz",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "3h ago",
+      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
+    },
+    {
+      "category": "si",
+      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Developing",
+      "time": "9h ago",
+      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
+    },
+    {
+      "category": "military",
+      "title": "Unusual pattern of strategic airlift into forward operating locations",
+      "region": "Indo-Pacific",
+      "severity": "moderate",
+      "confidence": "Single-source",
+      "time": "14h ago",
+      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
+    },
+    {
+      "category": "si",
+      "title": "Open model matches proprietary frontier on multi-step deception evals",
+      "region": "Global / Open Source",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "22h ago",
+      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+    },
+    {
+      "category": "military",
+      "title": "Iran–Israel tensions elevated",
+      "region": "Middle East",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "2h ago",
+      "summary": "Multiple wire services report increased IRGC naval activity in the Strait of Hormuz; U.S. CENTCOM acknowledges 'heightened force-protection posture' in the region."
+    },
+    {
+      "category": "military",
+      "title": "Carrier strike group repositioning",
+      "region": "Eastern Mediterranean",
+      "severity": "moderate",
+      "confidence": "Corroborated",
+      "time": "6h ago",
+      "summary": "Open-source ship tracking shows a CSG departing scheduled exercise area ahead of plan. No official statement; consistent with contingency positioning."
+    },
+    {
+      "category": "si",
+      "title": "Frontier AI lab announces autonomous-agent milestone",
+      "region": "Global / Technology",
+      "severity": "moderate",
+      "confidence": "Developing",
+      "time": "11h ago",
+      "summary": "Published benchmarks claim sustained multi-day autonomous operation — a capability jump that feeds the SI Readiness composite."
+    },
+    {
+      "category": "military",
+      "title": "NATO eastern-flank exercise begins",
+      "region": "Baltics",
+      "severity": "low",
+      "confidence": "Corroborated",
+      "time": "1d ago",
+      "summary": "Pre-announced joint exercise involving ~9,000 personnel. Scheduled and notified under Vienna Document; treated as baseline activity."
+    },
+    {
+      "category": "military",
+      "title": "Unusual military cargo flight cluster",
+      "region": "Indo-Pacific",
+      "severity": "moderate",
+      "confidence": "Single-source",
+      "time": "1d ago",
+      "summary": "ADS-B watchers flag an above-baseline cluster of strategic-airlift flights to Guam. Unverified; could reflect routine rotation."
+    }
+  ],
+  "newsTracker": [
+    {
+      "category": "si",
+      "title": "Frontier Lab Claims Multi-Day Autonomous Agent Operation",
+      "summary": "Benchmark paper reports agents completing week-long tasks with minimal human intervention.",
+      "time": "Jun 11, 2026 · 11h ago",
+      "command": "SI-3",
+      "commandLevel": 3,
+      "url": "https://www.anthropic.com/research"
+    },
+    {
+      "category": "si",
+      "title": "Open-Weight Model Nears Closed Frontier on Reasoning Tasks",
+      "summary": "New release closes gap on multi-step reasoning — capability diffusion accelerating.",
+      "time": "Jun 10, 2026 · 1d ago",
+      "command": "SI-3",
+      "commandLevel": 3,
+      "url": "https://huggingface.co/blog"
+    },
+    {
+      "category": "si",
+      "title": "Enterprise Agentic Stack Ships to Millions of Developers",
+      "summary": "Cloud provider deploys persistent autonomous coding agents with tool use at scale.",
+      "time": "Jun 9, 2026 · 2d ago",
+      "command": "SI-2",
+      "commandLevel": 4,
+      "url": "https://openai.com/index"
+    },
+    {
+      "category": "si",
+      "title": "UK AI Safety Institute Publishes Frontier Eval Red-Team",
+      "summary": "Public evals show rising deception scores — governance lag vs. capability growth.",
+      "time": "Jun 8, 2026 · 3d ago",
+      "command": "SI-2",
+      "commandLevel": 4,
+      "url": "https://www.gov.uk/government/organisations/ai-safety-institute"
+    },
+    {
+      "category": "military",
+      "title": "Pentagon Enacts Precautionary Shelter-in-Place After Air Quality Issue",
+      "summary": "Pentagon spokesman confirmed sophisticated building systems detected an air quality issue, triggering shelter-in-place and hazmat deployment.",
+      "time": "Jun 11, 2026 · 4:53 PM",
+      "command": "NORTHCOM",
+      "commandLevel": 3,
+      "url": "https://defconlevel.com/alert/2026-06-11-pentagon-enacts-precautionary-shelter-in-place-and-lock-down-after-internal-systems-detect-air-quality-issue"
+    },
+    {
+      "category": "military",
+      "title": "U.S. Strikes Iran for Second Day; Air Defenses Engage in Kuwait, Bahrain, Jordan",
+      "summary": "U.S. forces struck targets inside Iran for a second consecutive day while regional air defenses engaged Iranian missiles and drones.",
+      "time": "Jun 11, 2026 · 6:34 AM",
+      "command": "CENTCOM",
+      "commandLevel": 2,
+      "url": "https://defconlevel.com/alert/2026-06-11-u-s-strikes-iran-for-second-day-air-defenses-in-kuwait-bahrain-and-jordan-engage-iranian-missiles-and-drones"
+    },
+    {
+      "category": "military",
+      "title": "CENTCOM Completes Strikes on Iranian Targets After Apache Downing",
+      "summary": "Strikes targeted air defense, ground control stations, and surveillance radar sites near the Strait of Hormuz.",
+      "time": "Jun 10, 2026 · 4:27 AM",
+      "command": "CENTCOM",
+      "commandLevel": 2,
+      "url": "https://defconlevel.com/alert/2026-06-10-u-s-central-command-completes-strikes-on-iranian-targets-following-apache-helicopter-downing"
+    },
+    {
+      "category": "military",
+      "title": "U.S. Forces Launch Strikes on Iran After Apache Helicopter Downed",
+      "summary": "CENTCOM reported U.S. forces began self-defense strikes against Iran following the downing of a U.S. Army AH-64 Apache.",
+      "time": "Jun 9, 2026 · 9:29 PM",
+      "command": "CENTCOM",
+      "commandLevel": 2,
+      "url": "https://defconlevel.com/alert/2026-06-09-us-forces-begin-launching-strikes-on-iran-in-response-to-downing-of-u-s-army-apache-helicopter"
+    },
+    {
+      "category": "military",
+      "title": "U.S. Forces Rescue Apache Crew After Helicopter Shot Down Near Oman",
+      "summary": "Two crew members rescued after AH-64 Apache went down near the coast of Oman while patrolling regional waters.",
+      "time": "Jun 9, 2026 · 2:38 PM",
+      "command": "CENTCOM",
+      "commandLevel": 2,
+      "url": "https://defconlevel.com/alert/2026-06-09-u-s-forces-rescue-army-apache-crew-after-helicopter-shot-down-near-oman-coast"
+    },
+    {
+      "category": "military",
+      "title": "NATO Baltic Air Policing Jets Shoot Down Drone in Latvian Airspace",
+      "summary": "Latvia issued orange-level air threat alert after foreign UAV incursion attributed to Russian electromagnetic warfare.",
+      "time": "Jun 8, 2026 · 5:04 PM",
+      "command": "EUCOM",
+      "commandLevel": 3,
+      "url": "https://defconlevel.com/alert/2026-06-08-nato-baltic-air-policing-jets-shoot-down-drone-in-latvian-airspace"
+    },
+    {
+      "category": "military",
+      "title": "Iran Fires Ballistic Missiles Toward Israel; U.S. Forces at Heightened Alert",
+      "summary": "Multiple waves of ballistic missiles toward Israeli territory; air defense systems engaged across several areas.",
+      "time": "Jun 8, 2026 · 5:28 AM",
+      "command": "CENTCOM",
+      "commandLevel": 2,
+      "url": "https://defconlevel.com/alert/2026-06-08-iran-fires-ballistic-missiles-toward-israel-u-s-regional-forces-at-heightened-alert"
+    },
+    {
+      "category": "military",
+      "title": "U.S. Embassy Issues Security Alert for Middle East",
+      "summary": "U.S. Embassy in Jerusalem directed citizens across the Middle East to exercise increased caution.",
+      "time": "Jun 4, 2026 · 7:53 PM",
+      "command": "NORTHCOM",
+      "commandLevel": 3,
+      "url": "https://defconlevel.com/alert/2026-06-04-u-s-embassy-issues-security-alert-urging-increased-caution-in-the-middle-east"
+    }
+  ],
+  "history": {
+    "labels": [
+      "May 14",
+      "May 16",
+      "May 18",
+      "May 20",
+      "May 22",
+      "May 24",
+      "May 26",
+      "May 28",
+      "May 30",
+      "Jun 1",
+      "Jun 3",
+      "Jun 5",
+      "Jun 7",
+      "Jun 9",
+      "Jun 10",
+      "Jun 14"
+    ],
+    "defcon": [
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "si": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      2,
+      2,
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      3,
+      4
+    ]
+  }
+}

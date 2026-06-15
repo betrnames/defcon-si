@@ -75,5 +75,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 ```
 
-**3. Automate:** A scheduled Cloudflare Worker scores OSINT sources and commits
-a fresh `data.json` to this repo — the site itself never changes.
+**3. Automate (Loop Option 1 implemented):**
+- Run `node scripts/agent-update.mjs` (or `node scripts/agent-update.js` if you prefer .js)
+- It fetches/simulates OSINT, reasons about levels, writes `data.json`
+- The site (`index.html`) now automatically prefers `/data.json` on load (see the DOMContentLoaded block)
+- "Refresh Signals" button also re-fetches the latest data.json without full reload
+
+Next: turn this into a real cron / GitHub Action / Cloudflare Worker that runs daily (or on significant signals) and commits the updated `data.json`.
