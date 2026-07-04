@@ -243,7 +243,7 @@
             <span id="risk-level" class="font-display text-5xl font-800 text-amber">ELEVATED</span>
             <div class="hidden h-6 w-px bg-line sm:block"></div>
             <span id="risk-detail" class="max-w-md text-sm text-muted">
-              Military tensions rising • SI acceleration continues • Combined risk: <span id="risk-summary" class="font-medium text-amber">Elevated</span>
+              US-Iran strikes escalate • AI agentic breakthroughs • Combined risk: <span id="risk-summary" class="font-medium text-amber">Elevated</span>
             </span>
           </div>
         </div>
@@ -291,7 +291,10 @@
         </div>
 
         <div class="mt-6 flex flex-wrap items-center justify-between gap-4 font-mono text-sm">
-          <p>Last assessment: <span id="last-updated" class="text-amber"></span></p>
+          <div>
+            <p>Last assessment: <span id="last-updated" class="text-amber"></span></p>
+            <p class="text-[10px] text-muted mt-0.5">Updated via Grok Build</p>
+          </div>
           <div class="flex flex-wrap gap-2">
             <button type="button" id="generate-post-btn" class="rounded border border-line bg-transparent px-4 py-1.5 text-xs uppercase tracking-widest text-ink transition-colors hover:border-amber/50 hover:text-amber">
               ⧉ Generate X Post
@@ -431,7 +434,7 @@
     // --- Current levels ---
     defconLevel: 3,        // 1 (max readiness) … 5 (normal)
     siLevel: 3,            // 0 (dormant) … 5 (critical)
-    lastUpdated: "2026-06-10 17:00 UTC",
+    lastUpdated: "2026-06-14 16:00 UTC",
 
     // --- Live signal cards ---
     signals: [
@@ -938,7 +941,7 @@
     } else {
       const combined = (militaryRisk + si) / 2;
       label = riskLabelFromScore(combined);
-      detail = "Military tensions rising • SI acceleration continues • Combined risk: ";
+      detail = "US-Iran strikes escalate • AI agentic breakthroughs • Combined risk: ";
     }
 
     const title = label.charAt(0) + label.slice(1).toLowerCase();
