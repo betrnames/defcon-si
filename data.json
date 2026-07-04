@@ -1,8 +1,44 @@
 {
   "defconLevel": 3,
-  "siLevel": 4,
-  "lastUpdated": "2026-07-03 12:00 UTC",
+  "siLevel": 5,
+  "lastUpdated": "2026-07-04 13:10 UTC",
   "signals": [
+    {
+      "category": "military",
+      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
+      "region": "Middle East / Strait of Hormuz",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "3h ago",
+      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
+    },
+    {
+      "category": "si",
+      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Developing",
+      "time": "9h ago",
+      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
+    },
+    {
+      "category": "military",
+      "title": "Unusual pattern of strategic airlift into forward operating locations",
+      "region": "Indo-Pacific",
+      "severity": "moderate",
+      "confidence": "Single-source",
+      "time": "14h ago",
+      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
+    },
+    {
+      "category": "si",
+      "title": "Open model matches proprietary frontier on multi-step deception evals",
+      "region": "Global / Open Source",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "22h ago",
+      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+    },
     {
       "category": "military",
       "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
@@ -47,42 +83,6 @@
       "confidence": "Corroborated",
       "time": "2h ago",
       "summary": "Multiple wire services report increased IRGC naval activity in the Strait of Hormuz; U.S. CENTCOM acknowledges 'heightened force-protection posture' in the region."
-    },
-    {
-      "category": "military",
-      "title": "Carrier strike group repositioning",
-      "region": "Eastern Mediterranean",
-      "severity": "moderate",
-      "confidence": "Corroborated",
-      "time": "6h ago",
-      "summary": "Open-source ship tracking shows a CSG departing scheduled exercise area ahead of plan. No official statement; consistent with contingency positioning."
-    },
-    {
-      "category": "si",
-      "title": "Frontier AI lab announces autonomous-agent milestone",
-      "region": "Global / Technology",
-      "severity": "moderate",
-      "confidence": "Developing",
-      "time": "11h ago",
-      "summary": "Published benchmarks claim sustained multi-day autonomous operation — a capability jump that feeds the SI Readiness composite."
-    },
-    {
-      "category": "military",
-      "title": "NATO eastern-flank exercise begins",
-      "region": "Baltics",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "1d ago",
-      "summary": "Pre-announced joint exercise involving ~9,000 personnel. Scheduled and notified under Vienna Document; treated as baseline activity."
-    },
-    {
-      "category": "military",
-      "title": "Unusual military cargo flight cluster",
-      "region": "Indo-Pacific",
-      "severity": "moderate",
-      "confidence": "Single-source",
-      "time": "1d ago",
-      "summary": "ADS-B watchers flag an above-baseline cluster of strategic-airlift flights to Guam. Unverified; could reflect routine rotation."
     }
   ],
   "newsTracker": [
@@ -197,7 +197,6 @@
   ],
   "history": {
     "labels": [
-      "May 14",
       "May 16",
       "May 18",
       "May 20",
@@ -212,19 +211,20 @@
       "Jun 7",
       "Jun 9",
       "Jun 10",
-      "Jun 14"
+      "Jun 14",
+      "Jul 4"
     ],
     "defcon": [
       4,
       4,
       4,
-      4,
       3,
       3,
       4,
       4,
       4,
       4,
+      3,
       3,
       3,
       3,
@@ -234,7 +234,6 @@
     ],
     "si": [
       1,
-      1,
       2,
       2,
       2,
@@ -248,7 +247,8 @@
       3,
       2,
       3,
-      4
+      4,
+      5
     ]
   }
 }
