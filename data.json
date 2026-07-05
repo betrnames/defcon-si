@@ -1,7 +1,7 @@
 {
   "defconLevel": 3,
   "siLevel": 5,
-  "lastUpdated": "2026-07-04 13:10 UTC",
+  "lastUpdated": "2026-07-05 13:19 UTC",
   "signals": [
     {
       "category": "military",
@@ -77,12 +77,12 @@
     },
     {
       "category": "military",
-      "title": "Iran–Israel tensions elevated",
-      "region": "Middle East",
+      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
+      "region": "Middle East / Strait of Hormuz",
       "severity": "high",
       "confidence": "Corroborated",
-      "time": "2h ago",
-      "summary": "Multiple wire services report increased IRGC naval activity in the Strait of Hormuz; U.S. CENTCOM acknowledges 'heightened force-protection posture' in the region."
+      "time": "3h ago",
+      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
     }
   ],
   "newsTracker": [
@@ -197,7 +197,6 @@
   ],
   "history": {
     "labels": [
-      "May 16",
       "May 18",
       "May 20",
       "May 22",
@@ -212,18 +211,19 @@
       "Jun 9",
       "Jun 10",
       "Jun 14",
-      "Jul 4"
+      "Jul 4",
+      "Jul 5"
     ],
     "defcon": [
       4,
       4,
-      4,
       3,
       3,
       4,
       4,
       4,
       4,
+      3,
       3,
       3,
       3,
@@ -233,7 +233,6 @@
       3
     ],
     "si": [
-      1,
       2,
       2,
       2,
@@ -248,6 +247,7 @@
       2,
       3,
       4,
+      5,
       5
     ]
   }
