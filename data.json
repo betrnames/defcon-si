@@ -1,7 +1,7 @@
 {
   "defconLevel": 3,
   "siLevel": 5,
-  "lastUpdated": "2026-07-05 13:19 UTC",
+  "lastUpdated": "2026-07-06 15:20 UTC",
   "signals": [
     {
       "category": "military",
@@ -197,7 +197,6 @@
   ],
   "history": {
     "labels": [
-      "May 18",
       "May 20",
       "May 22",
       "May 24",
@@ -212,17 +211,18 @@
       "Jun 10",
       "Jun 14",
       "Jul 4",
-      "Jul 5"
+      "Jul 5",
+      "Jul 6"
     ],
     "defcon": [
       4,
-      4,
       3,
       3,
       4,
       4,
       4,
       4,
+      3,
       3,
       3,
       3,
@@ -233,7 +233,6 @@
       3
     ],
     "si": [
-      2,
       2,
       2,
       3,
@@ -247,6 +246,7 @@
       2,
       3,
       4,
+      5,
       5,
       5
     ]
