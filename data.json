@@ -1,44 +1,8 @@
 {
   "defconLevel": 3,
   "siLevel": 5,
-  "lastUpdated": "2026-07-08 13:49 UTC",
+  "lastUpdated": "2026-07-09 14:44 UTC",
   "signals": [
-    {
-      "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
-      "region": "Middle East / Strait of Hormuz",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3h ago",
-      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
-    },
-    {
-      "category": "si",
-      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Developing",
-      "time": "9h ago",
-      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
-    },
-    {
-      "category": "military",
-      "title": "Unusual pattern of strategic airlift into forward operating locations",
-      "region": "Indo-Pacific",
-      "severity": "moderate",
-      "confidence": "Single-source",
-      "time": "14h ago",
-      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
-    },
-    {
-      "category": "si",
-      "title": "Open model matches proprietary frontier on multi-step deception evals",
-      "region": "Global / Open Source",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "22h ago",
-      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
-    },
     {
       "category": "military",
       "title": "IRGC increases naval drills in Strait of Hormuz",
@@ -78,6 +42,42 @@
     {
       "category": "military",
       "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
+      "region": "Middle East / Strait of Hormuz",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "3h ago",
+      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
+    },
+    {
+      "category": "si",
+      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Developing",
+      "time": "9h ago",
+      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
+    },
+    {
+      "category": "military",
+      "title": "Unusual pattern of strategic airlift into forward operating locations",
+      "region": "Indo-Pacific",
+      "severity": "moderate",
+      "confidence": "Single-source",
+      "time": "14h ago",
+      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
+    },
+    {
+      "category": "si",
+      "title": "Open model matches proprietary frontier on multi-step deception evals",
+      "region": "Global / Open Source",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "22h ago",
+      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+    },
+    {
+      "category": "military",
+      "title": "IRGC increases naval drills in Strait of Hormuz",
       "region": "Middle East / Strait of Hormuz",
       "severity": "high",
       "confidence": "Corroborated",
@@ -197,7 +197,6 @@
   ],
   "history": {
     "labels": [
-      "May 24",
       "May 26",
       "May 28",
       "May 30",
@@ -212,14 +211,15 @@
       "Jul 5",
       "Jul 6",
       "Jul 7",
-      "Jul 8"
+      "Jul 8",
+      "Jul 9"
     ],
     "defcon": [
+      4,
+      4,
+      4,
+      4,
       3,
-      4,
-      4,
-      4,
-      4,
       3,
       3,
       3,
@@ -233,7 +233,6 @@
       3
     ],
     "si": [
-      3,
       2,
       2,
       1,
@@ -244,6 +243,7 @@
       2,
       3,
       4,
+      5,
       5,
       5,
       5,
