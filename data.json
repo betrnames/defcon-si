@@ -1,11 +1,11 @@
 {
   "defconLevel": 3,
   "siLevel": 5,
-  "lastUpdated": "2026-07-12 13:05 UTC",
+  "lastUpdated": "2026-07-13 14:18 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
+      "title": "IRGC increases naval drills in Strait of Hormuz",
       "region": "Middle East / Strait of Hormuz",
       "severity": "high",
       "confidence": "Corroborated",
@@ -197,7 +197,6 @@
   ],
   "history": {
     "labels": [
-      "Jun 1",
       "Jun 3",
       "Jun 5",
       "Jun 7",
@@ -212,10 +211,11 @@
       "Jul 9",
       "Jul 10",
       "Jul 11",
-      "Jul 12"
+      "Jul 12",
+      "Jul 13"
     ],
     "defcon": [
-      4,
+      3,
       3,
       3,
       3,
@@ -234,12 +234,12 @@
     ],
     "si": [
       2,
-      2,
       3,
       3,
       2,
       3,
       4,
+      5,
       5,
       5,
       5,
