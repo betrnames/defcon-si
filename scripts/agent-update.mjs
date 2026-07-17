@@ -1,25 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * DEFCON.si Autonomous Daily OSINT Assessment Loop (Option 1)
- *
- * This script simulates an autonomous agent that:
- * 1. "Fetches" latest OSINT signals (mock data for now — replace with real news APIs, RSS, or LLM summarizer later)
- * 2. Analyzes signals using deterministic reasoning (easy to swap for Grok/Claude API call)
- * 3. Decides updated defconLevel (1-5) and siLevel (0-5)
- * 4. Persists changes to data.json (preferred over editing index.html)
- * 5. Logs a clear, human-readable summary of the decision + reasoning
- *
- * Run locally:
- *   node scripts/agent-update.js
- *
- * Future evolution:
- * - Replace fetchLatestOSINT() with real HTTP calls + LLM prompt for scoring
- * - Add confidence scoring, source weighting
- * - Cron / GitHub Action / Cloudflare Cron / Netlify Scheduled Function
- * - Commit + push data.json automatically
- */
-
 import { readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
@@ -29,146 +9,180 @@ const ROOT = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data.json');
 
 // ============================================================
-// 1. DATA MODEL (matches CONFIG in index.html + README upgrade path)
+// 1. RSS FEEDS
 // ============================================================
 
-/**
- * @typedef {Object} Signal
- * @property {string} category - 'military' | 'si'
- * @property {string} title
- * @property {string} region
- * @property {'low'|'moderate'|'high'} severity
- * @property {string} confidence
- * @property {string} time
- * @property {string} summary
- */
+const MILITARY_FEEDS = [
+  'https://news.google.com/rss/search?q=military+OR+pentagon+OR+CENTCOM+OR+NATO+OR+missile+OR+airstrike+when:1d&hl=en-US&gl=US&ceid=US:en',
+  'https://news.google.com/rss/search?q=defense+OR+troops+OR+warship+OR+nuclear+OR+NORAD+when:1d&hl=en-US&gl=US&ceid=US:en',
+];
 
-/**
- * @typedef {Object} NewsItem
- * @property {string} category
- * @property {string} title
- * @property {string} summary
- * @property {string} time
- * @property {string} command
- * @property {number} commandLevel
- * @property {string} url
- */
-
-/**
- * @typedef {Object} History
- * @property {string[]} labels
- * @property {number[]} defcon
- * @property {number[]} si
- */
-
-/**
- * @typedef {Object} AssessmentData
- * @property {number} defconLevel - 1 (highest readiness) to 5 (peacetime)
- * @property {number} siLevel - 0 (dormant) to 5 (critical SI risk)
- * @property {string} lastUpdated
- * @property {Signal[]} signals
- * @property {NewsItem[]} newsTracker
- * @property {History} history
- */
+const SI_FEEDS = [
+  'https://news.google.com/rss/search?q=%22artificial+intelligence%22+OR+%22AI+model%22+OR+%22frontier+AI%22+OR+AGI+when:1d&hl=en-US&gl=US&ceid=US:en',
+  'https://news.google.com/rss/search?q=%22AI+safety%22+OR+%22autonomous+agent%22+OR+%22superintelligence%22+OR+%22AI+regulation%22+when:1d&hl=en-US&gl=US&ceid=US:en',
+];
 
 // ============================================================
-// 2. MOCK OSINT FETCH (replace this module later)
+// 2. RSS PARSER (no dependencies — regex on XML)
 // ============================================================
 
-/**
- * Simulates fetching fresh OSINT.
- * In production this would:
- *   - Hit news APIs (NewsAPI, GDELT, etc.)
- *   - Scrape open sources
- *   - Or call an LLM: "Summarize the top 8 most important signals from the last 24h for military DEFCON and AGI risk. Return structured JSON."
- */
-function fetchLatestOSINT() {
-  const now = new Date();
-  const hours = now.getUTCHours();
-
-  // Base on real-ish current events + some daily variation for demo
-  const mockSignals = [
-    {
-      category: "military",
-      title: hours % 2 === 0 
-        ? "IRGC increases naval drills in Strait of Hormuz" 
-        : "Additional U.S. destroyers arrive in CENTCOM AOR",
-      region: "Middle East / Strait of Hormuz",
-      severity: "high",
-      confidence: "Corroborated",
-      time: "3h ago",
-      summary: "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
-    },
-    {
-      category: "si",
-      title: "Major lab releases new agentic scaffolding with long-horizon planning",
-      region: "Global / Frontier Labs",
-      severity: "high",
-      confidence: "Developing",
-      time: "9h ago",
-      summary: "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
-    },
-    {
-      category: "military",
-      title: "Unusual pattern of strategic airlift into forward operating locations",
-      region: "Indo-Pacific",
-      severity: "moderate",
-      confidence: "Single-source",
-      time: "14h ago",
-      summary: "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
-    },
-    {
-      category: "si",
-      title: "Open model matches proprietary frontier on multi-step deception evals",
-      region: "Global / Open Source",
-      severity: "high",
-      confidence: "Corroborated",
-      time: "22h ago",
-      summary: "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+function parseRSSItems(xml) {
+  const items = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+  let match;
+  while ((match = itemRegex.exec(xml)) !== null) {
+    const block = match[1];
+    const tag = (name) => {
+      const m = block.match(new RegExp(`<${name}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${name}>|<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`));
+      return m ? (m[1] || m[2] || '').trim() : '';
+    };
+    const title = tag('title').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+    const link = tag('link');
+    const pubDate = tag('pubDate');
+    const description = tag('description').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'").replace(/&quot;/g, '"').slice(0, 300);
+    const source = tag('source');
+    if (title && link) {
+      items.push({ title, link, pubDate, description, source });
     }
-  ];
-
-  // Occasionally surface a breaking military event for demo drama
-  if (hours % 6 === 0) {
-    mockSignals.unshift({
-      category: "military",
-      title: "Regional air defenses engaged after reported missile launches",
-      region: "Middle East",
-      severity: "high",
-      confidence: "Developing",
-      time: "47m ago",
-      summary: "Multiple reports of intercepts and increased alert status across several partner nations."
-    });
   }
+  return items;
+}
 
-  return mockSignals;
+async function fetchRSS(url) {
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'DEFCON-SI-OSINT/1.0' },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return parseRSSItems(await res.text());
+  } catch (e) {
+    console.warn(`  Feed failed: ${url} — ${e.message}`);
+    return [];
+  }
 }
 
 // ============================================================
-// 3. ANALYSIS & DECISION ENGINE (simulated reasoning — easy to LLM-ify)
+// 3. FETCH & CLASSIFY REAL OSINT
 // ============================================================
 
-/**
- * Scores the current signal set.
- * Returns numbers that influence level deltas.
- */
+const MILITARY_KEYWORDS = /military|pentagon|defense|troops|nato|centcom|eucom|indopacom|norad|missile|airstrike|warship|naval|carrier|nuclear|submarine|fighter.jet|bomber|drone.strike|air.defense|artillery|tank|infantry|deploy|mobiliz|force.posture|readiness|threat.level|defcon|conflict|war\b|invasion|incursion|border.clash/i;
+const SI_KEYWORDS = /artificial.intelligence|\bAI\b|machine.learning|deep.learning|neural.net|GPT|LLM|frontier.model|AGI|superintelligence|autonomous.agent|agentic|AI.safety|alignment|AI.regulation|AI.chip|compute|transformer|diffusion.model|generative|chatbot|copilot|AI.lab/i;
+
+const HOT_MILITARY_REGIONS = /Iran|Israel|Gaza|Hezbollah|Hormuz|CENTCOM|Gulf|Syria|Yemen|Houthi|Taiwan|South.China.Sea|Indo-?Pacific|Ukraine|Russia|NATO|Korea|DPRK/i;
+const HIGH_SEVERITY_KEYWORDS = /strike|attack|launch|intercept|shoot.down|missile|nuclear|invasion|escalat|mobiliz|emergency|alert|threat|casualties|shoot|bomb|explosi/i;
+const SI_HIGH_SEVERITY = /breakthrough|surpass|frontier|autonomous|superhuman|deception|loss.of.control|existential|AGI|superintelligence|safety.concern|alignment.failure|ban|moratorium|emergent/i;
+
+function classifyItem(item, category) {
+  const text = `${item.title} ${item.description}`;
+
+  let region = 'Global';
+  if (/Iran|Iraq|Syria|Yemen|Hormuz|Gulf|Middle.East|Israel|Gaza|Lebanon|Hezbollah/i.test(text)) region = 'Middle East';
+  else if (/Ukraine|Russia|NATO|Europe|Baltic|Poland|Romania/i.test(text)) region = 'Europe / NATO';
+  else if (/Taiwan|China|Indo-?Pacific|South.China.Sea|Japan|Korea|DPRK|Philippines/i.test(text)) region = 'Indo-Pacific';
+  else if (/Africa|Sahel|Somalia|Libya|Sudan/i.test(text)) region = 'Africa';
+  else if (category === 'si') region = 'Global / Frontier Labs';
+
+  let severity = 'low';
+  if (category === 'military') {
+    if (HIGH_SEVERITY_KEYWORDS.test(text)) severity = 'high';
+    else if (/deploy|exercise|drill|posture|caution|alert|sanction/i.test(text)) severity = 'moderate';
+  } else {
+    if (SI_HIGH_SEVERITY.test(text)) severity = 'high';
+    else if (/release|announce|partner|invest|regulat|policy|benchmark|eval/i.test(text)) severity = 'moderate';
+  }
+
+  let confidence = 'Single-source';
+  if (item.source && /reuters|associated.press|bbc|nyt|washington.post|guardian|defense.gov|pentagon/i.test(item.source)) {
+    confidence = 'Corroborated';
+  } else if (/report|according|confirm|official/i.test(text)) {
+    confidence = 'Corroborated';
+  } else if (/developing|breaking|unconfirmed|alleged/i.test(text)) {
+    confidence = 'Developing';
+  }
+
+  const pubMs = item.pubDate ? new Date(item.pubDate).getTime() : Date.now();
+  const agoMs = Date.now() - pubMs;
+  const agoH = Math.max(1, Math.round(agoMs / 3600000));
+  const time = agoH < 24 ? `${agoH}h ago` : `${Math.round(agoH / 24)}d ago`;
+
+  return {
+    category,
+    title: item.title.length > 120 ? item.title.slice(0, 117) + '…' : item.title,
+    region,
+    severity,
+    confidence,
+    time,
+    summary: item.description.length > 250 ? item.description.slice(0, 247) + '…' : item.description || item.title,
+    url: item.link,
+    publishedAt: pubMs,
+  };
+}
+
+function dedupeByTitle(signals) {
+  const seen = new Set();
+  return signals.filter(s => {
+    const key = s.title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+async function fetchLatestOSINT() {
+  console.log('Fetching live RSS feeds…');
+
+  const [milResults, siResults] = await Promise.all([
+    Promise.all(MILITARY_FEEDS.map(fetchRSS)),
+    Promise.all(SI_FEEDS.map(fetchRSS)),
+  ]);
+
+  const milItems = milResults.flat();
+  const siItems = siResults.flat();
+  console.log(`  Raw items — military: ${milItems.length}, SI: ${siItems.length}`);
+
+  const milSignals = milItems
+    .filter(item => MILITARY_KEYWORDS.test(`${item.title} ${item.description}`))
+    .map(item => classifyItem(item, 'military'));
+
+  const siSignals = siItems
+    .filter(item => SI_KEYWORDS.test(`${item.title} ${item.description}`))
+    .map(item => classifyItem(item, 'si'));
+
+  const all = [...milSignals, ...siSignals]
+    .sort((a, b) => b.publishedAt - a.publishedAt);
+
+  const deduped = dedupeByTitle(all);
+
+  // Take top signals, balanced between categories
+  const milTop = deduped.filter(s => s.category === 'military').slice(0, 5);
+  const siTop = deduped.filter(s => s.category === 'si').slice(0, 4);
+  const signals = [...milTop, ...siTop]
+    .sort((a, b) => b.publishedAt - a.publishedAt)
+    .map(({ publishedAt, ...rest }) => rest);
+
+  console.log(`  Final signals: ${signals.length} (${milTop.length} mil, ${siTop.length} SI)`);
+  return signals;
+}
+
+// ============================================================
+// 4. ANALYSIS & DECISION ENGINE
+// ============================================================
+
 function analyzeSignals(signals) {
-  let militaryTension = 0;   // higher = more readiness needed (lower defcon number)
-  let siAcceleration = 0;    // higher = higher siLevel
+  let militaryTension = 0;
+  let siAcceleration = 0;
 
   for (const s of signals) {
-    const sev = s.severity;
-    const sevScore = sev === 'high' ? 3 : sev === 'moderate' ? 2 : 1;
+    const sevScore = s.severity === 'high' ? 3 : s.severity === 'moderate' ? 2 : 1;
 
     if (s.category === 'military') {
-      // Hot regions + high severity = stronger signal
-      const hotRegion = /Iran|Middle East|Hormuz|CENTCOM|Gulf|Israel|Gaza/i.test(s.region + ' ' + s.title);
+      const hotRegion = HOT_MILITARY_REGIONS.test(s.region + ' ' + s.title);
       militaryTension += sevScore * (hotRegion ? 1.5 : 1);
     }
 
     if (s.category === 'si') {
-      // Breakthrough language = acceleration
-      const breakthrough = /autonomous|agentic|frontier|matches|narrows|deception|long-horizon/i.test(s.title + ' ' + s.summary);
+      const breakthrough = SI_HIGH_SEVERITY.test(s.title + ' ' + s.summary);
       siAcceleration += sevScore * (breakthrough ? 1.4 : 1);
     }
   }
@@ -176,25 +190,17 @@ function analyzeSignals(signals) {
   return { militaryTension, siAcceleration };
 }
 
-/**
- * Decides new levels from current + analysis.
- * Keeps changes conservative (max ±1 per day) for credibility.
- */
 function decideNewLevels(currentDefcon, currentSi, scores) {
   const { militaryTension, siAcceleration } = scores;
 
-  // Military: more tension = lower number (higher readiness)
-  // Baseline around 3-4. High tension pushes toward 2 or 1.
   let newDefcon = currentDefcon;
   if (militaryTension > 9) newDefcon = Math.max(1, currentDefcon - 1);
   else if (militaryTension < 4) newDefcon = Math.min(5, currentDefcon + 1);
 
-  // SI: more acceleration = higher number (higher risk)
   let newSi = currentSi;
   if (siAcceleration > 7) newSi = Math.min(5, currentSi + 1);
   else if (siAcceleration < 3) newSi = Math.max(0, currentSi - 1);
 
-  // Clamp and return
   newDefcon = Math.max(1, Math.min(5, Math.round(newDefcon)));
   newSi = Math.max(0, Math.min(5, Math.round(newSi)));
 
@@ -204,7 +210,6 @@ function decideNewLevels(currentDefcon, currentSi, scores) {
   } else {
     reasoning.push(`Military tension (${militaryTension.toFixed(1)}) not sufficient for DEFCON change`);
   }
-
   if (newSi !== currentSi) {
     reasoning.push(`SI acceleration score ${siAcceleration.toFixed(1)} drove SI Readiness ${currentSi} → ${newSi}`);
   } else {
@@ -215,15 +220,12 @@ function decideNewLevels(currentDefcon, currentSi, scores) {
 }
 
 // ============================================================
-// 4. HISTORY & SIGNAL MAINTENANCE
+// 5. HISTORY
 // ============================================================
 
 function updateHistory(history, newDefcon, newSi) {
-  const today = new Date().toLocaleString('en-US', { 
-    month: 'short', day: 'numeric' 
-  });
+  const today = new Date().toLocaleString('en-US', { month: 'short', day: 'numeric' });
 
-  // Avoid duplicate day labels
   let labels = [...history.labels];
   let defconHist = [...history.defcon];
   let siHist = [...history.si];
@@ -232,15 +234,12 @@ function updateHistory(history, newDefcon, newSi) {
     labels.push(today);
     defconHist.push(newDefcon);
     siHist.push(newSi);
-
-    // Keep last 16 points
     if (labels.length > 16) {
       labels = labels.slice(-16);
       defconHist = defconHist.slice(-16);
       siHist = siHist.slice(-16);
     }
   } else {
-    // Same day — overwrite latest point
     defconHist[defconHist.length - 1] = newDefcon;
     siHist[siHist.length - 1] = newSi;
   }
@@ -248,56 +247,47 @@ function updateHistory(history, newDefcon, newSi) {
   return { labels, defcon: defconHist, si: siHist };
 }
 
-function pruneSignals(signals, max = 9) {
-  // Keep newest first (they are already roughly chronological in mock)
-  return signals.slice(0, max);
-}
-
 // ============================================================
-// 5. MAIN
+// 6. MAIN
 // ============================================================
 
 async function main() {
   console.log('=== DEFCON.si Daily OSINT Assessment Loop ===\n');
 
-  // Load current state
   let data;
   try {
     data = JSON.parse(readFileSync(DATA_PATH, 'utf8'));
   } catch (e) {
-    console.error('Could not read data.json — run with seed first or create it.');
+    console.error('Could not read data.json');
     process.exit(1);
   }
 
   const prevDefcon = data.defconLevel;
   const prevSi = data.siLevel;
 
-  // 1. Fetch
-  const newSignals = fetchLatestOSINT();
-  console.log(`Fetched ${newSignals.length} fresh OSINT signals.`);
+  const newSignals = await fetchLatestOSINT();
 
-  // 2. Analyze
+  if (newSignals.length === 0) {
+    console.log('No signals fetched — RSS feeds may be down. Keeping existing data.');
+    return;
+  }
+
+  console.log(`\nFetched ${newSignals.length} live OSINT signals.`);
+  newSignals.forEach(s => console.log(`  [${s.category}] ${s.severity} — ${s.title}`));
+
   const scores = analyzeSignals(newSignals);
-  console.log(`Analysis — Military tension: ${scores.militaryTension.toFixed(1)}, SI acceleration: ${scores.siAcceleration.toFixed(1)}`);
+  console.log(`\nAnalysis — Military tension: ${scores.militaryTension.toFixed(1)}, SI acceleration: ${scores.siAcceleration.toFixed(1)}`);
 
-  // 3. Decide
   const decision = decideNewLevels(prevDefcon, prevSi, scores);
 
-  // 4. Update data
   data.defconLevel = decision.newDefcon;
   data.siLevel = decision.newSi;
   data.lastUpdated = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
-
-  // Merge & prune signals (keep most recent credible ones)
-  data.signals = pruneSignals([...newSignals, ...data.signals]);
-
-  // Update history
+  data.signals = newSignals.slice(0, 9);
   data.history = updateHistory(data.history, data.defconLevel, data.siLevel);
 
-  // Write back
   writeFileSync(DATA_PATH, JSON.stringify(data, null, 2), 'utf8');
 
-  // 5. Human-readable summary
   console.log('\n=== ASSESSMENT SUMMARY ===');
   console.log(`DEFCON: ${prevDefcon} → ${data.defconLevel}`);
   console.log(`SI Readiness: ${prevSi} → ${data.siLevel}`);
@@ -305,15 +295,7 @@ async function main() {
   console.log('\nReasoning:');
   decision.reasoning.forEach(r => console.log('  • ' + r));
 
-  if (data.defconLevel < prevDefcon) {
-    console.log('\n→ Elevated military posture detected. Recommend increased monitoring.');
-  }
-  if (data.siLevel > prevSi) {
-    console.log('\n→ Significant SI capability signal. Monitor for follow-through developments.');
-  }
-
-  console.log('\ndata.json updated. Redeploy or let your scheduled process handle the rest.');
-  console.log('Next step (manual for now): node scripts/agent-update.mjs');
+  console.log('\ndata.json updated with live OSINT signals.');
 }
 
 main().catch(err => {

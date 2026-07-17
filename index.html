@@ -729,8 +729,17 @@
       header.appendChild(sevSpan);
       header.appendChild(timeSpan);
 
-      const title = document.createElement("h3");
-      title.className = "mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide";
+      let title;
+      if (s.url) {
+        title = document.createElement("a");
+        title.href = s.url;
+        title.target = "_blank";
+        title.rel = "noopener noreferrer";
+        title.className = "mt-3 block font-display text-xl font-700 uppercase leading-tight tracking-wide transition-colors hover:text-amber";
+      } else {
+        title = document.createElement("h3");
+        title.className = "mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide";
+      }
       title.style.fontWeight = "700";
       title.textContent = s.title;
 
