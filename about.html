@@ -250,71 +250,12 @@
         @defconsi
       </a>
       <a href="mailto:email@defcon.si" class="transition-colors hover:text-amber">email@defcon.si</a>
-      <button type="button" id="sale-trigger-footer" class="transition-colors hover:text-amber">Project for sale</button>
+      <a href="https://www.sideprojectors.com/project/82533/defconsi-super-intelligence-defcon-monitor" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-amber">Project for sale</a>
     </p>
     <p class="mt-1">&copy; <span id="year"></span> DEFCON.si</p>
   </footer>
 
-  <div id="sale-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-base/80 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="sale-modal-title">
-    <div class="w-full max-w-md rounded border border-amber/30 bg-panel p-6 shadow-2xl ring-1 ring-amber/10">
-      <div class="flex items-start justify-between gap-4">
-        <div>
-          <p class="font-mono text-[10px] uppercase tracking-widest text-amber">Acquisition Opportunity</p>
-          <h2 id="sale-modal-title" class="font-display mt-1 text-3xl font-800 uppercase leading-tight tracking-wide">DEFCON.si</h2>
-          <p class="mt-1 font-mono text-xs text-muted">Super Intelligence DEFCON Monitor</p>
-        </div>
-        <button type="button" id="sale-modal-close" aria-label="Close dialog" class="font-mono text-lg text-muted transition-colors hover:text-amber">✕</button>
-      </div>
-      <p class="mt-5 text-sm leading-relaxed text-muted">
-        This project is available for acquisition — domain, live OSINT monitor, dual-track SI / Military UI, news ticker, and deployment stack included.
-      </p>
-      <ul class="mt-4 space-y-2 font-mono text-[11px] text-ink">
-        <li><span class="text-amber">DOM</span> defcon.si + brandable .si positioning</li>
-        <li><span class="text-amber">APP</span> Static monitor with AGI globe &amp; theater radar</li>
-        <li><span class="text-amber">OPS</span> Netlify deploy · GA · X post generator</li>
-      </ul>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="https://www.sideprojectors.com/project/82533/defconsi-super-intelligence-defcon-monitor" target="_blank" rel="noopener noreferrer" class="rounded border border-amber/50 px-4 py-2 font-mono text-xs uppercase tracking-widest text-amber transition-colors hover:bg-amber/10">View Listing</a>
-        <a href="mailto:email@defcon.si" class="rounded border border-line px-4 py-2 font-mono text-xs uppercase tracking-widest text-ink transition-colors hover:border-amber/50 hover:text-amber">Contact</a>
-      </div>
-      <p class="mt-4 font-mono text-[10px] text-muted">Listed on SideProjectors · Serious inquiries welcome</p>
-    </div>
-  </div>
-
   <script>
-    function openModal(modal) {
-      if (!modal) return;
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeModal(modal) {
-      if (!modal) return;
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-      document.body.style.overflow = "";
-    }
-
-    function initSaleModal() {
-      const modal = document.getElementById("sale-modal");
-      const triggers = [document.getElementById("sale-trigger"), document.getElementById("sale-trigger-footer")];
-      const closeBtn = document.getElementById("sale-modal-close");
-
-      triggers.forEach((btn) => {
-        if (btn) btn.addEventListener("click", () => openModal(modal));
-      });
-      if (closeBtn) closeBtn.addEventListener("click", () => closeModal(modal));
-      if (modal) {
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) closeModal(modal);
-        });
-      }
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && modal && !modal.classList.contains("hidden")) closeModal(modal);
-      });
-    }
-
     function initMobileMenu() {
       const menuToggle = document.getElementById('menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
@@ -340,7 +281,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-      initSaleModal();
       initMobileMenu();
       document.getElementById("year").textContent = new Date().getFullYear();
       tickClock();
