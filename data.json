@@ -1,88 +1,97 @@
 {
-  "defconLevel": 3,
+  "defconLevel": 2,
   "siLevel": 5,
-  "lastUpdated": "2026-07-17 13:15 UTC",
+  "lastUpdated": "2026-07-19 12:00 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
-      "region": "Middle East / Strait of Hormuz",
+      "title": "Hanwha Philly Shipyard Secures 'Golden Dome' Missile Defense Contract - 조선일보",
+      "region": "Global",
       "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3h ago",
-      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
-    },
-    {
-      "category": "si",
-      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Developing",
-      "time": "9h ago",
-      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
-    },
-    {
-      "category": "military",
-      "title": "Unusual pattern of strategic airlift into forward operating locations",
-      "region": "Indo-Pacific",
-      "severity": "moderate",
       "confidence": "Single-source",
-      "time": "14h ago",
-      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
-    },
-    {
-      "category": "si",
-      "title": "Open model matches proprietary frontier on multi-step deception evals",
-      "region": "Global / Open Source",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "22h ago",
-      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPem9mVzFkTk9qTmMwczJFakZ4dnlRbDdlU01jSUNHSmtHajhxTG83VXFJU3U4MV83Vk51ZzFDeGl0UTY5Nk1HVFVSbXhOd0UwczN2b2lpX3lNRmpwaDh0NDVNcFFtc3lHZUtTUlF4MXd3bkVCNFlfVm5MSEU1RmdxVmh2YlplNERH?oc=5\" target…",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPem9mVzFkTk9qTmMwczJFakZ4dnlRbDdlU01jSUNHSmtHajhxTG83VXFJU3U4MV83Vk51ZzFDeGl0UTY5Nk1HVFVSbXhOd0UwczN2b2lpX3lNRmpwaDh0NDVNcFFtc3lHZUtTUlF4MXd3bkVCNFlfVm5MSEU1RmdxVmh2YlplNERH?oc=5"
     },
     {
       "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
-      "region": "Middle East / Strait of Hormuz",
+      "title": "Constellation Energy Stock And 2 Nuclear Picks For Reliable Clean Power - simplywall.st",
+      "region": "Global",
       "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3h ago",
-      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
-    },
-    {
-      "category": "si",
-      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Developing",
-      "time": "9h ago",
-      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
-    },
-    {
-      "category": "military",
-      "title": "Unusual pattern of strategic airlift into forward operating locations",
-      "region": "Indo-Pacific",
-      "severity": "moderate",
       "confidence": "Single-source",
-      "time": "14h ago",
-      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
-    },
-    {
-      "category": "si",
-      "title": "Open model matches proprietary frontier on multi-step deception evals",
-      "region": "Global / Open Source",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "22h ago",
-      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTkhZWXNETWhrWHRRRE5MNVdnTHhTSnNhcGg5N1doMjEtd1ZVMlNkUlN3OWpDZ0VLWVYxamtKUmRwdk9hMU5ERUs3aWc5MkRDXzV3VzJKWmpGZ1FQaXRrd21kT1BNMW0xYi1jT2xYSXNMLXlrV1dxUlV6Mm9fa2FJbXVGOHZ2UzEycG9KMkV0REVNM…",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTkhZWXNETWhrWHRRRE5MNVdnTHhTSnNhcGg5N1doMjEtd1ZVMlNkUlN3OWpDZ0VLWVYxamtKUmRwdk9hMU5ERUs3aWc5MkRDXzV3VzJKWmpGZ1FQaXRrd21kT1BNMW0xYi1jT2xYSXNMLXlrV1dxUlV6Mm9fa2FJbXVGOHZ2UzEycG9KMkV0REVNMHZ0NjhZckdTZFFaN1ZSdS1sZHZNZFFKdm1wd3AwU1RhdHlIZjdTWFJ5WlpQUVpHb1JIaUN6UG9fZVNjbEk4UUpNNmQxUdIB3AFBVV95cUxQOFlMREVGQTMzMVNwNnU3WVRUTkhOQWdockRjQUFGNE9HYjAzQWl4eDl5eldnbkEwQkFWZ0RXa1dHaTAxMzZyM3luQ3lQbWRxMkRHUzhHeEo3dnhqeFMtTGNmT0ZZRG9BcTcyZ29LYmg3VGloU3NFSDFhdUtLRDdoQ1BnV0JuaFVseG5LeDlfRmxodlYyd0hiZVoyb1RZc3dIRGVZLVRhc3NweVhtQmh5MnhCQ21zNFhGSHFRdnBpU2lrWnQ4LWxIRUVlM3doU0E2ZThBTjF3RlVNT2V2?oc=5"
     },
     {
       "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
-      "region": "Middle East / Strait of Hormuz",
+      "title": "Defense Procurement Agency contracts UAH 333.6B worth of drones for army in H1 2026 - Ukrinform",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxNaUZuSk9pcWRHSEhHSGpfeThyM2szN2Y3SU1EYWJIZi1KaWkwV2ZZX0k3S3RHTlpCMXl6NjJaNy1KeUxTRTlZcHVKaXRsemVoX21YZ096YzdQQi1wSkxhSGUyTFpSMWM4c0NxbkowbEIzMXlDSDNNNzlUOVhYMzFaMWQ3Q0NobGNGOC0wV1ZPUkFHd…",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaUZuSk9pcWRHSEhHSGpfeThyM2szN2Y3SU1EYWJIZi1KaWkwV2ZZX0k3S3RHTlpCMXl6NjJaNy1KeUxTRTlZcHVKaXRsemVoX21YZ096YzdQQi1wSkxhSGUyTFpSMWM4c0NxbkowbEIzMXlDSDNNNzlUOVhYMzFaMWQ3Q0NobGNGOC0wV1ZPUkFHdlgyZ1JSV1lmOGl2NHU5Mnh4cnU0bUpxUWphSTZfTVZXWkk4djN0Ulo2a2l4OG5vRTZZajJSWDc1azHSAdIBQVVfeXFMTS1BLUM2TWdUWGpwTUpYcGhNOWJySjFJb3FjdFh3OExvbFdpVmxSa2RnV1Z0by1PdnZzcWJXWTltV1Z6Z0lmNHVrcU9kRUJEVzVzQ3pmT3N5TFpwZ2tUejdMbFNjVldsZGNVOFVBMG1VMmo4OUZBckFTaXM2NHV0MWk0YUVRNmh0ZGJud2RmMWkxMWM1VUFOZ0d5TTlBbE5zWWZsOHdOb3dCSWtKdjBhMG9UcHRnMXZiVlRYVUZQRlZyOWRSWllCR0huM3FEZ01XSzV3?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Standard Nuclear (STDN) awards 11,436 RSUs to board director - Stock Titan",
+      "region": "Global",
       "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3h ago",
-      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPalp4ZHBsTktRUExXaC1WNFFYY2ZrR2Rnd1ZUSUdnLWJwM2pnUFpDdmN2d3pGeXBGc3lfcFluNnQxSURfUTIxMDNYMVNmNTFwS0VydEphMzl2VWNCVlJQWkpCTmhmSFNJazBUTjA5ckhxcFBvTzdOTEtIWk82dnZieGVYN19uTWN0MWtzeUc3QjZWe…",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalp4ZHBsTktRUExXaC1WNFFYY2ZrR2Rnd1ZUSUdnLWJwM2pnUFpDdmN2d3pGeXBGc3lfcFluNnQxSURfUTIxMDNYMVNmNTFwS0VydEphMzl2VWNCVlJQWkpCTmhmSFNJazBUTjA5ckhxcFBvTzdOTEtIWk82dnZieGVYN19uTWN0MWtzeUc3QjZWeDVRUThVc21QYUpkUkVuOEZIbEVCbUxCZ3VoclBod1N0NEM?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Standard Nuclear (STDN) CEO granted 3,846,250 RSUs vesting over 3–4 years - Stock Titan",
+      "region": "Global",
+      "severity": "high",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPbVU3SWpQOVJHVVhRRzFSSDJwaGtCX19lSUVnbzhvMjU4Nm4xYU0ybWNfVDk4WkpkZW9YZHdVWmUtMGxiNUNiRDRZVVRibnJuQ0FaZVZWcklfRjNBSG42Y1VWZUk3TUNXbTRWTzBJS0V4NFRiZXcwTThVaGRNR2NwYUp2eWV6TmcxMndfRC1WMGozO…",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbVU3SWpQOVJHVVhRRzFSSDJwaGtCX19lSUVnbzhvMjU4Nm4xYU0ybWNfVDk4WkpkZW9YZHdVWmUtMGxiNUNiRDRZVVRibnJuQ0FaZVZWcklfRjNBSG42Y1VWZUk3TUNXbTRWTzBJS0V4NFRiZXcwTThVaGRNR2NwYUp2eWV6TmcxMndfRC1WMGozOG9ZYlF0OE55VjVOMTFLZkpaWjVJTEF3TUVWekFuNGJBUTg?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Meet Kimi K3, the newest Chinese AI model haunting Silicon Valley - MarketWatch",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbWtUdnEwLW1IQjJwaHVPSWlKdEc0Yl9MZUU4NGtobl8xcFRtR3llWEpTR2JObHdfTWVuWTR0ZUJrSzZIQ29CbXlqcEJoalNSTVBaUjdMLUxOWERQd1FoZEJFSGVKUmxtWEpZbC02X3JjWUlSbjJwTDk2THI5RGtreDBlVHFSYzAzZGtPbm1yYWJ4R…",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbWtUdnEwLW1IQjJwaHVPSWlKdEc0Yl9MZUU4NGtobl8xcFRtR3llWEpTR2JObHdfTWVuWTR0ZUJrSzZIQ29CbXlqcEJoalNSTVBaUjdMLUxOWERQd1FoZEJFSGVKUmxtWEpZbC02X3JjWUlSbjJwTDk2THI5RGtreDBlVHFSYzAzZGtPbm1yYWJ4RTA2cFBqWTlpRFFpQUM2S3RVZ0NNeHk5VG8?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "‘This is how you lose’: New Chinese AI model Kimi K3 stuns Silicon Valley’s elite - Malay Mail",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQVkpaTUV3eVNaX2NBQzgtdmYzTHc1U1dYbVl1dHNORmFDT3NuU1RVejc4cWIxOFdEQmtUZThSSURGNFNWUGoyNXVWWnpCTnl4OWcxb0JWOUMtMGtDVExZdU15b0xRYUNWVjJZbjc0N3pKdDQ1cnN2SEl3Xy1tNGRvb1RTbms5WkQ1QkNBcU9rZE1NX…",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVkpaTUV3eVNaX2NBQzgtdmYzTHc1U1dYbVl1dHNORmFDT3NuU1RVejc4cWIxOFdEQmtUZThSSURGNFNWUGoyNXVWWnpCTnl4OWcxb0JWOUMtMGtDVExZdU15b0xRYUNWVjJZbjc0N3pKdDQ1cnN2SEl3Xy1tNGRvb1RTbms5WkQ1QkNBcU9rZE1NX0lvNGgyUDVqYW9TVVJpTlZhSGxIUl9DRGJaTkV3T2Zla1YxQ0RKTlVjcUVPaXk1UHlkN2ZVVjQ3VDXSAdIBQVVfeXFMTWhGWGdVOUhpdU1hMGtNMkwtSjFvTWNtUF8tU3diX3p4LTh6aXhkek8wNk9JdXBOaERfLVdFbDduMXEwRWZMaFphZDFsc29HZ3NSWG0xRTlSWUpmRlBqNDU4QmV4T3NxbmwzVDF1SUd6MlBjUUk1Rzh0Sm1nN1dkLXJTNUFJY3BOZVc2U0VrQVhBRG0xQzQ2ZUpQbVNhWmtFQzFsSFk5U1UxdTY4MmkzNXJkSFlMQ0RzSnpTOXJXUkR1d1owZDdCbS1XZkZLV3ctUV9B?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "What is Anthropic? The AI safety company behind Claude explained - qz.com",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiR0FVX3lxTE1BM290Y1M2d0E5MGNubk1QMUx4RzZWOHB1X2NPWlFhQ2lYSVFwQXpkaG5ZSVFWMm9vdndVZUFIZzV5ZEtWakkw?oc=5\" target=\"_blank\">What is Anthropic? The AI safety company behind Claude explained</a>&nbsp;&nbs…",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1BM290Y1M2d0E5MGNubk1QMUx4RzZWOHB1X2NPWlFhQ2lYSVFwQXpkaG5ZSVFWMm9vdndVZUFIZzV5ZEtWakkw?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "The market capitalization of U.S. aerospace and artificial intelligence company SpaceX fell by $1 tr.. - 매일경제",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsaWc4eTVaSUdNR01rc3o3Y3B6dE91SzMtRC1GNWdqVkYteXBxR1ZrbmpoUkI0TWxWb0M4dl9GLVUySkExeGRhUGxENzVsV1k?oc=5\" target=\"_blank\">The market capitalization of U.S. aerospace and artificial intellig…",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsaWc4eTVaSUdNR01rc3o3Y3B6dE91SzMtRC1GNWdqVkYteXBxR1ZrbmpoUkI0TWxWb0M4dl9GLVUySkExeGRhUGxENzVsV1k?oc=5"
     }
   ],
   "newsTracker": [
@@ -197,7 +206,6 @@
   ],
   "history": {
     "labels": [
-      "Jun 10",
       "Jun 14",
       "Jul 4",
       "Jul 5",
@@ -212,7 +220,8 @@
       "Jul 14",
       "Jul 15",
       "Jul 16",
-      "Jul 17"
+      "Jul 17",
+      "Jul 18"
     ],
     "defcon": [
       3,
@@ -230,11 +239,11 @@
       3,
       3,
       3,
-      3
+      2
     ],
     "si": [
-      3,
       4,
+      5,
       5,
       5,
       5,
