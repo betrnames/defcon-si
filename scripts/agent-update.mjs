@@ -73,6 +73,44 @@ const HOT_MILITARY_REGIONS = /Iran|Israel|Gaza|Hezbollah|Hormuz|CENTCOM|Gulf|Syr
 const HIGH_SEVERITY_KEYWORDS = /strike|attack|launch|intercept|shoot.down|missile|nuclear|invasion|escalat|mobiliz|emergency|alert|threat|casualties|shoot|bomb|explosi/i;
 const SI_HIGH_SEVERITY = /breakthrough|surpass|frontier|autonomous|superhuman|deception|loss.of.control|existential|AGI|superintelligence|safety.concern|alignment.failure|ban|moratorium|emergent/i;
 
+function buildSummary(item, category, region, severity, confidence) {
+  // Use the RSS description if it's substantial (more than just a source name)
+  const desc = (item.description || '').trim();
+  if (desc.length > 60 && desc !== item.title) {
+    return desc.length > 250 ? desc.slice(0, 247) + '…' : desc;
+  }
+
+  // Generate a contextual summary from available metadata
+  const source = item.source || 'Open-source reporting';
+  const sevLabel = severity === 'high' ? 'significant' : severity === 'moderate' ? 'notable' : 'routine';
+
+  if (category === 'military') {
+    const regionNote = region !== 'Global' ? ` in the ${region} theater` : '';
+    if (/strike|attack|bomb|missile|intercept|shoot/i.test(item.title)) {
+      return `${source} reports ${sevLabel} military action${regionNote}. ${confidence === 'Corroborated' ? 'Multiple outlets confirm.' : 'Monitoring for corroboration.'}`;
+    }
+    if (/deploy|reposition|carrier|destroyer|troops|exercise/i.test(item.title)) {
+      return `${source} reports force posture changes${regionNote}. Activity assessed as ${sevLabel} for regional readiness.`;
+    }
+    if (/nuclear|ICBM|strategic/i.test(item.title)) {
+      return `${source} flags strategic-level activity${regionNote}. Elevated monitoring warranted.`;
+    }
+    return `${source} reports ${sevLabel} defense development${regionNote}. ${confidence === 'Developing' ? 'Details still emerging.' : 'Assessing impact on readiness posture.'}`;
+  }
+
+  // SI category
+  if (/breakthrough|surpass|frontier|AGI|superintelligence/i.test(item.title)) {
+    return `${source} reports a ${sevLabel} capability milestone. Relevant to SI acceleration tracking and readiness composite.`;
+  }
+  if (/safety|alignment|regulation|ban|moratorium/i.test(item.title)) {
+    return `${source} covers AI governance developments. ${severity === 'high' ? 'Potential impact on capability deployment pace.' : 'Monitoring policy signals.'}`;
+  }
+  if (/autonomous|agent|agentic/i.test(item.title)) {
+    return `${source} reports on autonomous AI systems. Feeds into SI Readiness scoring for agentic capability diffusion.`;
+  }
+  return `${source} covers ${sevLabel} AI development. Tracking for SI acceleration signals.`;
+}
+
 function classifyItem(item, category) {
   const text = `${item.title} ${item.description}`;
 
@@ -113,7 +151,7 @@ function classifyItem(item, category) {
     severity,
     confidence,
     time,
-    summary: item.description.length > 250 ? item.description.slice(0, 247) + '…' : item.description || item.title,
+    summary: buildSummary(item, category, region, severity, confidence),
     url: item.link,
     publishedAt: pubMs,
   };
