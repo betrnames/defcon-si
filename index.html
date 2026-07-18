@@ -98,12 +98,90 @@
       );
     }
 
-    /* Active gauge segment pulse */
+    /* Active gauge segment pulse (non-critical levels) */
     @keyframes segpulse {
       0%, 100% { filter: brightness(1); }
       50%      { filter: brightness(1.45); }
     }
     .seg-active { animation: segpulse 2.4s ease-in-out infinite; }
+
+    /* DEFCON 1 — slow double-beat red glow (lub-dub heartbeat) */
+    @keyframes defcon1-heartbeat {
+      0%, 100% {
+        text-shadow:
+          0 0 10px rgba(255, 59, 48, 0.35),
+          0 0 28px rgba(255, 59, 48, 0.12);
+        filter: brightness(1);
+      }
+      12% {
+        text-shadow:
+          0 0 22px rgba(255, 59, 48, 0.95),
+          0 0 48px rgba(255, 59, 48, 0.55),
+          0 0 72px rgba(255, 59, 48, 0.28);
+        filter: brightness(1.28);
+      }
+      24% {
+        text-shadow:
+          0 0 12px rgba(255, 59, 48, 0.4),
+          0 0 30px rgba(255, 59, 48, 0.18);
+        filter: brightness(1.04);
+      }
+      36% {
+        text-shadow:
+          0 0 26px rgba(255, 59, 48, 1),
+          0 0 56px rgba(255, 59, 48, 0.6),
+          0 0 80px rgba(255, 59, 48, 0.32);
+        filter: brightness(1.32);
+      }
+      52% {
+        text-shadow:
+          0 0 10px rgba(255, 59, 48, 0.35),
+          0 0 28px rgba(255, 59, 48, 0.12);
+        filter: brightness(1);
+      }
+    }
+    @keyframes defcon1-seg-glow {
+      0%, 100% {
+        box-shadow: 0 0 12px rgba(255, 59, 48, 0.35), 0 0 24px rgba(255, 59, 48, 0.12);
+        filter: brightness(1);
+        transform: scale(1.08);
+      }
+      12% {
+        box-shadow: 0 0 22px rgba(255, 59, 48, 0.95), 0 0 48px rgba(255, 59, 48, 0.5);
+        filter: brightness(1.25);
+        transform: scale(1.14);
+      }
+      24% {
+        box-shadow: 0 0 14px rgba(255, 59, 48, 0.4), 0 0 28px rgba(255, 59, 48, 0.18);
+        filter: brightness(1.05);
+        transform: scale(1.09);
+      }
+      36% {
+        box-shadow: 0 0 28px rgba(255, 59, 48, 1), 0 0 56px rgba(255, 59, 48, 0.55);
+        filter: brightness(1.3);
+        transform: scale(1.16);
+      }
+      52% {
+        box-shadow: 0 0 12px rgba(255, 59, 48, 0.35), 0 0 24px rgba(255, 59, 48, 0.12);
+        filter: brightness(1);
+        transform: scale(1.08);
+      }
+    }
+    @keyframes defcon1-panel-glow {
+      0%, 100% { box-shadow: 0 0 0 1px rgba(255, 59, 48, 0.15), 0 0 24px rgba(255, 59, 48, 0.06); }
+      12%, 36% { box-shadow: 0 0 0 1px rgba(255, 59, 48, 0.45), 0 0 40px rgba(255, 59, 48, 0.18); }
+      52% { box-shadow: 0 0 0 1px rgba(255, 59, 48, 0.15), 0 0 24px rgba(255, 59, 48, 0.06); }
+    }
+    .defcon1-heartbeat {
+      animation: defcon1-heartbeat 2.8s ease-in-out infinite;
+    }
+    .defcon1-seg-glow {
+      animation: defcon1-seg-glow 2.8s ease-in-out infinite;
+    }
+    .defcon1-panel-glow {
+      animation: defcon1-panel-glow 2.8s ease-in-out infinite;
+      border-color: rgba(255, 59, 48, 0.45) !important;
+    }
 
     /* Blinking live dot */
     @keyframes blink { 0%,100% {opacity:1} 50% {opacity:.25} }
@@ -119,9 +197,56 @@
     .ticker-track:hover {
       animation-play-state: paused;
     }
+    /* Inline feed items: never wrap or stretch the marquee layout */
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+      max-width: min(32rem, 78vw);
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    .ticker-item__title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+      max-width: min(22rem, 52vw);
+      color: inherit;
+      text-decoration: none;
+    }
+    .ticker-item__title:hover {
+      color: #FFB000;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .ticker-item__source {
+      flex-shrink: 0;
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #6B7A8A;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(107, 122, 138, 0.45);
+    }
+    .ticker-item__source:hover {
+      color: #FFB000;
+      border-bottom-color: #FFB000;
+    }
+    .ticker-item__meta {
+      flex-shrink: 0;
+      color: #6B7A8A;
+    }
+    .ticker-item__sep {
+      flex-shrink: 0;
+      margin: 0 0.35rem 0 0.15rem;
+      color: rgba(107, 122, 138, 0.55);
+    }
 
     @media (prefers-reduced-motion: reduce) {
-      .seg-active, .live-dot { animation: none; }
+      .seg-active, .live-dot,
+      .defcon1-heartbeat, .defcon1-seg-glow, .defcon1-panel-glow { animation: none; }
       .scale-110 { transform: none; }
       .ticker-track { animation: none; }
       html { scroll-behavior: auto; }
@@ -401,9 +526,9 @@
      ============================================================ */
   const CONFIG = {
     // --- Current levels ---
-    defconLevel: 3,        // 1 (max readiness) … 5 (normal)
-    siLevel: 3,            // 0 (dormant) … 5 (critical)
-    lastUpdated: "2026-07-03 12:00 UTC",
+    defconLevel: 1,        // 1 (max readiness) … 5 (normal) — synced with live 2026-07-18
+    siLevel: 5,            // 0 (dormant) … 5 (critical)
+    lastUpdated: "2026-07-18 13:01 UTC",
 
     // --- Live signal cards ---
     signals: [
@@ -649,13 +774,25 @@
   // ---- Render: DEFCON board (segments run 5 → 1, left to right) ----
   function renderDefcon(level) {
     const meta = DEFCON_META[level];
+    const isMax = level === 1;
     const numberEl = document.getElementById("defcon-number");
+    const panelEl = document.getElementById("defcon-panel");
+    const labelEl = document.getElementById("defcon-label");
+
     numberEl.textContent = level;
     numberEl.style.color = meta.color;
-    numberEl.style.textShadow = `0 0 20px ${meta.color}88`;
-    document.getElementById("defcon-label").textContent = meta.label;
-    document.getElementById("defcon-label").style.color = meta.color;
+    // Heartbeat CSS owns glow when DEFCON 1; otherwise static shadow
+    numberEl.style.textShadow = isMax ? "none" : `0 0 20px ${meta.color}88`;
+    numberEl.classList.toggle("defcon1-heartbeat", isMax);
+
+    labelEl.textContent = meta.label;
+    labelEl.style.color = meta.color;
+    labelEl.classList.toggle("defcon1-heartbeat", isMax);
     document.getElementById("defcon-desc").textContent = meta.desc;
+
+    if (panelEl) {
+      panelEl.classList.toggle("defcon1-panel-glow", isMax);
+    }
 
     const gauge = document.getElementById("defcon-gauge");
     gauge.innerHTML = "";
@@ -663,12 +800,16 @@
       const el = document.createElement("div");
       const active = seg === level;
       const color = DEFCON_META[seg].color;
-      el.className = `h-9 rounded border transition-all duration-700${active ? " seg-active scale-110 shadow-2xl" : ""}`;
+      // DEFCON 1 active segment: slow red heartbeat glow (not the generic pulse)
+      const activeClass = active
+        ? (isMax ? " defcon1-seg-glow shadow-2xl" : " seg-active scale-110 shadow-2xl")
+        : "";
+      el.className = `h-9 rounded border transition-all duration-700${activeClass}`;
       el.style.borderColor = color + "66";
       el.style.background = active
         ? `linear-gradient(145deg, ${color}, ${color}88)`
         : color + "22";
-      el.style.boxShadow = active ? `0 0 25px ${color}99` : "none";
+      el.style.boxShadow = active && !isMax ? `0 0 25px ${color}99` : active ? "none" : "none";
       gauge.appendChild(el);
     }
   }
@@ -705,7 +846,94 @@
   // ---- Sanitize: strip HTML to prevent XSS from data.json ----
   function esc(str) { return String(str || "").replace(/[<>"'&]/g, c => ({"<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;","&":"&amp;"}[c])); }
 
-  // ---- Render: signal cards (DOM-safe — no raw interpolation) ----
+  /** Hostname for feed backlinks (never show full URL in layout) */
+  function sourceHost(url) {
+    try {
+      return new URL(url).hostname.replace(/^www\./i, "");
+    } catch (_) {
+      return "";
+    }
+  }
+
+  /** Prefer item.url; fall back to first href in HTML summary — never display raw URL text */
+  function resolveItemUrl(item) {
+    if (item && typeof item.url === "string" && /^https?:\/\//i.test(item.url.trim())) {
+      return item.url.trim();
+    }
+    const m = String(item?.summary || "").match(/href=["'](https?:\/\/[^"']+)["']/i);
+    return m ? m[1] : "";
+  }
+
+  /** Plain text only — strip tags, truncated HTML, and any URL strings */
+  function plainText(str) {
+    return String(str || "")
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]*>/g, " ")
+      .replace(/<[^>\s]*/g, " ")
+      .replace(/https?:\/\/\S+/gi, " ")
+      .replace(/&nbsp;/gi, " ")
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  /**
+   * Human summary for cards/ticker.
+   * Many pipeline rows store only a Google News <a href="..."> blob — never show that.
+   * Prefer real prose; otherwise derive a short blurb from the headline + outlet.
+   */
+  function contentSummary(item) {
+    const raw = String(item?.summary || "");
+    let text = plainText(raw);
+    const isLinkDump =
+      !text ||
+      text.length < 24 ||
+      /https?:\/\//i.test(text) ||
+      /^a\s+href/i.test(text) ||
+      /href=/i.test(raw) ||
+      /^[\s<"']*https?:/i.test(raw);
+
+    if (isLinkDump) {
+      const fullTitle = plainText(item?.title) || "OSINT signal";
+      const parts = fullTitle.split(/\s+[-–—]\s+/);
+      if (parts.length >= 2) {
+        const outlet = parts.pop().trim();
+        const headline = parts.join(" — ").trim();
+        return `${headline}. Reported by ${outlet}.`;
+      }
+      return `${fullTitle}. Open source for full report.`;
+    }
+
+    text = text.replace(/https?:\/\/\S+/gi, "").replace(/\s+/g, " ").trim();
+    if (text.length > 220) text = text.slice(0, 217).replace(/\s+\S*$/, "") + "…";
+    return text;
+  }
+
+  /** Headline without trailing " - Outlet" for cleaner titles (outlet goes on source line) */
+  function headlineOnly(item) {
+    const full = plainText(item?.title) || "Untitled";
+    const parts = full.split(/\s+[-–—]\s+/);
+    if (parts.length >= 2 && parts[parts.length - 1].length < 48) {
+      return parts.slice(0, -1).join(" — ");
+    }
+    return full;
+  }
+
+  function outletFromTitle(item) {
+    const full = plainText(item?.title) || "";
+    const parts = full.split(/\s+[-–—]\s+/);
+    if (parts.length >= 2 && parts[parts.length - 1].length < 48) {
+      return parts[parts.length - 1].trim();
+    }
+    return "";
+  }
+
+  // ---- Render: signal cards (title text + content summary + Source link only) ----
   function renderSignals(signals, mode) {
     const grid = document.getElementById("signals-grid");
     grid.innerHTML = "";
@@ -714,6 +942,11 @@
     filtered.forEach(s => {
       const severity = allowed.includes(s.severity) ? s.severity : "low";
       const sev = SEVERITY_COLORS[severity] || "#6B7A8A";
+      const url = resolveItemUrl(s);
+      const host = url ? sourceHost(url) : "";
+      const outlet = outletFromTitle(s);
+      const sourceLabel = outlet || host || "Source";
+
       const card = document.createElement("article");
       card.className = "rounded-sm border border-line bg-panel p-5 transition-colors hover:border-amber/40";
 
@@ -729,54 +962,40 @@
       header.appendChild(sevSpan);
       header.appendChild(timeSpan);
 
-      let title;
-      if (s.url) {
-        title = document.createElement("a");
-        title.href = s.url;
-        title.target = "_blank";
-        title.rel = "noopener noreferrer";
-        title.className = "mt-3 block font-display text-xl font-700 uppercase leading-tight tracking-wide transition-colors hover:text-amber";
-      } else {
-        title = document.createElement("h3");
-        title.className = "mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide";
-      }
+      // Plain title — not a URL
+      const title = document.createElement("h3");
+      title.className = "mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide";
       title.style.fontWeight = "700";
-      if (s.url) {
-        const link = document.createElement("a");
-        link.href = s.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.className = "transition-colors hover:text-amber";
-        link.textContent = s.title;
-        title.appendChild(link);
-      } else {
-        title.textContent = s.title;
-      }
+      title.textContent = headlineOnly(s);
 
+      // Content summary — never raw HTML/links
       const summary = document.createElement("p");
-      summary.className = "mt-2 text-sm text-muted";
-      summary.textContent = s.summary;
-
-      if (s.url) {
-        const sourceLink = document.createElement("a");
-        sourceLink.href = s.url;
-        sourceLink.target = "_blank";
-        sourceLink.rel = "noopener noreferrer";
-        sourceLink.className = "mt-2 inline-block font-mono text-[10px] text-amber/70 transition-colors hover:text-amber";
-        sourceLink.textContent = "View source ↗";
-        summary.appendChild(document.createElement("br"));
-        summary.appendChild(sourceLink);
-      }
+      summary.className = "mt-2 text-sm text-muted break-words";
+      summary.textContent = contentSummary(s);
 
       const footer = document.createElement("div");
-      footer.className = "mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-wider text-muted";
+      footer.className = "mt-4 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-wider text-muted";
       const regionSpan = document.createElement("span");
-      regionSpan.textContent = s.region;
+      regionSpan.className = "min-w-0 truncate";
+      regionSpan.textContent = s.region || "";
+      const right = document.createElement("span");
+      right.className = "flex items-center gap-2 shrink-0";
+      if (url) {
+        const src = document.createElement("a");
+        src.href = url;
+        src.target = "_blank";
+        src.rel = "noopener noreferrer";
+        src.className = "text-amber transition-colors hover:underline";
+        src.textContent = "Source · " + sourceLabel;
+        src.title = "Open original report";
+        right.appendChild(src);
+      }
       const confSpan = document.createElement("span");
       confSpan.className = "rounded-sm border border-line px-1.5 py-0.5";
-      confSpan.textContent = s.confidence;
+      confSpan.textContent = s.confidence || "";
+      right.appendChild(confSpan);
       footer.appendChild(regionSpan);
-      footer.appendChild(confSpan);
+      footer.appendChild(right);
 
       card.appendChild(header);
       card.appendChild(title);
@@ -792,7 +1011,7 @@
     return [...items].sort((a, b) => (a.commandLevel || 5) - (b.commandLevel || 5));
   }
 
-  // ---- Render: scrolling news ticker ----
+  // ---- Render: scrolling news ticker (inline links + source backlink) ----
   function renderNewsTicker(items, mode) {
     const track = document.getElementById("news-ticker-track");
     const label = document.getElementById("ticker-label");
@@ -811,30 +1030,53 @@
         const level = Math.min(5, Math.max(1, item.commandLevel || 5));
         const levelColor = COMMAND_LEVEL_COLORS[level] || "#6B7A8A";
         const isSI = item.category === "si";
+        const url = resolveItemUrl(item);
+        const host = url ? sourceHost(url) : "";
 
-        const link = document.createElement("a");
-        link.href = item.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.className = "inline-flex items-center gap-2 text-ink transition-colors hover:text-amber";
+        const row = document.createElement("span");
+        row.className = "ticker-item";
 
         const dot = document.createElement("span");
+        dot.setAttribute("aria-hidden", "true");
         dot.textContent = "●";
         dot.style.color = levelColor;
+        dot.style.flexShrink = "0";
 
-        const title = document.createElement("span");
-        title.textContent = item.title;
+        // Headline text (not a URL); entire line still links via Source
+        const titleEl = document.createElement("span");
+        titleEl.className = "ticker-item__title";
+        titleEl.textContent = headlineOnly(item);
+
+        row.appendChild(dot);
+        row.appendChild(titleEl);
+
+        // Source backlink only — short label, never full URL/HTML
+        if (url) {
+          const src = document.createElement("a");
+          src.className = "ticker-item__source";
+          src.href = url;
+          src.target = "_blank";
+          src.rel = "noopener noreferrer";
+          const outlet = outletFromTitle(item);
+          src.textContent = outlet || host || "source";
+          src.title = "Open original report";
+          row.appendChild(src);
+        }
 
         const meta = document.createElement("span");
-        meta.className = "text-muted";
+        meta.className = "ticker-item__meta";
         meta.textContent = isSI
-          ? `· ${item.command || "SI"} · Level ${level}`
-          : `· ${item.command} · DEFCON ${level}`;
+          ? `· ${item.command || "SI"} · L${level}`
+          : `· ${item.command || "OSINT"} · D${level}`;
+        row.appendChild(meta);
 
-        link.appendChild(dot);
-        link.appendChild(title);
-        link.appendChild(meta);
-        container.appendChild(link);
+        const sep = document.createElement("span");
+        sep.className = "ticker-item__sep";
+        sep.setAttribute("aria-hidden", "true");
+        sep.textContent = "◆";
+        row.appendChild(sep);
+
+        container.appendChild(row);
       });
     };
 
@@ -847,9 +1089,9 @@
     }
 
     const passA = document.createElement("div");
-    passA.className = "flex items-center gap-10 pr-10";
+    passA.className = "flex items-center gap-6 pr-6";
     const passB = document.createElement("div");
-    passB.className = "flex items-center gap-10 pr-10";
+    passB.className = "flex items-center gap-6 pr-6";
     buildItems(passA);
     buildItems(passB);
     track.appendChild(passA);
