@@ -729,23 +729,35 @@
       header.appendChild(sevSpan);
       header.appendChild(timeSpan);
 
-      let title;
-      if (s.url) {
-        title = document.createElement("a");
-        title.href = s.url;
-        title.target = "_blank";
-        title.rel = "noopener noreferrer";
-        title.className = "mt-3 block font-display text-xl font-700 uppercase leading-tight tracking-wide transition-colors hover:text-amber";
-      } else {
-        title = document.createElement("h3");
-        title.className = "mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide";
-      }
+      const title = document.createElement("h3");
+      title.className = "mt-3 font-display text-xl font-700 uppercase leading-tight tracking-wide";
       title.style.fontWeight = "700";
-      title.textContent = s.title;
+      if (s.url) {
+        const link = document.createElement("a");
+        link.href = s.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.className = "transition-colors hover:text-amber";
+        link.textContent = s.title;
+        title.appendChild(link);
+      } else {
+        title.textContent = s.title;
+      }
 
       const summary = document.createElement("p");
       summary.className = "mt-2 text-sm text-muted";
       summary.textContent = s.summary;
+
+      if (s.url) {
+        const sourceLink = document.createElement("a");
+        sourceLink.href = s.url;
+        sourceLink.target = "_blank";
+        sourceLink.rel = "noopener noreferrer";
+        sourceLink.className = "mt-2 inline-block font-mono text-[10px] text-amber/70 transition-colors hover:text-amber";
+        sourceLink.textContent = "View source ↗";
+        summary.appendChild(document.createElement("br"));
+        summary.appendChild(sourceLink);
+      }
 
       const footer = document.createElement("div");
       footer.className = "mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-wider text-muted";
