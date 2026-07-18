@@ -1,97 +1,97 @@
 {
-  "defconLevel": 2,
+  "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-07-19 12:00 UTC",
+  "lastUpdated": "2026-07-18 13:01 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "Hanwha Philly Shipyard Secures 'Golden Dome' Missile Defense Contract - 조선일보",
+      "title": "Egyptian, Pakistani naval chiefs discuss expanding military cooperation - Egypt Today",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQd3gtQ2dPOVJqQ28zVTFucXpOT09Ca2tPNHdFS0s3TDQtTDRQVW5OMkdSU2RUNlVTa05kMW9kY0QwV18wZ1NZSC1rdjljRXpBMzkwemZaNDJmUDZEbkdzUnROS2Z4YXJvR0RpTEdiV2VVc3ZJRmExd3BvTDFYaGVjdlV0eEpXVzlxNU1JZU9Gb0k5T…",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQd3gtQ2dPOVJqQ28zVTFucXpOT09Ca2tPNHdFS0s3TDQtTDRQVW5OMkdSU2RUNlVTa05kMW9kY0QwV18wZ1NZSC1rdjljRXpBMzkwemZaNDJmUDZEbkdzUnROS2Z4YXJvR0RpTEdiV2VVc3ZJRmExd3BvTDFYaGVjdlV0eEpXVzlxNU1JZU9Gb0k5TUNOckxSQWJ1UmozcGZUeDh1NFNHSzNTR0RTR3BiYldud2Q?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Global Markets Shaken by AI Concerns and Middle East Conflict - Business Turkey Today",
+      "region": "Middle East",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNzFsSzRhdzFBLTdtNmFqek1NVHlkd20tdnJkSWtEQVRseXVJMnJmWEFmNFhiZ3lXYnNTejJwTWhZSXp2UnZMVFNLd2U1NHJhM2M1SFYtOTBBT3FRYVl1aGxpbVNVUHdjTlQ5WUQ5ejJtZDNrTmoxMnM5VkVfYzZEdVlhd1pocVoxNXpSbmw1UnhyT…",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNzFsSzRhdzFBLTdtNmFqek1NVHlkd20tdnJkSWtEQVRseXVJMnJmWEFmNFhiZ3lXYnNTejJwTWhZSXp2UnZMVFNLd2U1NHJhM2M1SFYtOTBBT3FRYVl1aGxpbVNVUHdjTlQ5WUQ5ejJtZDNrTmoxMnM5VkVfYzZEdVlhd1pocVoxNXpSbmw1UnhyTC1UQTBIbFVTMHRJTEkwRGlJQ0lnWGRUOTNRRkk3Qk5LM0ZsMEtLLWhF?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "US body approves nuclear-powered ship design with two modular reactors - Interesting Engineering",
       "region": "Global",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPem9mVzFkTk9qTmMwczJFakZ4dnlRbDdlU01jSUNHSmtHajhxTG83VXFJU3U4MV83Vk51ZzFDeGl0UTY5Nk1HVFVSbXhOd0UwczN2b2lpX3lNRmpwaDh0NDVNcFFtc3lHZUtTUlF4MXd3bkVCNFlfVm5MSEU1RmdxVmh2YlplNERH?oc=5\" target…",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPem9mVzFkTk9qTmMwczJFakZ4dnlRbDdlU01jSUNHSmtHajhxTG83VXFJU3U4MV83Vk51ZzFDeGl0UTY5Nk1HVFVSbXhOd0UwczN2b2lpX3lNRmpwaDh0NDVNcFFtc3lHZUtTUlF4MXd3bkVCNFlfVm5MSEU1RmdxVmh2YlplNERH?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYWQ2clpKVENrT09SSHJ3d29RWTlyaS1JN1l6d0Y4SjB1YVpGSlU0dHdRSWxFaUtSZnNYQWpxd1ZZNHNqMFItdFl6RVJsbWROM1U3blM5a3J0WllLVEk5SVhGazZoREdjc2ZlZ3IyNFAtX2oxSDFoMjJXQk5LVnNBMWE5dXdET3VBTFd3?oc=5\" ta…",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYWQ2clpKVENrT09SSHJ3d29RWTlyaS1JN1l6d0Y4SjB1YVpGSlU0dHdRSWxFaUtSZnNYQWpxd1ZZNHNqMFItdFl6RVJsbWROM1U3blM5a3J0WllLVEk5SVhGazZoREdjc2ZlZ3IyNFAtX2oxSDFoMjJXQk5LVnNBMWE5dXdET3VBTFd3?oc=5"
     },
     {
       "category": "military",
-      "title": "Constellation Energy Stock And 2 Nuclear Picks For Reliable Clean Power - simplywall.st",
-      "region": "Global",
+      "title": "Iran expands retaliation across Gulf after fresh US strikes on military sites - Firstpost",
+      "region": "Middle East",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTkhZWXNETWhrWHRRRE5MNVdnTHhTSnNhcGg5N1doMjEtd1ZVMlNkUlN3OWpDZ0VLWVYxamtKUmRwdk9hMU5ERUs3aWc5MkRDXzV3VzJKWmpGZ1FQaXRrd21kT1BNMW0xYi1jT2xYSXNMLXlrV1dxUlV6Mm9fa2FJbXVGOHZ2UzEycG9KMkV0REVNM…",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTkhZWXNETWhrWHRRRE5MNVdnTHhTSnNhcGg5N1doMjEtd1ZVMlNkUlN3OWpDZ0VLWVYxamtKUmRwdk9hMU5ERUs3aWc5MkRDXzV3VzJKWmpGZ1FQaXRrd21kT1BNMW0xYi1jT2xYSXNMLXlrV1dxUlV6Mm9fa2FJbXVGOHZ2UzEycG9KMkV0REVNMHZ0NjhZckdTZFFaN1ZSdS1sZHZNZFFKdm1wd3AwU1RhdHlIZjdTWFJ5WlpQUVpHb1JIaUN6UG9fZVNjbEk4UUpNNmQxUdIB3AFBVV95cUxQOFlMREVGQTMzMVNwNnU3WVRUTkhOQWdockRjQUFGNE9HYjAzQWl4eDl5eldnbkEwQkFWZ0RXa1dHaTAxMzZyM3luQ3lQbWRxMkRHUzhHeEo3dnhqeFMtTGNmT0ZZRG9BcTcyZ29LYmg3VGloU3NFSDFhdUtLRDdoQ1BnV0JuaFVseG5LeDlfRmxodlYyd0hiZVoyb1RZc3dIRGVZLVRhc3NweVhtQmh5MnhCQ21zNFhGSHFRdnBpU2lrWnQ4LWxIRUVlM3doU0E2ZThBTjF3RlVNT2V2?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazJNX2lUOUh0eGE1cHk3TTFXN0hPQkdKZnJRTjh1WTh3RDcwbnhpa2xSbDd3RVFUVG5USTRlX095cDFFUGhaMl9WWmRsazdtR1NIMnFsMzRiWUoxbzAyZGs3aGR2NWJDRWpONWZxUjBTa3kzaE5uYVcxNmNHakxpcHFoZXBlQ2F4QnJsRXUtTDRDd…",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazJNX2lUOUh0eGE1cHk3TTFXN0hPQkdKZnJRTjh1WTh3RDcwbnhpa2xSbDd3RVFUVG5USTRlX095cDFFUGhaMl9WWmRsazdtR1NIMnFsMzRiWUoxbzAyZGs3aGR2NWJDRWpONWZxUjBTa3kzaE5uYVcxNmNHakxpcHFoZXBlQ2F4QnJsRXUtTDRDdTdBZDRaYUNCVWttLUtCUWJfczhYQi1KRzM2enhMUFlLdlJPeVhBZ1I2ZWlLX2I?oc=5"
     },
     {
-      "category": "military",
-      "title": "Defense Procurement Agency contracts UAH 333.6B worth of drones for army in H1 2026 - Ukrinform",
-      "region": "Global",
+      "category": "si",
+      "title": "UN Chief Warns Artificial Intelligence Could Deepen Global Inequality - ShiaWaves",
+      "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxNaUZuSk9pcWRHSEhHSGpfeThyM2szN2Y3SU1EYWJIZi1KaWkwV2ZZX0k3S3RHTlpCMXl6NjJaNy1KeUxTRTlZcHVKaXRsemVoX21YZ096YzdQQi1wSkxhSGUyTFpSMWM4c0NxbkowbEIzMXlDSDNNNzlUOVhYMzFaMWQ3Q0NobGNGOC0wV1ZPUkFHd…",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaUZuSk9pcWRHSEhHSGpfeThyM2szN2Y3SU1EYWJIZi1KaWkwV2ZZX0k3S3RHTlpCMXl6NjJaNy1KeUxTRTlZcHVKaXRsemVoX21YZ096YzdQQi1wSkxhSGUyTFpSMWM4c0NxbkowbEIzMXlDSDNNNzlUOVhYMzFaMWQ3Q0NobGNGOC0wV1ZPUkFHdlgyZ1JSV1lmOGl2NHU5Mnh4cnU0bUpxUWphSTZfTVZXWkk4djN0Ulo2a2l4OG5vRTZZajJSWDc1azHSAdIBQVVfeXFMTS1BLUM2TWdUWGpwTUpYcGhNOWJySjFJb3FjdFh3OExvbFdpVmxSa2RnV1Z0by1PdnZzcWJXWTltV1Z6Z0lmNHVrcU9kRUJEVzVzQ3pmT3N5TFpwZ2tUejdMbFNjVldsZGNVOFVBMG1VMmo4OUZBckFTaXM2NHV0MWk0YUVRNmh0ZGJud2RmMWkxMWM1VUFOZ0d5TTlBbE5zWWZsOHdOb3dCSWtKdjBhMG9UcHRnMXZiVlRYVUZQRlZyOWRSWllCR0huM3FEZ01XSzV3?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNTHFVcm5jMTE0dE5QZjN1VjdONzQ3UHV0bTVqTmstUmpDUFplelZ4M3NybTZ1NzkxamJKRnU0YVk2RzFma1dpaXotaFNBM2ViRS00cUEwRnUxcFEwUXZBWWVtTXdXekVndTM3MWxrWnhlNW5jWHFlbFhoRXFkX3hRZ2h5MlpKOVNQNTJiU184ak5JL…",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTHFVcm5jMTE0dE5QZjN1VjdONzQ3UHV0bTVqTmstUmpDUFplelZ4M3NybTZ1NzkxamJKRnU0YVk2RzFma1dpaXotaFNBM2ViRS00cUEwRnUxcFEwUXZBWWVtTXdXekVndTM3MWxrWnhlNW5jWHFlbFhoRXFkX3hRZ2h5MlpKOVNQNTJiU184ak5JLWVPRVdxOEZLMkdNdk5KZnNxYjd6ZEZEcVJNWlkxaXVYa1YyTFB2ZTRGZC1veE5NeHd3dHBz?oc=5"
     },
     {
       "category": "military",
-      "title": "Standard Nuclear (STDN) awards 11,436 RSUs to board director - Stock Titan",
-      "region": "Global",
+      "title": "US Navy awards NorthStar $418.5 million contract to dismantle ex-USS Enterprise nuclear aircraft carrier - Defence In…",
+      "region": "Europe / NATO",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPalp4ZHBsTktRUExXaC1WNFFYY2ZrR2Rnd1ZUSUdnLWJwM2pnUFpDdmN2d3pGeXBGc3lfcFluNnQxSURfUTIxMDNYMVNmNTFwS0VydEphMzl2VWNCVlJQWkpCTmhmSFNJazBUTjA5ckhxcFBvTzdOTEtIWk82dnZieGVYN19uTWN0MWtzeUc3QjZWe…",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalp4ZHBsTktRUExXaC1WNFFYY2ZrR2Rnd1ZUSUdnLWJwM2pnUFpDdmN2d3pGeXBGc3lfcFluNnQxSURfUTIxMDNYMVNmNTFwS0VydEphMzl2VWNCVlJQWkpCTmhmSFNJazBUTjA5ckhxcFBvTzdOTEtIWk82dnZieGVYN19uTWN0MWtzeUc3QjZWeDVRUThVc21QYUpkUkVuOEZIbEVCbUxCZ3VoclBod1N0NEM?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOTnBUZF9xUXBndjd6R0lWbnFUUWlKZFlfLTBOeTNLb1A5LWFkN2ZFUXhzWnowTnFOcDBlbGh3TUh4dUpNaVNha09ydmFPN1hpZFhIZkF1YkY0ZC1OeENybEY1LWgtU0F2ZjVQeWM1czhqRDhxUnc2X2lIeDdScVpIdXFQVGVQdzQxYnNfTE1vdGYya…",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTnBUZF9xUXBndjd6R0lWbnFUUWlKZFlfLTBOeTNLb1A5LWFkN2ZFUXhzWnowTnFOcDBlbGh3TUh4dUpNaVNha09ydmFPN1hpZFhIZkF1YkY0ZC1OeENybEY1LWgtU0F2ZjVQeWM1czhqRDhxUnc2X2lIeDdScVpIdXFQVGVQdzQxYnNfTE1vdGYyanNwMkdEYS1NQXRnT2JHZElyb1JoQW5KX2R4NXpDbklMNWNyTGczQllJZ0ozWlBIVVd2bURtb3RSWDY?oc=5"
     },
     {
       "category": "military",
-      "title": "Standard Nuclear (STDN) CEO granted 3,846,250 RSUs vesting over 3–4 years - Stock Titan",
-      "region": "Global",
+      "title": "We're ready to make any Russian move cost far more than it's worth — NATO military chief in exclusive interview - The…",
+      "region": "Europe / NATO",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVVBSRzhSZEpUSFRRYjBWRjkzWk9RbzlldUtFR2lqdjVjaURaWkxfZzRPNTVFZmZpdU9naThuNHI3XzI2eDNjNWlfamUtZktiV0Z6WTEwREk3eEZyczc1WU1XX1lSMTF2aFhUb3dLc0FjUnNOYk9RSnIteHdTdE1yemVRc1hVN1VvbUFJY1IyRGJzS…",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVVBSRzhSZEpUSFRRYjBWRjkzWk9RbzlldUtFR2lqdjVjaURaWkxfZzRPNTVFZmZpdU9naThuNHI3XzI2eDNjNWlfamUtZktiV0Z6WTEwREk3eEZyczc1WU1XX1lSMTF2aFhUb3dLc0FjUnNOYk9RSnIteHdTdE1yemVRc1hVN1VvbUFJY1IyRGJzSllfVzZGd0ZmblJ6anNoZDRERnRidVhrWTVFWlgwSDJnM0YwbUJNNTJEVXpIQ1RQQ0dFVnoyWVN0Z2NtanFjSVE?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Morgan State to offer bachelor’s degree in artificial intelligence this fall - Baltimore Sun",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE5lT1V0Ul9ZYzVub0FJZG1mWEhlcUZxRlpxbVJia2JVSXB4c0w0MThjcjg4eHo5ZHZjQmNQai1BVWRhNEtvUHFxOVNpWjhEX3pBQm80NHNvbHlTTldvdnYwMTB1SHNjSm5iUk5sRFpIMG5ZYmNjUUp5OGQzOUdUQQ?oc=5\" target=\"_blank\">Morg…",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lT1V0Ul9ZYzVub0FJZG1mWEhlcUZxRlpxbVJia2JVSXB4c0w0MThjcjg4eHo5ZHZjQmNQai1BVWRhNEtvUHFxOVNpWjhEX3pBQm80NHNvbHlTTldvdnYwMTB1SHNjSm5iUk5sRFpIMG5ZYmNjUUp5OGQzOUdUQQ?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "AGI: The Ultimate Prize and the Race Against Self-Destruction - quasa.io",
+      "region": "Global / Frontier Labs",
       "severity": "high",
       "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPbVU3SWpQOVJHVVhRRzFSSDJwaGtCX19lSUVnbzhvMjU4Nm4xYU0ybWNfVDk4WkpkZW9YZHdVWmUtMGxiNUNiRDRZVVRibnJuQ0FaZVZWcklfRjNBSG42Y1VWZUk3TUNXbTRWTzBJS0V4NFRiZXcwTThVaGRNR2NwYUp2eWV6TmcxMndfRC1WMGozO…",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbVU3SWpQOVJHVVhRRzFSSDJwaGtCX19lSUVnbzhvMjU4Nm4xYU0ybWNfVDk4WkpkZW9YZHdVWmUtMGxiNUNiRDRZVVRibnJuQ0FaZVZWcklfRjNBSG42Y1VWZUk3TUNXbTRWTzBJS0V4NFRiZXcwTThVaGRNR2NwYUp2eWV6TmcxMndfRC1WMGozOG9ZYlF0OE55VjVOMTFLZkpaWjVJTEF3TUVWekFuNGJBUTg?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Meet Kimi K3, the newest Chinese AI model haunting Silicon Valley - MarketWatch",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbWtUdnEwLW1IQjJwaHVPSWlKdEc0Yl9MZUU4NGtobl8xcFRtR3llWEpTR2JObHdfTWVuWTR0ZUJrSzZIQ29CbXlqcEJoalNSTVBaUjdMLUxOWERQd1FoZEJFSGVKUmxtWEpZbC02X3JjWUlSbjJwTDk2THI5RGtreDBlVHFSYzAzZGtPbm1yYWJ4R…",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbWtUdnEwLW1IQjJwaHVPSWlKdEc0Yl9MZUU4NGtobl8xcFRtR3llWEpTR2JObHdfTWVuWTR0ZUJrSzZIQ29CbXlqcEJoalNSTVBaUjdMLUxOWERQd1FoZEJFSGVKUmxtWEpZbC02X3JjWUlSbjJwTDk2THI5RGtreDBlVHFSYzAzZGtPbm1yYWJ4RTA2cFBqWTlpRFFpQUM2S3RVZ0NNeHk5VG8?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "‘This is how you lose’: New Chinese AI model Kimi K3 stuns Silicon Valley’s elite - Malay Mail",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQVkpaTUV3eVNaX2NBQzgtdmYzTHc1U1dYbVl1dHNORmFDT3NuU1RVejc4cWIxOFdEQmtUZThSSURGNFNWUGoyNXVWWnpCTnl4OWcxb0JWOUMtMGtDVExZdU15b0xRYUNWVjJZbjc0N3pKdDQ1cnN2SEl3Xy1tNGRvb1RTbms5WkQ1QkNBcU9rZE1NX…",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVkpaTUV3eVNaX2NBQzgtdmYzTHc1U1dYbVl1dHNORmFDT3NuU1RVejc4cWIxOFdEQmtUZThSSURGNFNWUGoyNXVWWnpCTnl4OWcxb0JWOUMtMGtDVExZdU15b0xRYUNWVjJZbjc0N3pKdDQ1cnN2SEl3Xy1tNGRvb1RTbms5WkQ1QkNBcU9rZE1NX0lvNGgyUDVqYW9TVVJpTlZhSGxIUl9DRGJaTkV3T2Zla1YxQ0RKTlVjcUVPaXk1UHlkN2ZVVjQ3VDXSAdIBQVVfeXFMTWhGWGdVOUhpdU1hMGtNMkwtSjFvTWNtUF8tU3diX3p4LTh6aXhkek8wNk9JdXBOaERfLVdFbDduMXEwRWZMaFphZDFsc29HZ3NSWG0xRTlSWUpmRlBqNDU4QmV4T3NxbmwzVDF1SUd6MlBjUUk1Rzh0Sm1nN1dkLXJTNUFJY3BOZVc2U0VrQVhBRG0xQzQ2ZUpQbVNhWmtFQzFsSFk5U1UxdTY4MmkzNXJkSFlMQ0RzSnpTOXJXUkR1d1owZDdCbS1XZkZLV3ctUV9B?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "What is Anthropic? The AI safety company behind Claude explained - qz.com",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiR0FVX3lxTE1BM290Y1M2d0E5MGNubk1QMUx4RzZWOHB1X2NPWlFhQ2lYSVFwQXpkaG5ZSVFWMm9vdndVZUFIZzV5ZEtWakkw?oc=5\" target=\"_blank\">What is Anthropic? The AI safety company behind Claude explained</a>&nbsp;&nbs…",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1BM290Y1M2d0E5MGNubk1QMUx4RzZWOHB1X2NPWlFhQ2lYSVFwQXpkaG5ZSVFWMm9vdndVZUFIZzV5ZEtWakkw?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "The market capitalization of U.S. aerospace and artificial intelligence company SpaceX fell by $1 tr.. - 매일경제",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsaWc4eTVaSUdNR01rc3o3Y3B6dE91SzMtRC1GNWdqVkYteXBxR1ZrbmpoUkI0TWxWb0M4dl9GLVUySkExeGRhUGxENzVsV1k?oc=5\" target=\"_blank\">The market capitalization of U.S. aerospace and artificial intellig…",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsaWc4eTVaSUdNR01rc3o3Y3B6dE91SzMtRC1GNWdqVkYteXBxR1ZrbmpoUkI0TWxWb0M4dl9GLVUySkExeGRhUGxENzVsV1k?oc=5"
+      "time": "2h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMjJqVk5LR0pBbFRQeDVkWm1HS2E5SzEwT09vdHlzVllmNEpOYnlEMm90WklrRU15bzNuazcxalVOZDFfVjAzaUtHWWJzNnNSNlRLclNzLW1nR1kxVWNUTEtEQ3ZqQXJwSlJhSEFGdmpmNlp0S2h1ZDhqbXNZSlVvMjhKcjJjVXVOTHlj?oc=5\" ta…",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMjJqVk5LR0pBbFRQeDVkWm1HS2E5SzEwT09vdHlzVllmNEpOYnlEMm90WklrRU15bzNuazcxalVOZDFfVjAzaUtHWWJzNnNSNlRLclNzLW1nR1kxVWNUTEtEQ3ZqQXJwSlJhSEFGdmpmNlp0S2h1ZDhqbXNZSlVvMjhKcjJjVXVOTHlj?oc=5"
     }
   ],
   "newsTracker": [
@@ -239,7 +239,7 @@
       3,
       3,
       3,
-      2
+      1
     ],
     "si": [
       4,
