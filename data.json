@@ -1,97 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-07-18 13:01 UTC",
+  "lastUpdated": "2026-07-26 12:00 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "Egyptian, Pakistani naval chiefs discuss expanding military cooperation - Egypt Today",
+      "title": "Trump swings back toward diplomacy in escalating war with Iran - The Washington Post",
+      "region": "Middle East",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcS1YRl9qTmtNX2dmX3k4UThqYXM2VUtCVWIycWM2OFBNNFo3ZDhuUndZb2pKX2lITjVmeTFDdUNPdllJWGtWT0s3MThyRE1LeEs3SWt3YjZhVlR4RW9vVXFjYm9MYWN6dWRvMFA4cm1PR3pkWmV3ZERSZVRKYnZvWldna1BWRERZX05WQmw4azlxU…",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcS1YRl9qTmtNX2dmX3k4UThqYXM2VUtCVWIycWM2OFBNNFo3ZDhuUndZb2pKX2lITjVmeTFDdUNPdllJWGtWT0s3MThyRE1LeEs3SWt3YjZhVlR4RW9vVXFjYm9MYWN6dWRvMFA4cm1PR3pkWmV3ZERSZVRKYnZvWldna1BWRERZX05WQmw4azlxUzV5V3dkLTI5V21KT1JYY1E0SHM0MjU1UQ?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Dick Hermann, a military hero, former saddle bronc rider and pickup man, passes away - Tri-State Livestock News",
       "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQd3gtQ2dPOVJqQ28zVTFucXpOT09Ca2tPNHdFS0s3TDQtTDRQVW5OMkdSU2RUNlVTa05kMW9kY0QwV18wZ1NZSC1rdjljRXpBMzkwemZaNDJmUDZEbkdzUnROS2Z4YXJvR0RpTEdiV2VVc3ZJRmExd3BvTDFYaGVjdlV0eEpXVzlxNU1JZU9Gb0k5T…",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQd3gtQ2dPOVJqQ28zVTFucXpOT09Ca2tPNHdFS0s3TDQtTDRQVW5OMkdSU2RUNlVTa05kMW9kY0QwV18wZ1NZSC1rdjljRXpBMzkwemZaNDJmUDZEbkdzUnROS2Z4YXJvR0RpTEdiV2VVc3ZJRmExd3BvTDFYaGVjdlV0eEpXVzlxNU1JZU9Gb0k5TUNOckxSQWJ1UmozcGZUeDh1NFNHSzNTR0RTR3BiYldud2Q?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Global Markets Shaken by AI Concerns and Middle East Conflict - Business Turkey Today",
-      "region": "Middle East",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNzFsSzRhdzFBLTdtNmFqek1NVHlkd20tdnJkSWtEQVRseXVJMnJmWEFmNFhiZ3lXYnNTejJwTWhZSXp2UnZMVFNLd2U1NHJhM2M1SFYtOTBBT3FRYVl1aGxpbVNVUHdjTlQ5WUQ5ejJtZDNrTmoxMnM5VkVfYzZEdVlhd1pocVoxNXpSbmw1UnhyT…",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNzFsSzRhdzFBLTdtNmFqek1NVHlkd20tdnJkSWtEQVRseXVJMnJmWEFmNFhiZ3lXYnNTejJwTWhZSXp2UnZMVFNLd2U1NHJhM2M1SFYtOTBBT3FRYVl1aGxpbVNVUHdjTlQ5WUQ5ejJtZDNrTmoxMnM5VkVfYzZEdVlhd1pocVoxNXpSbmw1UnhyTC1UQTBIbFVTMHRJTEkwRGlJQ0lnWGRUOTNRRkk3Qk5LM0ZsMEtLLWhF?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNd2o5MmVBcEVJV281RzZJVzNjLXFseHdtQTRCTEh6c2NjRnlpbUNuNTd5Mllma0FhczVTdXVXN2lFZzNvN3QzbF9Ham5rNFJNRnZ0Y3Y0a3BMYzd3VW1iYVkyeTFEcTBjanM0N2VrVWVTb1ZLMHZVak5ucVJoNXU0SHJSU2cwYmdrdEV3Sy1ET3Q4b…",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd2o5MmVBcEVJV281RzZJVzNjLXFseHdtQTRCTEh6c2NjRnlpbUNuNTd5Mllma0FhczVTdXVXN2lFZzNvN3QzbF9Ham5rNFJNRnZ0Y3Y0a3BMYzd3VW1iYVkyeTFEcTBjanM0N2VrVWVTb1ZLMHZVak5ucVJoNXU0SHJSU2cwYmdrdEV3Sy1ET3Q4bzNudjA0Ukp5SmE2R2lJdzdmeXFoUEdzZ0Mt?oc=5"
     },
     {
       "category": "military",
-      "title": "US body approves nuclear-powered ship design with two modular reactors - Interesting Engineering",
+      "title": "Opposing Defense Bill, Democrats Shift Their Tactics - The New York Times",
       "region": "Global",
-      "severity": "high",
+      "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYWQ2clpKVENrT09SSHJ3d29RWTlyaS1JN1l6d0Y4SjB1YVpGSlU0dHdRSWxFaUtSZnNYQWpxd1ZZNHNqMFItdFl6RVJsbWROM1U3blM5a3J0WllLVEk5SVhGazZoREdjc2ZlZ3IyNFAtX2oxSDFoMjJXQk5LVnNBMWE5dXdET3VBTFd3?oc=5\" ta…",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYWQ2clpKVENrT09SSHJ3d29RWTlyaS1JN1l6d0Y4SjB1YVpGSlU0dHdRSWxFaUtSZnNYQWpxd1ZZNHNqMFItdFl6RVJsbWROM1U3blM5a3J0WllLVEk5SVhGazZoREdjc2ZlZ3IyNFAtX2oxSDFoMjJXQk5LVnNBMWE5dXdET3VBTFd3?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBMd3pNR21Wak5weFVib2lWYjFDU1NVVDJQOUYta3R0Zm5xZEFWNnYxNVpUbVRLcktwQWVfOWxmQmVGTEtyUEVLbnlidzFwMlBsRi01Mm1qTXJ2RkcxVjlOMk80U09MYnhqRVVzYmpuVFg1clZfZGRaVkJmN2l2QWc?oc=5\" target=\"_blank\">Opp…",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMd3pNR21Wak5weFVib2lWYjFDU1NVVDJQOUYta3R0Zm5xZEFWNnYxNVpUbVRLcktwQWVfOWxmQmVGTEtyUEVLbnlidzFwMlBsRi01Mm1qTXJ2RkcxVjlOMk80U09MYnhqRVVzYmpuVFg1clZfZGRaVkJmN2l2QWc?oc=5"
     },
     {
       "category": "military",
-      "title": "Iran expands retaliation across Gulf after fresh US strikes on military sites - Firstpost",
+      "title": "Iran War Updates: Trump Meets With Cabinet Over Whether to Intensify Iran Strikes - The New York Times",
       "region": "Middle East",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazJNX2lUOUh0eGE1cHk3TTFXN0hPQkdKZnJRTjh1WTh3RDcwbnhpa2xSbDd3RVFUVG5USTRlX095cDFFUGhaMl9WWmRsazdtR1NIMnFsMzRiWUoxbzAyZGs3aGR2NWJDRWpONWZxUjBTa3kzaE5uYVcxNmNHakxpcHFoZXBlQ2F4QnJsRXUtTDRDd…",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNazJNX2lUOUh0eGE1cHk3TTFXN0hPQkdKZnJRTjh1WTh3RDcwbnhpa2xSbDd3RVFUVG5USTRlX095cDFFUGhaMl9WWmRsazdtR1NIMnFsMzRiWUoxbzAyZGs3aGR2NWJDRWpONWZxUjBTa3kzaE5uYVcxNmNHakxpcHFoZXBlQ2F4QnJsRXUtTDRDdTdBZDRaYUNCVWttLUtCUWJfczhYQi1KRzM2enhMUFlLdlJPeVhBZ1I2ZWlLX2I?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "UN Chief Warns Artificial Intelligence Could Deepen Global Inequality - ShiaWaves",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNTHFVcm5jMTE0dE5QZjN1VjdONzQ3UHV0bTVqTmstUmpDUFplelZ4M3NybTZ1NzkxamJKRnU0YVk2RzFma1dpaXotaFNBM2ViRS00cUEwRnUxcFEwUXZBWWVtTXdXekVndTM3MWxrWnhlNW5jWHFlbFhoRXFkX3hRZ2h5MlpKOVNQNTJiU184ak5JL…",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTHFVcm5jMTE0dE5QZjN1VjdONzQ3UHV0bTVqTmstUmpDUFplelZ4M3NybTZ1NzkxamJKRnU0YVk2RzFma1dpaXotaFNBM2ViRS00cUEwRnUxcFEwUXZBWWVtTXdXekVndTM3MWxrWnhlNW5jWHFlbFhoRXFkX3hRZ2h5MlpKOVNQNTJiU184ak5JLWVPRVdxOEZLMkdNdk5KZnNxYjd6ZEZEcVJNWlkxaXVYa1YyTFB2ZTRGZC1veE5NeHd3dHBz?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNekVNZHhVQkF4WWRNNm84S0JDZWJ1U3ZJRl85dFBtdV9DNlFSZGhtTGxIZll4aWRMZDVGd3JFX0hfWFR2SEwxUlVLOXR6NlNrQ3RPOUpBbm1qZERuVG1VM0FyY0NKNFZvZGtwV3VjU3BBSE5IeDV6dEpYYnYybnM3Zg?oc=5\" target=\"_blank\">…",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNekVNZHhVQkF4WWRNNm84S0JDZWJ1U3ZJRl85dFBtdV9DNlFSZGhtTGxIZll4aWRMZDVGd3JFX0hfWFR2SEwxUlVLOXR6NlNrQ3RPOUpBbm1qZERuVG1VM0FyY0NKNFZvZGtwV3VjU3BBSE5IeDV6dEpYYnYybnM3Zg?oc=5"
     },
     {
       "category": "military",
-      "title": "US Navy awards NorthStar $418.5 million contract to dismantle ex-USS Enterprise nuclear aircraft carrier - Defence In…",
-      "region": "Europe / NATO",
+      "title": "Video: Trump Switched Planes at NATO Summit After Credible Iranian Threat - The New York Times",
+      "region": "Middle East",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOTnBUZF9xUXBndjd6R0lWbnFUUWlKZFlfLTBOeTNLb1A5LWFkN2ZFUXhzWnowTnFOcDBlbGh3TUh4dUpNaVNha09ydmFPN1hpZFhIZkF1YkY0ZC1OeENybEY1LWgtU0F2ZjVQeWM1czhqRDhxUnc2X2lIeDdScVpIdXFQVGVQdzQxYnNfTE1vdGYya…",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTnBUZF9xUXBndjd6R0lWbnFUUWlKZFlfLTBOeTNLb1A5LWFkN2ZFUXhzWnowTnFOcDBlbGh3TUh4dUpNaVNha09ydmFPN1hpZFhIZkF1YkY0ZC1OeENybEY1LWgtU0F2ZjVQeWM1czhqRDhxUnc2X2lIeDdScVpIdXFQVGVQdzQxYnNfTE1vdGYyanNwMkdEYS1NQXRnT2JHZElyb1JoQW5KX2R4NXpDbklMNWNyTGczQllJZ0ozWlBIVVd2bURtb3RSWDY?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "We're ready to make any Russian move cost far more than it's worth — NATO military chief in exclusive interview - The…",
-      "region": "Europe / NATO",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVVBSRzhSZEpUSFRRYjBWRjkzWk9RbzlldUtFR2lqdjVjaURaWkxfZzRPNTVFZmZpdU9naThuNHI3XzI2eDNjNWlfamUtZktiV0Z6WTEwREk3eEZyczc1WU1XX1lSMTF2aFhUb3dLc0FjUnNOYk9RSnIteHdTdE1yemVRc1hVN1VvbUFJY1IyRGJzS…",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVVBSRzhSZEpUSFRRYjBWRjkzWk9RbzlldUtFR2lqdjVjaURaWkxfZzRPNTVFZmZpdU9naThuNHI3XzI2eDNjNWlfamUtZktiV0Z6WTEwREk3eEZyczc1WU1XX1lSMTF2aFhUb3dLc0FjUnNOYk9RSnIteHdTdE1yemVRc1hVN1VvbUFJY1IyRGJzSllfVzZGd0ZmblJ6anNoZDRERnRidVhrWTVFWlgwSDJnM0YwbUJNNTJEVXpIQ1RQQ0dFVnoyWVN0Z2NtanFjSVE?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPMzhVYkV2WDBIRlJSVzNfWC0wRElMdzJzNzdaNnhxSllmYnBINDFaRWFBbUtVYXlDR3R0ZVlrRmgySmRIQlQwaUhrdkhLUnFja0dIQXpGUUdIUDlQQlM0bFNxMDZRSS1DcGJGczhUc0cyOVdJY0huenVPdzdWa2hFZlJNblFZWkR2eGl4UTRB?oc=5…",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMzhVYkV2WDBIRlJSVzNfWC0wRElMdzJzNzdaNnhxSllmYnBINDFaRWFBbUtVYXlDR3R0ZVlrRmgySmRIQlQwaUhrdkhLUnFja0dIQXpGUUdIUDlQQlM0bFNxMDZRSS1DcGJGczhUc0cyOVdJY0huenVPdzdWa2hFZlJNblFZWkR2eGl4UTRB?oc=5"
     },
     {
       "category": "si",
-      "title": "Morgan State to offer bachelor’s degree in artificial intelligence this fall - Baltimore Sun",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
+      "title": "China’s Kimi K3 Exposes a Growing Divide in Silicon Valley Over AI Regulation - kmjournal.net",
+      "region": "Indo-Pacific",
+      "severity": "moderate",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE5lT1V0Ul9ZYzVub0FJZG1mWEhlcUZxRlpxbVJia2JVSXB4c0w0MThjcjg4eHo5ZHZjQmNQai1BVWRhNEtvUHFxOVNpWjhEX3pBQm80NHNvbHlTTldvdnYwMTB1SHNjSm5iUk5sRFpIMG5ZYmNjUUp5OGQzOUdUQQ?oc=5\" target=\"_blank\">Morg…",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lT1V0Ul9ZYzVub0FJZG1mWEhlcUZxRlpxbVJia2JVSXB4c0w0MThjcjg4eHo5ZHZjQmNQai1BVWRhNEtvUHFxOVNpWjhEX3pBQm80NHNvbHlTTldvdnYwMTB1SHNjSm5iUk5sRFpIMG5ZYmNjUUp5OGQzOUdUQQ?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTFB1em14V2wxUDdRSXBJU2o1ZUdkYW4tNjJQZHV2dV9qSVZCRng3MTNDSjRQVXRqeDVPOVFoT1NuQ0JxYWtNU3dfUENDQzVVUkk0YkJlbURLdmtHQ05weEFfeTRLQ0szYVJtTjU0?oc=5\" target=\"_blank\">China’s Kimi K3 Exposes a Grow…",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1em14V2wxUDdRSXBJU2o1ZUdkYW4tNjJQZHV2dV9qSVZCRng3MTNDSjRQVXRqeDVPOVFoT1NuQ0JxYWtNU3dfUENDQzVVUkk0YkJlbURLdmtHQ05weEFfeTRLQ0szYVJtTjU0?oc=5"
     },
     {
       "category": "si",
-      "title": "AGI: The Ultimate Prize and the Race Against Self-Destruction - quasa.io",
+      "title": "Caribbean charts united course for artificial intelligence - Jamaica Gleaner",
       "region": "Global / Frontier Labs",
-      "severity": "high",
+      "severity": "low",
       "confidence": "Single-source",
       "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMjJqVk5LR0pBbFRQeDVkWm1HS2E5SzEwT09vdHlzVllmNEpOYnlEMm90WklrRU15bzNuazcxalVOZDFfVjAzaUtHWWJzNnNSNlRLclNzLW1nR1kxVWNUTEtEQ3ZqQXJwSlJhSEFGdmpmNlp0S2h1ZDhqbXNZSlVvMjhKcjJjVXVOTHlj?oc=5\" ta…",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMjJqVk5LR0pBbFRQeDVkWm1HS2E5SzEwT09vdHlzVllmNEpOYnlEMm90WklrRU15bzNuazcxalVOZDFfVjAzaUtHWWJzNnNSNlRLclNzLW1nR1kxVWNUTEtEQ3ZqQXJwSlJhSEFGdmpmNlp0S2h1ZDhqbXNZSlVvMjhKcjJjVXVOTHlj?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQeWR2WGYtak5ILTZZVzZNdTFBcWhjMllRdV83M1MzajlaQlNEZlZIZWpRS25KeVpaUHU3YzZ6Umhpa0o2RHlZRE9VcEtGR3VKSXdLWDBzZ2lJMWpFel90MUdvNnkzLVZIS2swZ19ZOVZ2Vkg2Q3pLVGlDVk05cElnOEE3Y3dob0x1WXF6UzlORkNrZ…",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeWR2WGYtak5ILTZZVzZNdTFBcWhjMllRdV83M1MzajlaQlNEZlZIZWpRS25KeVpaUHU3YzZ6Umhpa0o2RHlZRE9VcEtGR3VKSXdLWDBzZ2lJMWpFel90MUdvNnkzLVZIS2swZ19ZOVZ2Vkg2Q3pLVGlDVk05cElnOEE3Y3dob0x1WXF6UzlORkNrZDZsV3hhQ0JIUExKXzRnc0ltTFlR?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Report claims teachers unions are expanding DEI efforts into artificial intelligence - fox4beaumont.com",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Corroborated",
+      "time": "2h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgNBVV95cUxOUWw3all5RzQxdjUtNmsxWEg4U2NVLUNza3ZoUnAzNWpEekthQjgzV0I2WFBQRTlmZFVWbmxIR1hJX1V5bC11OUU5M2ItaFBtTGNTZmxBU1prYW5OYldHazRZaldiMmo2d0FCZDduU2xMYlFDeU1VWlFzYktMdVlrM1pKRWd5VmhnSHlqMDZ0RkZ3U…",
+      "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxOUWw3all5RzQxdjUtNmsxWEg4U2NVLUNza3ZoUnAzNWpEekthQjgzV0I2WFBQRTlmZFVWbmxIR1hJX1V5bC11OUU5M2ItaFBtTGNTZmxBU1prYW5OYldHazRZaldiMmo2d0FCZDduU2xMYlFDeU1VWlFzYktMdVlrM1pKRWd5VmhnSHlqMDZ0RkZ3UUQwVzR3Q0dVZ1lsTUdBNnRaOWFTUVhyNHJpcEU2al8tS0h1WklSU3F2bWY3N1N2TWJGaWl5YUtTcnVVeXBvMDNpZ01PLVZDRmNob0JBam1HMmFoMkxZSGdPTVR4X3laMTliOFR3RkRsR3NLWmVxRXZOcDAyaVJfc3VOa2haV1gzZS15SkE4UnIwbjA0ZXAxcjRsV0xPc2VmWVI4eS0xZ2h6M3kyTnRhLTFMX1gxRzQtUE02X3J3eExVOU1UMTdjcFZDLVoxUmgyaUV2SEs1ZHd3SHZqdjBiWTFnODZTQTU0VEV4cDRRck1hbm1NV20wbHF0aTg1aVNPV3FuUQ?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Canada launches public consultation on artificial intelligence transparency - Mugglehead Investment Magazine",
+      "region": "Global / Frontier Labs",
+      "severity": "moderate",
+      "confidence": "Single-source",
+      "time": "2h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxNUGVabUtpYVN3V2dGWF9abVp3MEZsbmtlbThLbjc1OWk0ZElKeWR1OTVmNHhXaUxWa1g1SXQ1bnJVMjQxQ09ETEhFV2ZwTVEwMklLRWJCSTZIcWhwMG9xNlM5eUZ2REwxcXBYWFZzTDI4UmtienViSDI4MlVuaXN0OE1pUlRVY3Q5dEF2Ull6UVdCb…",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUGVabUtpYVN3V2dGWF9abVp3MEZsbmtlbThLbjc1OWk0ZElKeWR1OTVmNHhXaUxWa1g1SXQ1bnJVMjQxQ09ETEhFV2ZwTVEwMklLRWJCSTZIcWhwMG9xNlM5eUZ2REwxcXBYWFZzTDI4UmtienViSDI4MlVuaXN0OE1pUlRVY3Q5dEF2Ull6UVdCbmJMWlpobXVLaHAzNXVy?oc=5"
     }
   ],
   "newsTracker": [
@@ -206,7 +206,6 @@
   ],
   "history": {
     "labels": [
-      "Jun 14",
       "Jul 4",
       "Jul 5",
       "Jul 6",
@@ -221,7 +220,8 @@
       "Jul 15",
       "Jul 16",
       "Jul 17",
-      "Jul 18"
+      "Jul 18",
+      "Jul 25"
     ],
     "defcon": [
       3,
@@ -238,11 +238,11 @@
       3,
       3,
       3,
-      3,
+      1,
       1
     ],
     "si": [
-      4,
+      5,
       5,
       5,
       5,
