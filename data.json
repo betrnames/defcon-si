@@ -1,25 +1,56 @@
 {
   "defconLevel": 3,
   "siLevel": 5,
-  "lastUpdated": "2026-07-16 13:29 UTC",
+  "lastUpdated": "2026-07-26 12:00 UTC",
   "signals": [
     {
+      "category": "si",
+      "title": "OpenAI CEO Sam Altman declares humanity is 'now in the singularity'",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "1d ago",
+      "summary": "Altman stated 'we are now in the singularity — this is the moment,' calling it the realization of what seemed improbable a decade ago. Multiple outlets and prediction markets confirm the statement.",
+      "url": "https://x.com/Polymarket/status/2081101771636613218"
+    },
+    {
+      "category": "si",
+      "title": "Altman sets goal: automated AI researcher by March 2028",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "2d ago",
+      "summary": "OpenAI targets an automated AI research intern by September 2026 running on hundreds of thousands of GPUs, and a true automated AI researcher by March 2028.",
+      "url": "https://x.com/sama/status/1983584366547829073"
+    },
+    {
+      "category": "si",
+      "title": "Altman publishes 'The Gentle Singularity' — claims event horizon crossed",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "Jul 2026",
+      "summary": "Blog post argues the singularity will not arrive as a sudden rupture but as a gradual progression of increasingly capable AI systems. Claims the process of building digital superintelligence has officially begun.",
+      "url": "https://blog.samaltman.com/the-gentle-singularity"
+    },
+    {
+      "category": "si",
+      "title": "OpenAI's Codex approaches autonomous software engineering",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "3d ago",
+      "summary": "Altman says Codex is 'so good' and admits difficulty imagining what creating software at end of 2026 will look like — signaling rapid capability acceleration.",
+      "url": "https://x.com/sama/status/1977177505971736675"
+    },
+    {
       "category": "military",
       "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
       "region": "Middle East / Strait of Hormuz",
       "severity": "high",
       "confidence": "Corroborated",
-      "time": "3h ago",
+      "time": "10d ago",
       "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
-    },
-    {
-      "category": "si",
-      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Developing",
-      "time": "9h ago",
-      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
     },
     {
       "category": "military",
@@ -27,7 +58,7 @@
       "region": "Indo-Pacific",
       "severity": "moderate",
       "confidence": "Single-source",
-      "time": "14h ago",
+      "time": "10d ago",
       "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
     },
     {
@@ -36,56 +67,38 @@
       "region": "Global / Open Source",
       "severity": "high",
       "confidence": "Corroborated",
-      "time": "22h ago",
+      "time": "12d ago",
       "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
-    },
-    {
-      "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
-      "region": "Middle East / Strait of Hormuz",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3h ago",
-      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
-    },
-    {
-      "category": "si",
-      "title": "Major lab releases new agentic scaffolding with long-horizon planning",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Developing",
-      "time": "9h ago",
-      "summary": "New framework shows reliable 72-hour autonomous operation on complex software engineering tasks."
-    },
-    {
-      "category": "military",
-      "title": "Unusual pattern of strategic airlift into forward operating locations",
-      "region": "Indo-Pacific",
-      "severity": "moderate",
-      "confidence": "Single-source",
-      "time": "14h ago",
-      "summary": "Open-source tracking shows elevated tempo of heavy-lift flights consistent with contingency movement."
-    },
-    {
-      "category": "si",
-      "title": "Open model matches proprietary frontier on multi-step deception evals",
-      "region": "Global / Open Source",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "22h ago",
-      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
-    },
-    {
-      "category": "military",
-      "title": "Additional U.S. destroyers arrive in CENTCOM AOR",
-      "region": "Middle East / Strait of Hormuz",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3h ago",
-      "summary": "Multiple independent sources confirm increased activity and force posture adjustments in a key chokepoint."
     }
   ],
   "newsTracker": [
+    {
+      "category": "si",
+      "title": "OpenAI CEO Declares 'We Are Now in the Singularity'",
+      "summary": "Sam Altman says humanity has crossed the event horizon — 'this is the moment' that was once a far-off dream.",
+      "time": "Jul 25, 2026 · 1d ago",
+      "command": "SI-5",
+      "commandLevel": 1,
+      "url": "https://x.com/Polymarket/status/2081101771636613218"
+    },
+    {
+      "category": "si",
+      "title": "Altman: Automated AI Researcher Targeted for March 2028",
+      "summary": "OpenAI sets internal goal of AI research intern by Sep 2026, full automated researcher by Mar 2028.",
+      "time": "Jul 24, 2026 · 2d ago",
+      "command": "SI-5",
+      "commandLevel": 1,
+      "url": "https://x.com/sama/status/1983584366547829073"
+    },
+    {
+      "category": "si",
+      "title": "Altman Publishes 'The Gentle Singularity' Blog Post",
+      "summary": "Claims digital superintelligence build has officially begun — singularity will unfold gradually, not as sudden rupture.",
+      "time": "Jul 2026",
+      "command": "SI-5",
+      "commandLevel": 1,
+      "url": "https://blog.samaltman.com/the-gentle-singularity"
+    },
     {
       "category": "si",
       "title": "Frontier Lab Claims Multi-Day Autonomous Agent Operation",
@@ -212,9 +225,11 @@
       "Jul 13",
       "Jul 14",
       "Jul 15",
-      "Jul 16"
+      "Jul 16",
+      "Jul 26"
     ],
     "defcon": [
+      3,
       3,
       3,
       3,
@@ -236,6 +251,7 @@
       2,
       3,
       4,
+      5,
       5,
       5,
       5,
