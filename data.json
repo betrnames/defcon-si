@@ -4,97 +4,129 @@
   "lastUpdated": "2026-07-26 12:00 UTC",
   "signals": [
     {
+      "category": "si",
+      "title": "OpenAI CEO Sam Altman declares humanity is 'now in the singularity'",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "1d ago",
+      "summary": "Altman stated 'we are now in the singularity — this is the moment,' calling it the realization of what seemed improbable a decade ago. Multiple outlets and prediction markets confirm the statement.",
+      "url": "https://x.com/Polymarket/status/2081101771636613218"
+    },
+    {
+      "category": "si",
+      "title": "Altman sets goal: automated AI researcher by March 2028",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "2d ago",
+      "summary": "OpenAI targets an automated AI research intern by September 2026 running on hundreds of thousands of GPUs, and a true automated AI researcher by March 2028.",
+      "url": "https://x.com/sama/status/1983584366547829073"
+    },
+    {
+      "category": "si",
+      "title": "Altman publishes 'The Gentle Singularity' — claims event horizon crossed",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "Jul 2026",
+      "summary": "Blog post argues the singularity will not arrive as a sudden rupture but as a gradual progression of increasingly capable AI systems. Claims the process of building digital superintelligence has officially begun.",
+      "url": "https://blog.samaltman.com/the-gentle-singularity"
+    },
+    {
+      "category": "si",
+      "title": "OpenAI's Codex approaches autonomous software engineering",
+      "region": "Global / Frontier Labs",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "3d ago",
+      "summary": "Altman says Codex is 'so good' and admits difficulty imagining what creating software at end of 2026 will look like — signaling rapid capability acceleration.",
+      "url": "https://x.com/sama/status/1977177505971736675"
+    },
+    {
       "category": "military",
       "title": "Trump swings back toward diplomacy in escalating war with Iran - The Washington Post",
       "region": "Middle East",
       "severity": "high",
       "confidence": "Corroborated",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcS1YRl9qTmtNX2dmX3k4UThqYXM2VUtCVWIycWM2OFBNNFo3ZDhuUndZb2pKX2lITjVmeTFDdUNPdllJWGtWT0s3MThyRE1LeEs3SWt3YjZhVlR4RW9vVXFjYm9MYWN6dWRvMFA4cm1PR3pkWmV3ZERSZVRKYnZvWldna1BWRERZX05WQmw4azlxU…",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcS1YRl9qTmtNX2dmX3k4UThqYXM2VUtCVWIycWM2OFBNNFo3ZDhuUndZb2pKX2lITjVmeTFDdUNPdllJWGtWT0s3MThyRE1LeEs3SWt3YjZhVlR4RW9vVXFjYm9MYWN6dWRvMFA4cm1PR3pkWmV3ZERSZVRKYnZvWldna1BWRERZX05WQmw4azlxUzV5V3dkLTI5V21KT1JYY1E0SHM0MjU1UQ?oc=5"
+      "time": "1d ago",
+      "summary": "Washington Post reports Trump administration shifting toward diplomatic channels amid escalating military operations against Iran."
     },
     {
       "category": "military",
-      "title": "Dick Hermann, a military hero, former saddle bronc rider and pickup man, passes away - Tri-State Livestock News",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNd2o5MmVBcEVJV281RzZJVzNjLXFseHdtQTRCTEh6c2NjRnlpbUNuNTd5Mllma0FhczVTdXVXN2lFZzNvN3QzbF9Ham5rNFJNRnZ0Y3Y0a3BMYzd3VW1iYVkyeTFEcTBjanM0N2VrVWVTb1ZLMHZVak5ucVJoNXU0SHJSU2cwYmdrdEV3Sy1ET3Q4b…",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd2o5MmVBcEVJV281RzZJVzNjLXFseHdtQTRCTEh6c2NjRnlpbUNuNTd5Mllma0FhczVTdXVXN2lFZzNvN3QzbF9Ham5rNFJNRnZ0Y3Y0a3BMYzd3VW1iYVkyeTFEcTBjanM0N2VrVWVTb1ZLMHZVak5ucVJoNXU0SHJSU2cwYmdrdEV3Sy1ET3Q4bzNudjA0Ukp5SmE2R2lJdzdmeXFoUEdzZ0Mt?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Opposing Defense Bill, Democrats Shift Their Tactics - The New York Times",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBMd3pNR21Wak5weFVib2lWYjFDU1NVVDJQOUYta3R0Zm5xZEFWNnYxNVpUbVRLcktwQWVfOWxmQmVGTEtyUEVLbnlidzFwMlBsRi01Mm1qTXJ2RkcxVjlOMk80U09MYnhqRVVzYmpuVFg1clZfZGRaVkJmN2l2QWc?oc=5\" target=\"_blank\">Opp…",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMd3pNR21Wak5weFVib2lWYjFDU1NVVDJQOUYta3R0Zm5xZEFWNnYxNVpUbVRLcktwQWVfOWxmQmVGTEtyUEVLbnlidzFwMlBsRi01Mm1qTXJ2RkcxVjlOMk80U09MYnhqRVVzYmpuVFg1clZfZGRaVkJmN2l2QWc?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Iran War Updates: Trump Meets With Cabinet Over Whether to Intensify Iran Strikes - The New York Times",
+      "title": "Trump meets with cabinet over whether to intensify Iran strikes",
       "region": "Middle East",
       "severity": "high",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNekVNZHhVQkF4WWRNNm84S0JDZWJ1U3ZJRl85dFBtdV9DNlFSZGhtTGxIZll4aWRMZDVGd3JFX0hfWFR2SEwxUlVLOXR6NlNrQ3RPOUpBbm1qZERuVG1VM0FyY0NKNFZvZGtwV3VjU3BBSE5IeDV6dEpYYnYybnM3Zg?oc=5\" target=\"_blank\">…",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNekVNZHhVQkF4WWRNNm84S0JDZWJ1U3ZJRl85dFBtdV9DNlFSZGhtTGxIZll4aWRMZDVGd3JFX0hfWFR2SEwxUlVLOXR6NlNrQ3RPOUpBbm1qZERuVG1VM0FyY0NKNFZvZGtwV3VjU3BBSE5IeDV6dEpYYnYybnM3Zg?oc=5"
+      "confidence": "Corroborated",
+      "time": "1d ago",
+      "summary": "NYT reports cabinet-level deliberations on escalation of strikes against Iranian targets. Critical decision point for regional conflict trajectory."
     },
     {
       "category": "military",
-      "title": "Video: Trump Switched Planes at NATO Summit After Credible Iranian Threat - The New York Times",
+      "title": "Trump switched planes at NATO summit after credible Iranian threat",
       "region": "Middle East",
       "severity": "high",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPMzhVYkV2WDBIRlJSVzNfWC0wRElMdzJzNzdaNnhxSllmYnBINDFaRWFBbUtVYXlDR3R0ZVlrRmgySmRIQlQwaUhrdkhLUnFja0dIQXpGUUdIUDlQQlM0bFNxMDZRSS1DcGJGczhUc0cyOVdJY0huenVPdzdWa2hFZlJNblFZWkR2eGl4UTRB?oc=5…",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMzhVYkV2WDBIRlJSVzNfWC0wRElMdzJzNzdaNnhxSllmYnBINDFaRWFBbUtVYXlDR3R0ZVlrRmgySmRIQlQwaUhrdkhLUnFja0dIQXpGUUdIUDlQQlM0bFNxMDZRSS1DcGJGczhUc0cyOVdJY0huenVPdzdWa2hFZlJNblFZWkR2eGl4UTRB?oc=5"
+      "confidence": "Corroborated",
+      "time": "1d ago",
+      "summary": "NYT reports a credible Iranian threat forced a security protocol change at the NATO summit — signaling direct threat to senior U.S. leadership."
     },
     {
       "category": "si",
-      "title": "China’s Kimi K3 Exposes a Growing Divide in Silicon Valley Over AI Regulation - kmjournal.net",
+      "title": "China’s Kimi K3 exposes growing divide in Silicon Valley over AI regulation",
       "region": "Indo-Pacific",
       "severity": "moderate",
       "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTFB1em14V2wxUDdRSXBJU2o1ZUdkYW4tNjJQZHV2dV9qSVZCRng3MTNDSjRQVXRqeDVPOVFoT1NuQ0JxYWtNU3dfUENDQzVVUkk0YkJlbURLdmtHQ05weEFfeTRLQ0szYVJtTjU0?oc=5\" target=\"_blank\">China’s Kimi K3 Exposes a Grow…",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1em14V2wxUDdRSXBJU2o1ZUdkYW4tNjJQZHV2dV9qSVZCRng3MTNDSjRQVXRqeDVPOVFoT1NuQ0JxYWtNU3dfUENDQzVVUkk0YkJlbURLdmtHQ05weEFfeTRLQ0szYVJtTjU0?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Caribbean charts united course for artificial intelligence - Jamaica Gleaner",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQeWR2WGYtak5ILTZZVzZNdTFBcWhjMllRdV83M1MzajlaQlNEZlZIZWpRS25KeVpaUHU3YzZ6Umhpa0o2RHlZRE9VcEtGR3VKSXdLWDBzZ2lJMWpFel90MUdvNnkzLVZIS2swZ19ZOVZ2Vkg2Q3pLVGlDVk05cElnOEE3Y3dob0x1WXF6UzlORkNrZ…",
+      "time": "1d ago",
+      "summary": "Chinese frontier model narrows gap with Western labs, intensifying debate over export controls vs. open competition.",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeWR2WGYtak5ILTZZVzZNdTFBcWhjMllRdV83M1MzajlaQlNEZlZIZWpRS25KeVpaUHU3YzZ6Umhpa0o2RHlZRE9VcEtGR3VKSXdLWDBzZ2lJMWpFel90MUdvNnkzLVZIS2swZ19ZOVZ2Vkg2Q3pLVGlDVk05cElnOEE3Y3dob0x1WXF6UzlORkNrZDZsV3hhQ0JIUExKXzRnc0ltTFlR?oc=5"
     },
     {
       "category": "si",
-      "title": "Report claims teachers unions are expanding DEI efforts into artificial intelligence - fox4beaumont.com",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgNBVV95cUxOUWw3all5RzQxdjUtNmsxWEg4U2NVLUNza3ZoUnAzNWpEekthQjgzV0I2WFBQRTlmZFVWbmxIR1hJX1V5bC11OUU5M2ItaFBtTGNTZmxBU1prYW5OYldHazRZaldiMmo2d0FCZDduU2xMYlFDeU1VWlFzYktMdVlrM1pKRWd5VmhnSHlqMDZ0RkZ3U…",
-      "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxOUWw3all5RzQxdjUtNmsxWEg4U2NVLUNza3ZoUnAzNWpEekthQjgzV0I2WFBQRTlmZFVWbmxIR1hJX1V5bC11OUU5M2ItaFBtTGNTZmxBU1prYW5OYldHazRZaldiMmo2d0FCZDduU2xMYlFDeU1VWlFzYktMdVlrM1pKRWd5VmhnSHlqMDZ0RkZ3UUQwVzR3Q0dVZ1lsTUdBNnRaOWFTUVhyNHJpcEU2al8tS0h1WklSU3F2bWY3N1N2TWJGaWl5YUtTcnVVeXBvMDNpZ01PLVZDRmNob0JBam1HMmFoMkxZSGdPTVR4X3laMTliOFR3RkRsR3NLWmVxRXZOcDAyaVJfc3VOa2haV1gzZS15SkE4UnIwbjA0ZXAxcjRsV0xPc2VmWVI4eS0xZ2h6M3kyTnRhLTFMX1gxRzQtUE02X3J3eExVOU1UMTdjcFZDLVoxUmgyaUV2SEs1ZHd3SHZqdjBiWTFnODZTQTU0VEV4cDRRck1hbm1NV20wbHF0aTg1aVNPV3FuUQ?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Canada launches public consultation on artificial intelligence transparency - Mugglehead Investment Magazine",
+      "title": "Canada launches public consultation on artificial intelligence transparency",
       "region": "Global / Frontier Labs",
       "severity": "moderate",
       "confidence": "Single-source",
       "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxNUGVabUtpYVN3V2dGWF9abVp3MEZsbmtlbThLbjc1OWk0ZElKeWR1OTVmNHhXaUxWa1g1SXQ1bnJVMjQxQ09ETEhFV2ZwTVEwMklLRWJCSTZIcWhwMG9xNlM5eUZ2REwxcXBYWFZzTDI4UmtienViSDI4MlVuaXN0OE1pUlRVY3Q5dEF2Ull6UVdCb…",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUGVabUtpYVN3V2dGWF9abVp3MEZsbmtlbThLbjc1OWk0ZElKeWR1OTVmNHhXaUxWa1g1SXQ1bnJVMjQxQ09ETEhFV2ZwTVEwMklLRWJCSTZIcWhwMG9xNlM5eUZ2REwxcXBYWFZzTDI4UmtienViSDI4MlVuaXN0OE1pUlRVY3Q5dEF2Ull6UVdCbmJMWlpobXVLaHAzNXVy?oc=5"
+      "summary": "Canadian government opens formal review of AI transparency requirements, signaling regulatory momentum."
+    },
+    {
+      "category": "si",
+      "title": "Open model matches proprietary frontier on multi-step deception evals",
+      "region": "Global / Open Source",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "12d ago",
+      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
     }
   ],
   "newsTracker": [
+    {
+      "category": "si",
+      "title": "OpenAI CEO Declares 'We Are Now in the Singularity'",
+      "summary": "Sam Altman says humanity has crossed the event horizon — 'this is the moment' that was once a far-off dream.",
+      "time": "Jul 25, 2026 · 1d ago",
+      "command": "SI-5",
+      "commandLevel": 1,
+      "url": "https://x.com/Polymarket/status/2081101771636613218"
+    },
+    {
+      "category": "si",
+      "title": "Altman: Automated AI Researcher Targeted for March 2028",
+      "summary": "OpenAI sets internal goal of AI research intern by Sep 2026, full automated researcher by Mar 2028.",
+      "time": "Jul 24, 2026 · 2d ago",
+      "command": "SI-5",
+      "commandLevel": 1,
+      "url": "https://x.com/sama/status/1983584366547829073"
+    },
+    {
+      "category": "si",
+      "title": "Altman Publishes 'The Gentle Singularity' Blog Post",
+      "summary": "Claims digital superintelligence build has officially begun — singularity will unfold gradually, not as sudden rupture.",
+      "time": "Jul 2026",
+      "command": "SI-5",
+      "commandLevel": 1,
+      "url": "https://blog.samaltman.com/the-gentle-singularity"
+    },
     {
       "category": "si",
       "title": "Frontier Lab Claims Multi-Day Autonomous Agent Operation",
@@ -221,7 +253,8 @@
       "Jul 16",
       "Jul 17",
       "Jul 18",
-      "Jul 25"
+      "Jul 25",
+      "Jul 26"
     ],
     "defcon": [
       3,
@@ -239,9 +272,11 @@
       3,
       3,
       1,
+      1,
       1
     ],
     "si": [
+      5,
       5,
       5,
       5,
