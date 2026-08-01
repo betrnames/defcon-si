@@ -1,102 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-07-26 12:00 UTC",
+  "lastUpdated": "2026-08-02 12:00 UTC",
   "signals": [
     {
-      "category": "si",
-      "title": "OpenAI CEO Sam Altman declares humanity is 'now in the singularity'",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "1d ago",
-      "summary": "Altman stated 'we are now in the singularity — this is the moment,' calling it the realization of what seemed improbable a decade ago. Multiple outlets and prediction markets confirm the statement.",
-      "url": "https://x.com/Polymarket/status/2081101771636613218"
-    },
-    {
-      "category": "si",
-      "title": "Altman sets goal: automated AI researcher by March 2028",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "2d ago",
-      "summary": "OpenAI targets an automated AI research intern by September 2026 running on hundreds of thousands of GPUs, and a true automated AI researcher by March 2028.",
-      "url": "https://x.com/sama/status/1983584366547829073"
-    },
-    {
-      "category": "si",
-      "title": "Altman publishes 'The Gentle Singularity' — claims event horizon crossed",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "Jul 2026",
-      "summary": "Blog post argues the singularity will not arrive as a sudden rupture but as a gradual progression of increasingly capable AI systems. Claims the process of building digital superintelligence has officially begun.",
-      "url": "https://blog.samaltman.com/the-gentle-singularity"
-    },
-    {
-      "category": "si",
-      "title": "OpenAI's Codex approaches autonomous software engineering",
-      "region": "Global / Frontier Labs",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "3d ago",
-      "summary": "Altman says Codex is 'so good' and admits difficulty imagining what creating software at end of 2026 will look like — signaling rapid capability acceleration.",
-      "url": "https://x.com/sama/status/1977177505971736675"
-    },
-    {
       "category": "military",
-      "title": "Trump swings back toward diplomacy in escalating war with Iran - The Washington Post",
-      "region": "Middle East",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "1d ago",
-      "summary": "Washington Post reports Trump administration shifting toward diplomatic channels amid escalating military operations against Iran."
-    },
-    {
-      "category": "military",
-      "title": "Trump meets with cabinet over whether to intensify Iran strikes",
-      "region": "Middle East",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "1d ago",
-      "summary": "NYT reports cabinet-level deliberations on escalation of strikes against Iranian targets. Critical decision point for regional conflict trajectory."
-    },
-    {
-      "category": "military",
-      "title": "Trump switched planes at NATO summit after credible Iranian threat",
-      "region": "Middle East",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "1d ago",
-      "summary": "NYT reports a credible Iranian threat forced a security protocol change at the NATO summit — signaling direct threat to senior U.S. leadership."
-    },
-    {
-      "category": "si",
-      "title": "China’s Kimi K3 exposes growing divide in Silicon Valley over AI regulation",
+      "title": "Why China Is Closely Watching Egypt’s Military and Defense Strategy - Modern Diplomacy",
       "region": "Indo-Pacific",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE1FbHQ5Wk5QbEowMDUwa0lPWEZ6QTR4UEhwZnN1c1Y4VEt4dlp1MW9wTmhhdXAwcUc1MHhuZ0IzOXFHWVNTQ1Q1TXhrLWFIMmhRVnVURVlUY3FzbDJKQ1ZXazc4TDFyeGR3M29WOUtzaENGbk9QbWhN?oc=5\" target=\"_blank\">Why China Is C…",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1FbHQ5Wk5QbEowMDUwa0lPWEZ6QTR4UEhwZnN1c1Y4VEt4dlp1MW9wTmhhdXAwcUc1MHhuZ0IzOXFHWVNTQ1Q1TXhrLWFIMmhRVnVURVlUY3FzbDJKQ1ZXazc4TDFyeGR3M29WOUtzaENGbk9QbWhN?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Royals Lean on Pitching, Defense to Advance to State Final Four - News Dakota",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVAwb2oxb0JVS1lvLWJzWXMxRldNdThxcXMxT2JGNXZTQkwwQU5VQ3lsYmc2ZXd5cTFLYUVkVVpiRjQwVkFxM1doeUNwQWFUZWswZGRuYm14OUFhbXhqcUVWdnRLUnJLRndscl93VDJMYnBzNFNHdm1NcXo4Y1N5eG04WC1UQjJRenQ5UUtxRllQR…",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVAwb2oxb0JVS1lvLWJzWXMxRldNdThxcXMxT2JGNXZTQkwwQU5VQ3lsYmc2ZXd5cTFLYUVkVVpiRjQwVkFxM1doeUNwQWFUZWswZGRuYm14OUFhbXhqcUVWdnRLUnJLRndscl93VDJMYnBzNFNHdm1NcXo4Y1N5eG04WC1UQjJRenQ5UUtxRllQRzRPa0xWUEpUV1E4OE5ENDRn?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "'Crazy intense': Secret military exercise in Española took residents by surprise - santafenewmexican.com",
+      "region": "Global",
       "severity": "moderate",
       "confidence": "Single-source",
-      "time": "1d ago",
-      "summary": "Chinese frontier model narrows gap with Western labs, intensifying debate over export controls vs. open competition.",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeWR2WGYtak5ILTZZVzZNdTFBcWhjMllRdV83M1MzajlaQlNEZlZIZWpRS25KeVpaUHU3YzZ6Umhpa0o2RHlZRE9VcEtGR3VKSXdLWDBzZ2lJMWpFel90MUdvNnkzLVZIS2swZ19ZOVZ2Vkg2Q3pLVGlDVk05cElnOEE3Y3dob0x1WXF6UzlORkNrZDZsV3hhQ0JIUExKXzRnc0ltTFlR?oc=5"
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAJBVV95cUxNMDNTT3VOYVlSWnhHcUZ4S3FDdlE4SXpjRVhveTFadlA5bjlnOGVOa0dyQUdnV1oyRG1mUHZia3lGaXJCbWpHOVgtREJKcGI4WDFEV3JndW9yZkV2NkhNQmdOcXpiNlAwbGphSndBNlVYRGJTa1ZWbnRLOUdEWVppWTZLUmt5c09tVWd1Q3F5a3lfL…",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNMDNTT3VOYVlSWnhHcUZ4S3FDdlE4SXpjRVhveTFadlA5bjlnOGVOa0dyQUdnV1oyRG1mUHZia3lGaXJCbWpHOVgtREJKcGI4WDFEV3JndW9yZkV2NkhNQmdOcXpiNlAwbGphSndBNlVYRGJTa1ZWbnRLOUdEWVppWTZLUmt5c09tVWd1Q3F5a3lfLUR6THNKUnZkTW1zOEduam9XYVgydEdUR0tSakNyNzlubkZfT3k2YWpLOWc2Y25tYTZOZ2h6QXc0VkJYMjNRd3hxMzZxQWU3ajE3dmhVYkdWMUN0a2RvWWpXM2VRelpsXzFnUDZCQ2ZkUU5MWmRYRlpQeTViby0?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "News - Cyber Shield 2026 validates Guard cyber readiness for critical infrastructure defense - DVIDS",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQY2F6NU8wd1M1QTdsQnQ3QlRjNVhEWXQ1dnNiYnJvVkRNWmxYU1hKQVl5NHlfXzBMSTlwRy1HNjBudFI1VWh2N2NSZjhfTkVFTDJyRmNDNTB5WDZ4SFRJNTd6OEtrOUFIaFlZZzZBTGRJZGhtMUlZWXc5N1BWcTR6aUpSdlhPVF9pM1FTTktQcWVrR…",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQY2F6NU8wd1M1QTdsQnQ3QlRjNVhEWXQ1dnNiYnJvVkRNWmxYU1hKQVl5NHlfXzBMSTlwRy1HNjBudFI1VWh2N2NSZjhfTkVFTDJyRmNDNTB5WDZ4SFRJNTd6OEtrOUFIaFlZZzZBTGRJZGhtMUlZWXc5N1BWcTR6aUpSdlhPVF9pM1FTTktQcWVrR1dWbHdjN0JIeTRpNVg4NmlybFlFdVdSTUdsLWZqS3pZcnh1WnhENVE?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "IAEA, Canadian university collaborate on nuclear education - World Nuclear News",
+      "region": "Global",
+      "severity": "high",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQSnZ5bTdqNEhUZWZxQ0dIemRZdFVlZlZhUV9HaFh5SEVaLVJBd2YyVzZSZzBOZ0p3T1lhQ1BQUjBmWkZRXzJRQ2N6MTRYZk1WdTJ0aWY4MDZDTnB6VHNHSnRDYjNVNFlCVE1BNDk0LWROOWo2T3RXQXZLMHhnS09May1NdnZWM2Y0cEdteWJRek1yY…",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSnZ5bTdqNEhUZWZxQ0dIemRZdFVlZlZhUV9HaFh5SEVaLVJBd2YyVzZSZzBOZ0p3T1lhQ1BQUjBmWkZRXzJRQ2N6MTRYZk1WdTJ0aWY4MDZDTnB6VHNHSnRDYjNVNFlCVE1BNDk0LWROOWo2T3RXQXZLMHhnS09May1NdnZWM2Y0cEdteWJRek1yYTAxb2lmRDdpc1ZZdw?oc=5"
     },
     {
       "category": "si",
-      "title": "Canada launches public consultation on artificial intelligence transparency",
+      "title": "XBOW Research Highlights System-Level Controls for Advanced AI Safety - TipRanks",
       "region": "Global / Frontier Labs",
-      "severity": "moderate",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaUhpVC05MURsdWxIRHZLVm9YV0lycmo5Q3N6T2ZZa0tKa0dBOWFyMGxTaTZxMFFrcVl6RHZGYks5c0dJYnBNRGVnZGxJX2VMV0hhZS1JODdYQ0tKZmhuY2ZsLWJMc2ZwUnZ4clNQd1c2ME5SYjBXTmJuNFJFdzBvUmtlMFhtbll0dHJBRjR1ODhuW…",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaUhpVC05MURsdWxIRHZLVm9YV0lycmo5Q3N6T2ZZa0tKa0dBOWFyMGxTaTZxMFFrcVl6RHZGYks5c0dJYnBNRGVnZGxJX2VMV0hhZS1JODdYQ0tKZmhuY2ZsLWJMc2ZwUnZ4clNQd1c2ME5SYjBXTmJuNFJFdzBvUmtlMFhtbll0dHJBRjR1ODhuWXNhSVdCcjlySW45ZHZ4Tnk4UUQ1eVV4YmJ4aWFrR0ZoTV93VXlt?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "German Court Rules Suno Illegally Trained AI Model on Copyrighted Songs - Law Commentary",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQNnRwY1U4VDNYYktTZmg3RVVFTmxUcVhGTjc5MDRxazVOU3ZOZFBCUEV0VzlkVVN0TTAxV0ZnSm9tN3RYUHJKN2M3ai1Sazl3RkhibnhyeV8wQWdNSWwxdDBMa1dYdGc3TDdsTExHRVAtVE1mU28tXzdtMU4xV21IY3FVUi1PbkFDOXpiWGFtRjhHa…",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNnRwY1U4VDNYYktTZmg3RVVFTmxUcVhGTjc5MDRxazVOU3ZOZFBCUEV0VzlkVVN0TTAxV0ZnSm9tN3RYUHJKN2M3ai1Sazl3RkhibnhyeV8wQWdNSWwxdDBMa1dYdGc3TDdsTExHRVAtVE1mU28tXzdtMU4xV21IY3FVUi1PbkFDOXpiWGFtRjhHa2U3cWo1cmxlTmRFM2FYYjExLUxnN3VXTVk4a3Nn?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Korean Physical AI Startups Face a Hard Truth: A 98% Accurate AI Model Can Still Fail Inside a Robot - KoreaTechDesk",
+      "region": "Indo-Pacific",
+      "severity": "low",
       "confidence": "Single-source",
       "time": "2h ago",
-      "summary": "Canadian government opens formal review of AI transparency requirements, signaling regulatory momentum."
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPbm56aHN1cU9VNW02QnJBTTJDcmhQS19ITE9kX2w4VnVrREpUS0dWeW1Ya191UDB3SjBRcmd0U2kwYWFIUGZFVkJXOG9KVEZpcmVwNjYtYkJjRTFZT3BvMncwMV9BeUk4ejRrcl9yc2F4OHhPTEJCTHRtdnhRN0dzMUZxT3ZUZlZNa0E?oc=5\" tar…",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbm56aHN1cU9VNW02QnJBTTJDcmhQS19ITE9kX2w4VnVrREpUS0dWeW1Ya191UDB3SjBRcmd0U2kwYWFIUGZFVkJXOG9KVEZpcmVwNjYtYkJjRTFZT3BvMncwMV9BeUk4ejRrcl9yc2F4OHhPTEJCTHRtdnhRN0dzMUZxT3ZUZlZNa0E?oc=5"
     },
     {
       "category": "si",
-      "title": "Open model matches proprietary frontier on multi-step deception evals",
-      "region": "Global / Open Source",
-      "severity": "high",
-      "confidence": "Corroborated",
-      "time": "12d ago",
-      "summary": "Significant narrowing of the gap on safety-relevant benchmarks — accelerates capability diffusion risk."
+      "title": "Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference - NVIDIA Developer",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "3h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNcjZvZjlTbDI3MUxoTURqUU81N1VLUExIZEI2QVZBN21JSkt2WW1BYXhtOXp5WV9PLWRlYng4ZDN2MEZFWEhZc2d5dVRyQjY4Z0J6ZjZaRURjbGZVd0dhQ0EzWmpmVjUxaDNHc2UtM3ZCMm5sTW01SDdLb0lLSVFjU09HUHZwamstZ1VpT0M2d3Zqe…",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcjZvZjlTbDI3MUxoTURqUU81N1VLUExIZEI2QVZBN21JSkt2WW1BYXhtOXp5WV9PLWRlYng4ZDN2MEZFWEhZc2d5dVRyQjY4Z0J6ZjZaRURjbGZVd0dhQ0EzWmpmVjUxaDNHc2UtM3ZCMm5sTW01SDdLb0lLSVFjU09HUHZwamstZ1VpT0M2d3ZqemtjX1R4a3lCWVZERV9Ec1lLUk9TQ3FyTVhERk40?oc=5"
     }
   ],
   "newsTracker": [
@@ -238,8 +233,6 @@
   ],
   "history": {
     "labels": [
-      "Jul 4",
-      "Jul 5",
       "Jul 6",
       "Jul 7",
       "Jul 8",
@@ -254,7 +247,8 @@
       "Jul 17",
       "Jul 18",
       "Jul 25",
-      "Jul 26"
+      "Jul 26",
+      "Aug 1"
     ],
     "defcon": [
       3,
@@ -269,14 +263,12 @@
       3,
       3,
       3,
-      3,
-      3,
+      1,
       1,
       1,
       1
     ],
     "si": [
-      5,
       5,
       5,
       5,
