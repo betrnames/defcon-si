@@ -1,23 +1,47 @@
-# DEFCON.si
+﻿# DEFCON.si — Super Intelligence DEFCON Monitor
 
-Real-time Super Intelligence threat level monitor. Tracks global AI capability signals and maps them to a DEFCON-style readiness scale.
+Real-time-style **SI (super intelligence) DEFCON board**: levels, signals, history chart. Static site — no framework build required.
 
-## What it does
+**Live:** [defcon.si](https://defcon.si)
 
-DEFCON.si aggregates open-source intelligence (OSINT) on AI development milestones and presents a live threat assessment dashboard — from routine (DEFCON 5) to critical (DEFCON 1).
+![DEFCON.si open graph](og-image.jpg)
 
-- **Dual-scale tracking** — Separate DEFCON level (1–5) and SI capability level (0–5)
-- - **Signal cards** — Individual intelligence signals with source attribution
-  - - **Historical chart** — Timeline of level changes via Chart.js
-    - - **Auto-updating** — Agent script fetches and scores new signals, writes to data.json
-      - - **Zero dependencies** — Single index.html file, Tailwind CDN + Chart.js CDN + vanilla JS
-       
-        - ## How it works
-       
-        - All data lives in a CONFIG object at the top of the script block. The agent update script (scripts/agent-update.mjs) fetches OSINT, reasons about threat levels, and writes a fresh data.json that the site loads on refresh.
-       
-        - ## Deploy
-       
-        - Drag index.html onto [Netlify Drop](https://app.netlify.com/drop). Done in 60 seconds.
-       
-        - For continuous deployment, connect the repo to Netlify — every push auto-deploys.
+![Alternate preview 1](og-image-1.jpg)
+
+## What it is
+
+Single-page monitor for tracking "how hot" the SI landscape feels — DEFCON 1–5, SI level, signal cards, and a history chart (Chart.js). Data can be inlined in `index.html` or loaded from `data.json` for agent/cron updates.
+
+## Stack
+
+| Layer | Tech |
+|-------|------|
+| UI | Static HTML + Tailwind CDN + Chart.js |
+| Data | `CONFIG` in page or `/data.json` |
+| Hosting | Netlify (see `netlify.toml`) |
+| Automation | `scripts/agent-update.mjs` (optional) |
+
+## Deploy
+
+**Drag & drop:** Netlify Drop the folder containing `index.html`.
+
+**Git:** Import this repo; empty build command; publish directory `/`.
+
+**Custom domain:** Point apex/www per Netlify DNS docs.
+
+## Editing data
+
+Prefer `data.json` next to `index.html` (same shape as `CONFIG`). Or edit `CONFIG` in `index.html` and redeploy.
+
+```bash
+node scripts/agent-update.mjs   # refresh data.json when configured
+```
+
+## Assets
+
+- `og-image.jpg`, `og-image-1.jpg` … `og-image-5.jpg` — social / share art  
+- `favicon.svg`, apple-touch icons  
+
+## License
+
+All rights reserved.
