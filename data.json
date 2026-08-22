@@ -1,97 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-08-16 12:00 UTC",
+  "lastUpdated": "2026-08-23 12:00 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "How many Russian soldiers died in the war with Ukraine - Mediazona",
-      "region": "Europe / NATO",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE84ZGpXZXlQdWtPdlh6TkI5SlYxcE55Zm5pWXpjUUphYld0TGlHLWxFY3JvWGtOY0RxY1BmcFZaeHpLSmF3WlR4dXBWMGNJYnZ2UTJrVlNwWXFuRFJGNGlLUEMyRzRRZnFkZkF3?oc=5\" target=\"_blank\">How many Russian soldiers died…",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE84ZGpXZXlQdWtPdlh6TkI5SlYxcE55Zm5pWXpjUUphYld0TGlHLWxFY3JvWGtOY0RxY1BmcFZaeHpLSmF3WlR4dXBWMGNJYnZ2UTJrVlNwWXFuRFJGNGlLUEMyRzRRZnFkZkF3?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Defense pushes back as prosecutors seek harsher sentence for former DeRidder Mayor Misty Roberts - KPLC 7 News",
+      "title": "Pentagon sacks editor, publisher of independent military news outlet over USS Abraham Lincoln story - Firstpost",
       "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2pkTWdkSmlXNkZUdmFRQTNoellqU2dBTVJyekRTdmI0d1NWX2owNFlHOVdjM2toRjdrbFRpVXFHY3hreTdHRnktUkFFdE1iblFrVlI0RjRLTzdWdTJaUUVaVUtPeHE3VGxmUlBaQXIzQ3pzMjd5S3RCMktpM0tTYVZsdkRBYXF2OTVHYW9oMU1ON…",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2pkTWdkSmlXNkZUdmFRQTNoellqU2dBTVJyekRTdmI0d1NWX2owNFlHOVdjM2toRjdrbFRpVXFHY3hreTdHRnktUkFFdE1iblFrVlI0RjRLTzdWdTJaUUVaVUtPeHE3VGxmUlBaQXIzQ3pzMjd5S3RCMktpM0tTYVZsdkRBYXF2OTVHYW9oMU1ON2FLQnFIdjVLRHlCbVNQS05OeFEzMHBrRllLRFFwMUZhWEpwdnBFNlFlWl9RTExMZw?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVC1hbExHS2txTzIxdjhMdFFjNko4eUlpV2wxajRQeWo2NFdxTUozdExPUnV3LS1adENhU2RrQVJYY0lhbVlTeGM2UERMV0lHWUYzTFVRc0xtb1VJMVNQX2tvYjdNT2N2a1dwUnRTZHdrOTYyZlJIaU5PajVodE5fSnk3U0E2NXBudExnTEJQOHRJY…",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVC1hbExHS2txTzIxdjhMdFFjNko4eUlpV2wxajRQeWo2NFdxTUozdExPUnV3LS1adENhU2RrQVJYY0lhbVlTeGM2UERMV0lHWUYzTFVRc0xtb1VJMVNQX2tvYjdNT2N2a1dwUnRTZHdrOTYyZlJIaU5PajVodE5fSnk3U0E2NXBudExnTEJQOHRJYVlEZDZrcWQ5NG0wMDhfc0liX3NpY0ttSWpMVmZRMDlMb296WVV6dWY1N2ZmWmdwT2c5ZkU1QzZtdVlPQThxdmluOUhmQllPYWRE0gHiAUFVX3lxTFBXVUp0bnhhY2gwRXRZUWplU3p5Wi0tNjQ1YW5ORWhmQXZ3SzBSZ2FRVUgxeE1GM0trb1dVcm9mam16d1l1Rm1BNWFrclh5MVNCMWRSSW0yaXBrU0Y1NHJCclhKaU53bVlwcXNib1hCMWRuay1EX1ZUMG5TaWlmeHl2Z2ZTcV8zOENGWVlRWUhHcFpjMjZJTUpzVnZPaVYtY0RaNjJCMTZUVWx6UUhXaXJ4LWtOVnRhZFNkRnNhdHh3bDhUYzFQRGVSWjVQMjFTaVRTV2NEZWxBT0l2aEhSTTMzZ1E?oc=5"
     },
     {
       "category": "military",
-      "title": "Military GPS jamming under scrutiny after deadly New Mexico plane crash - MS NOW",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSU0zOWFuX0twRmxoZEx6TmpIYWxVVXZMSTZTMlJXd19sUkwzOGt2REctN3NOY3BMYVdZWVZsUzdyS05YRWFYMXl3cjVyV29JQlpFZ2c2SzI2eUtwMnJtYXlfUXA3R1lpLXQwZGpkN3ItNTBSVE95c1E1Nk5hYk9Ma25BTXYzUENFMFVHRzBoY0Z4Z…",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSU0zOWFuX0twRmxoZEx6TmpIYWxVVXZMSTZTMlJXd19sUkwzOGt2REctN3NOY3BMYVdZWVZsUzdyS05YRWFYMXl3cjVyV29JQlpFZ2c2SzI2eUtwMnJtYXlfUXA3R1lpLXQwZGpkN3ItNTBSVE95c1E1Nk5hYk9Ma25BTXYzUENFMFVHRzBoY0Z4Z3pNSEJTTTE5X1BhU1huZlVxX2VsYVhfZ0tzT1BJdlJOQ2M4QnRv?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "IDF troops stood by as West Bank settlers besieged Palestinian homes - The Washington Post",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxOdVlDSUI1YlhJYlFrUUZ4dWZNclhsLVRfTWdsallwYkpHaTNaME9IemlxbHNhX0tyUmJXQXBOdl84MUtJTVUtQlRSVlBtdEowcGlvcTRiQ3NOcnFLUWJpazRWeEZTZmFmTVV0VWVoNXo0aUdjdTFJcnpnU2MyWmJjNnhJMUNmYnlydmJ1Z2oyOEM1a…",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdVlDSUI1YlhJYlFrUUZ4dWZNclhsLVRfTWdsallwYkpHaTNaME9IemlxbHNhX0tyUmJXQXBOdl84MUtJTVUtQlRSVlBtdEowcGlvcTRiQ3NOcnFLUWJpazRWeEZTZmFmTVV0VWVoNXo0aUdjdTFJcnpnU2MyWmJjNnhJMUNmYnlydmJ1Z2oyOEM1a1NtV1RFaVBGSjlPNS1wazNTQ3JiN0tYbFZyOGpSUTVwU0Y?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "CENTCOM launches first multinational attack drone task force - Qazinform",
+      "title": "Geno Smith looks sharp in Jets return as defense finally ends interception drought - New York Daily News",
       "region": "Global",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPTEQwU0wzU2xlQVJkdHdwdzV3WG52WWE5Qk1tSjRkWk9XXzcyZEtiSk82NEstR0YyT1FpS19aOWM1TG1nSTlDdGFQeHpLTzJMOEV3cUk0bUV0RXNuNHhnMTUtczY1WWZsX2pvRFBvcDNrYl9nZkxBbFIzOGNGc0dKNDRkMEs5SHlyb1lrNVh3V1dxY…",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTEQwU0wzU2xlQVJkdHdwdzV3WG52WWE5Qk1tSjRkWk9XXzcyZEtiSk82NEstR0YyT1FpS19aOWM1TG1nSTlDdGFQeHpLTzJMOEV3cUk0bUV0RXNuNHhnMTUtczY1WWZsX2pvRFBvcDNrYl9nZkxBbFIzOGNGc0dKNDRkMEs5SHlyb1lrNVh3V1dxY0U4Z0hJcjln0gGaAUFVX3lxTFBES3BwQkZuR2Zzb3QyMHRjY20tcUstNndrTHdQWTN2UWhHeEthV0pRSEl0TE9JTzkwbDYwWmoyb2pBMFhLTUVGc1F4d29qYXRoOXBtT0N0dW04R1dMZVNRRWN3dkhsa3RHbU1DSkl6Y09FUEdGVk9saWxEQmxaYVRWc2g2NlhiRFA1LVhtb2lyVWtUMTFtQ01sRFE?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQaERuRHAwUkdRWFJDQWN5cl9OcnVoSjRfVDBmektpcXRVcHlOQmpKYk94dzVDRUkyUHhSRWpkb25xc2V5bFRqYjZHOEhqbGxCcEZCcEJPYkk3MmxYZ1FBM1JYdXFramRtZ2pKcE1pdExkU3JxUXlJdnRrcFZ4d2lNSjB1ell4aGRjM1JCcklLZFJBb…",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaERuRHAwUkdRWFJDQWN5cl9OcnVoSjRfVDBmektpcXRVcHlOQmpKYk94dzVDRUkyUHhSRWpkb25xc2V5bFRqYjZHOEhqbGxCcEZCcEJPYkk3MmxYZ1FBM1JYdXFramRtZ2pKcE1pdExkU3JxUXlJdnRrcFZ4d2lNSjB1ell4aGRjM1JCcklLZFJBbVU0UjY3TXg4d0JjcGZjSEpfQzBCX1B4ajgxa2M3SHkwcDRxLTlNZzc5UDdXbw?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Alaska Defense Forum 2026 focuses on community-military ties - Geophysical Institute",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOQWpYazNBeElhbFdYZzdmcDF6VHNySTF3ZlpfdktDbFJKdXV3dUd0ZGdwNHl6NVJfZWtlTXhiYlZXcHdIaE5abmV3c0xWM0ljckd1UXJCNFl4b3pkVHRtTmhiall2c2pCcFVaNEtDQ1RoQ3E0MXJZdVJMWlhQRmVjZERmR3BZeW1XYThreHUwaW41Q…",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQWpYazNBeElhbFdYZzdmcDF6VHNySTF3ZlpfdktDbFJKdXV3dUd0ZGdwNHl6NVJfZWtlTXhiYlZXcHdIaE5abmV3c0xWM0ljckd1UXJCNFl4b3pkVHRtTmhiall2c2pCcFVaNEtDQ1RoQ3E0MXJZdVJMWlhQRmVjZERmR3BZeW1XYThreHUwaW41QQ?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Video: Defense Concludes Days of Testimony in Lindsay Clancy Murder Trial - The New York Times",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNU2hoVlU0eHE0aDRvYThLYWhWWHlTczhCRmZDY1ZUZ2JISWFHd3NRSGlsenk2eWJFcGc4N2c4RTBTM1duZEQ5VW82TEJsd1dabjg5bVFWQVByOW12ZlFtYmlsZDFxMkVfLV9Hc1MzN0dneEc4em9nWTd5TDZncGZfSWxNT0haTWRHenZtOVpTbWliU…",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU2hoVlU0eHE0aDRvYThLYWhWWHlTczhCRmZDY1ZUZ2JISWFHd3NRSGlsenk2eWJFcGc4N2c4RTBTM1duZEQ5VW82TEJsd1dabjg5bVFWQVByOW12ZlFtYmlsZDFxMkVfLV9Hc1MzN0dneEc4em9nWTd5TDZncGZfSWxNT0haTWRHenZtOVpTbWliUXBfTHczUWdoVk50RkdnZXpQOVBTSkJyYVVnejdHSEVGcS1JOWI2cFpHYQ?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Pentagon fires Stars and Stripes leaders who criticized DOD’s interference - The Washington Post",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Corroborated",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RKb05ZWU5uSWhMUDBKTm5iZGM0MGt1VlgwUmZOblM3bl9VTEMtZHFpelRidlBfYldZRW81eXBwRVVRZGlKSUdueWNEamdHd2REcy1lNjFFNlpMRTZWbmI0NTlVU0d2bTR1V3FFaWJDcmU4STZzYlNhbENWZDBDYThRYU5YTW9GdDhVdDQyVW9IW…",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RKb05ZWU5uSWhMUDBKTm5iZGM0MGt1VlgwUmZOblM3bl9VTEMtZHFpelRidlBfYldZRW81eXBwRVVRZGlKSUdueWNEamdHd2REcy1lNjFFNlpMRTZWbmI0NTlVU0d2bTR1V3FFaWJDcmU4STZzYlNhbENWZDBDYThRYU5YTW9GdDhVdDQyVW9IWV9PWGdfRXVqaUg5cUFZUF9ENV9vVUh6UmhjelZPbll5RmVPcXZlTy1YUUV3?oc=5"
     },
     {
       "category": "si",
-      "title": "SK Hynix vs. Monday.com: Which Technology Stock Is a Better Buy in 2026 Amid the Artificial Intelligence Boom? - The …",
+      "title": "OpenAI’s AI safety pause is a warning the industry cannot afford to ignore - weeklyblitz.net",
       "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxNdl9POElZeWRpUWJuRWRTZWZEcW5ZNFBPdTJjbjhGSjJ3NF84cTVlQkNIQ05qRXltcEwtVmxXVlQ0SHZoYTdGM3dMZHptNjNCSDZOSkZHVTlsZlpxRG5kalZCNjRpTFlNZTFCdjVMUFVVTTlzd21maXd3ZG5xeTh6eFNBWS1CMDBHdnhfaEhXRTByN…",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNdl9POElZeWRpUWJuRWRTZWZEcW5ZNFBPdTJjbjhGSjJ3NF84cTVlQkNIQ05qRXltcEwtVmxXVlQ0SHZoYTdGM3dMZHptNjNCSDZOSkZHVTlsZlpxRG5kalZCNjRpTFlNZTFCdjVMUFVVTTlzd21maXd3ZG5xeTh6eFNBWS1CMDBHdnhfaEhXRTByNFpySXpORUxURDNYNzRkeDZXZW96aUt1am5EOGVZOWE5bWNRNVQ3ZmRNazdfYnpqbHBLcXZMd2czTzRqUmI0R256OGxOMS0xbmY5SFdmTzVCc05qaEdSRVlnRVdsN3ZOUQ?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAJBVV95cUxNaXZNTEg0TWpUeGtnb0xjYUxVaTV3cV8tdko1c3BYZ0ZpbHRyOVQ4T0IwM3hyVERfeEpnY3o0aDVUYWhSaXdIb0t0S0xORXVzSnFiMEQySkI0ZWNtX1BLNWY0SC1JT1ZYOTlNTTgyNHBPc25MYVExVFExQjgxWXdtUE9ObTZpNG9HSGJhai0waXBCb…",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNaXZNTEg0TWpUeGtnb0xjYUxVaTV3cV8tdko1c3BYZ0ZpbHRyOVQ4T0IwM3hyVERfeEpnY3o0aDVUYWhSaXdIb0t0S0xORXVzSnFiMEQySkI0ZWNtX1BLNWY0SC1JT1ZYOTlNTTgyNHBPc25MYVExVFExQjgxWXdtUE9ObTZpNG9HSGJhai0waXBCbk9aVWdqdGJoa2g3YklYbklSdlVGSGZkcXhWV0pPNTAyeHRyMmRLcXJoTjhxQWJZYS1HWmpHeFJkakd5MHBVSEFmSWR0ZWhnckNOS05mOVhaRDRwTThMMENWWGkyQm5lT3dsRVZlRVpjaS1pNi1Fb282RzZjb1lvRWF5b0NLSA?oc=5"
     },
     {
       "category": "si",
-      "title": "How Anthropic plans to watermark Claude's AI-generated text - BleepingComputer",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQRWgwX0doUEdwTmZPRWVvd2FPUktpeXh6WnF6T1g2ZVFMMVBISlpFbnI4RnVoRFk2cjhDa2pqajBTN0RBakdDNXRFYW1qUzdJbGxobV91MVV4MnVsNDZydVpPVXoyamZjWGRuQkduNGhjTTJQWUlfdV9hN1FncmVlUHV1UjRYX2VCaS1Pbk9wa1hLN…",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRWgwX0doUEdwTmZPRWVvd2FPUktpeXh6WnF6T1g2ZVFMMVBISlpFbnI4RnVoRFk2cjhDa2pqajBTN0RBakdDNXRFYW1qUzdJbGxobV91MVV4MnVsNDZydVpPVXoyamZjWGRuQkduNGhjTTJQWUlfdV9hN1FncmVlUHV1UjRYX2VCaS1Pbk9wa1hLNmEwejRxODdZRFl5T1ZDeFhlUGJjMFZncjZHdmRlRVFEbXRMMmRGMUxUejRB0gHDAUFVX3lxTE5WSlRyTlpURWRhODJESVZfcS00U29HN2N1M3Z0d3FsUXhWSmQ1MnFNMmtJMnVKeE5QbmJVSW1taGkxUW5LWnBMX25WRTlUaVc4TmhWaFF3RVQ3T2VtT2VXVGRudjBiNnl5ZUZCcy1lbkZjY2s1dTUyU24zcXFrX05UYl9tTTEzbURHQkViNzU3M1lFUGNsUkU1eEVvTjJtaE8xY3E3NXp5LXc2X3Ftd2s2OVhjb2NNUW94cGZfYm9OZUgtVQ?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "OpenAI Revenue Surges Past $40 Billion - StartupHub.ai",
+      "title": "Billionaire David Tepper Piled Into a Debt-Laden Artificial Intelligence (AI) Neocloud Stock in Q2 While Also Increas…",
       "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQT0tPanhhazJGNzBydzAzZ3dERXdFakhBcVJmcmpKWnd4cHdZZDNHOGM4SXdidC0xU0lMWGFCMzZnbHNMWTIwY2xCS2JyLWMxRDJiNlVjaXp6Rm9Gbk1lVy00X0ZzVUVLT0I1WHREVlRuVG5HRkZWeE10VkhIczhJRjN3Y3BhYWdWUGxobWpFMU82N…",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT0tPanhhazJGNzBydzAzZ3dERXdFakhBcVJmcmpKWnd4cHdZZDNHOGM4SXdidC0xU0lMWGFCMzZnbHNMWTIwY2xCS2JyLWMxRDJiNlVjaXp6Rm9Gbk1lVy00X0ZzVUVLT0I1WHREVlRuVG5HRkZWeE10VkhIczhJRjN3Y3BhYWdWUGxobWpFMU82NGUzMURmS2toOHplVWRwRnc?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQeVBSdzlYRm02R001NkZfTWJ0bU9NY0k4LWhRUG04TE13Tmp5bkdXVkIyV0JzeTVBVHZDWjNPMTd2NjBwNVRiaVVmVGwyTFpETU1PWi1wWjlJT3hJZmVMN1JEck56dUtJYnMtTXN0aXg2MXNJTHhGYlo4Z3Z1NWRwQkViSkoyR1V1MUhETFBBOEVuU…",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeVBSdzlYRm02R001NkZfTWJ0bU9NY0k4LWhRUG04TE13Tmp5bkdXVkIyV0JzeTVBVHZDWjNPMTd2NjBwNVRiaVVmVGwyTFpETU1PWi1wWjlJT3hJZmVMN1JEck56dUtJYnMtTXN0aXg2MXNJTHhGYlo4Z3Z1NWRwQkViSkoyR1V1MUhETFBBOEVuUGR1bVNXeg?oc=5"
     },
     {
       "category": "si",
-      "title": "A public consultation on a proposed artificial intelligence (AI) data center here broke down on Friday, Aug. 14, afte…",
+      "title": "Artificial intelligence playing a big role in choosing college majors - WGRZ",
       "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcExjdVMzU0syUHdjMGN1aWdwdXFtRHJPUFFBSHg2OW1kbWFkbFZVU0V2S0NRdTRHMlppd05VS0c3eXc3NHhtZWpPbTJNeXhCNDVZVVRaNVBCY3NlM3hDZFlMQ0xIYmZhZUhhLTVFaFRWczdheXRnZ29QOWVhYzFibHRUcU9BVVBWMnhOSG9jeTFkR…",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcExjdVMzU0syUHdjMGN1aWdwdXFtRHJPUFFBSHg2OW1kbWFkbFZVU0V2S0NRdTRHMlppd05VS0c3eXc3NHhtZWpPbTJNeXhCNDVZVVRaNVBCY3NlM3hDZFlMQ0xIYmZhZUhhLTVFaFRWczdheXRnZ29QOWVhYzFibHRUcU9BVVBWMnhOSG9jeTFkR2FfMGZLc2EwMkZPaFVkZ2pJQTdqWjB5N0taRDJBX0I1RlNtcVBEdHpheUhxQ01lWnl2N3VWM2R5RGhnU2ZuTEg3djVNa2tieWhkcUE?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSDEwYlR2cVVWVWkzekR0SHZnSjlWTG9RbVd1NWZ1NVpQOU9rN2tOZFpZN0daQlpMSy15VkNBbXF4RmZnMWtjQlRIOFVla1EtY2hNT1lScEdVTC1pbi0yMk5pSXN5d0J1ODRnT2pUUU1kdi1qaGlUeFREbmJSb3NoZGRYZGFudW10ZW5raDY5M21Bb…",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSDEwYlR2cVVWVWkzekR0SHZnSjlWTG9RbVd1NWZ1NVpQOU9rN2tOZFpZN0daQlpMSy15VkNBbXF4RmZnMWtjQlRIOFVla1EtY2hNT1lScEdVTC1pbi0yMk5pSXN5d0J1ODRnT2pUUU1kdi1qaGlUeFREbmJSb3NoZGRYZGFudW10ZW5raDY5M21BbHM5OTBlMnVHbTBZWEwxY3FEUWlVTzEtSHc1QnpxZkk3N2d0enZrZ1lLVTNqVHhRT3ZISUo3VmtsTTYwc05JMnI5RGUzbHRUX242WkhaSw?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "AI scammers may use vacation photos to determine travelers' locations, experts at McAfee warn - ABC7 Chicago",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "3h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQX3dvQXFUNFhfWGFCR2RUcENReUlSMmJITWRnNUJkS3l2RDdSb2E0NFg2TVh2Y0J6Vlo4V2lRZ251OElsTzVCUnY0V3dOcnNtS3UyX3dmVUNtZ3RlbTFzSTR5azJxRTlvVVdHdjhYZEFCNHRnSnVaT0wwUW95a3JQMS1MN1owVnZXclZYRGo0RnFIb…",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQX3dvQXFUNFhfWGFCR2RUcENReUlSMmJITWRnNUJkS3l2RDdSb2E0NFg2TVh2Y0J6Vlo4V2lRZ251OElsTzVCUnY0V3dOcnNtS3UyX3dmVUNtZ3RlbTFzSTR5azJxRTlvVVdHdjhYZEFCNHRnSnVaT0wwUW95a3JQMS1MN1owVnZXclZYRGo0RnFIbWllcXBCaGM5MkgycEZfMEJrdjQxRmZHNzVEazdxR3MySE01UWxvSDZrck9qcDFHQdIBxwFBVV95cUxNWEEtb0RGWC1PRHRfbWx4TG1HME51N093cmNiUDFINVFZdDlHekVKR0ZNdmc1LXZuWGdSRXZ3dGxFaEh0dHpicjFNbmRzclVzZ3ZnR0NmbURZOGUyY2lpc25PbDNERWNBZXNfY0EwTGo2UEFzU0JlZTdnbUY5LWgwZXFPTFBjdDRRZnVZaXBPdUtDVElYYkFyNm9qUHR4b0U0QkZTdEhDdjdzdEx3STNITWdnRUJuY2RuTGQ1dS1WemRrUGd3UVlJ?oc=5"
     }
   ],
   "newsTracker": [
@@ -233,7 +233,6 @@
   ],
   "history": {
     "labels": [
-      "Jul 8",
       "Jul 9",
       "Jul 10",
       "Jul 11",
@@ -248,7 +247,8 @@
       "Jul 26",
       "Aug 1",
       "Aug 8",
-      "Aug 15"
+      "Aug 15",
+      "Aug 22"
     ],
     "defcon": [
       3,
@@ -260,7 +260,7 @@
       3,
       3,
       3,
-      3,
+      1,
       1,
       1,
       1,
