@@ -1,97 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-09-13 12:00 UTC",
+  "lastUpdated": "2026-09-20 12:00 UTC",
   "signals": [
     {
-      "category": "military",
-      "title": "Jay Cobb calls out Trinity defense after loss to Chattanooga Baylor - courier-journal.com",
-      "region": "Global",
+      "category": "si",
+      "title": "Google Gemini AI model hacks three other companies - WESH",
+      "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZlpncmx5RkJPeS1NUGNwZ1VmUGV3QWtJVjJ4LU1VQVN6QjJyOThvMUpSTk5EYUszcFFhWlFvd3U1RzM2cnNjUjBMajdJT004eHVIUVJiM01VQ0FYMTlLVHFtZlZhaXhMcUZUUXN5Uko1TzJJWktINGRNeFdReGtsdU45RUxFMkUybzk2aDF0M2E3R…",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZlpncmx5RkJPeS1NUGNwZ1VmUGV3QWtJVjJ4LU1VQVN6QjJyOThvMUpSTk5EYUszcFFhWlFvd3U1RzM2cnNjUjBMajdJT004eHVIUVJiM01VQ0FYMTlLVHFtZlZhaXhMcUZUUXN5Uko1TzJJWktINGRNeFdReGtsdU45RUxFMkUybzk2aDF0M2E3Rk45RHQ0VDUwX0JvLUgxSGtUNjBkSGZCeFVDVC16cWNOREdtYTNCcU0yRDZmN1hETERaeDh2c2E1Q25SMU9uTlNUeVA0V3h1d3dUeFVxazNPcW1pVFU?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Scituate clamps down on defense, rides Tyler Stelljes’s QB debut past Duxbury in South Shore showdown - The Boston Globe",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTFA4QTR0Ymp6T01qTU1hbThXYjBaQV9PSV95UjVLd2xRNHZhM3J0UjhJMG9tMUVZRGVEd3ZadlZWcHFOWGszR0pCSmpMNmdKV0pBNXdrQ2lGRmdtZWk4emRxTE5zbjhFZ3l4X0RVdTM4R0RiNWxWU3Y1X3hQS2c?oc=5\" target=\"_blank\">Scituat…",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4QTR0Ymp6T01qTU1hbThXYjBaQV9PSV95UjVLd2xRNHZhM3J0UjhJMG9tMUVZRGVEd3ZadlZWcHFOWGszR0pCSmpMNmdKV0pBNXdrQ2lGRmdtZWk4emRxTE5zbjhFZ3l4X0RVdTM4R0RiNWxWU3Y1X3hQS2c?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Defense Holds Missouri Southern Negative as Harding Rolls to 10th Win - Harding University Athletics",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNZVp5LTFGdFNPZGJfUVhuNzVDX3JtdnM0OFdoQ0JaYlpSVWFRN2JVVmdjenRYVWRtbGhZc0ZJWFdfUk9zSkJ6SlpXVC05dGxtYXhnWTgzRkM2N0p0TnJad0tPM3RtbDNwVEFZa040NC1iUjFtWjhyNUN0TmdidzFXMFJoWTBmUjVGeTRnOWpmOFZHS…",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZVp5LTFGdFNPZGJfUVhuNzVDX3JtdnM0OFdoQ0JaYlpSVWFRN2JVVmdjenRYVWRtbGhZc0ZJWFdfUk9zSkJ6SlpXVC05dGxtYXhnWTgzRkM2N0p0TnJad0tPM3RtbDNwVEFZa040NC1iUjFtWjhyNUN0TmdidzFXMFJoWTBmUjVGeTRnOWpmOFZHSkh1RndjLUMxeF9rY0xNV2RGUGdVQmtBUnZNbzZadmN6MWFDbWxod3N0bHZLN3JUc3FM?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "‘Never forget’: How a Pentagon survivor helped inspire a Lanier graduate to serve in the Army - kens5.com",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxNOTZTM1RVYlNuNUtMY1VuNXdfaWNkY0ZzRUxHVmt5c1FuOHV4b3FodlV3a2NtbDJFSXJVQllFWWw4Y3RnTmJEaENrSlJwODZCRWk5Q2pXS1NUX3VrTWlMb2pIUFd5dzF3TzZBOU1pQlFXWkVxQjV3amJaTnZNbW5LNTF1N2czOGdxandIV2hIOXBKN…",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNOTZTM1RVYlNuNUtMY1VuNXdfaWNkY0ZzRUxHVmt5c1FuOHV4b3FodlV3a2NtbDJFSXJVQllFWWw4Y3RnTmJEaENrSlJwODZCRWk5Q2pXS1NUX3VrTWlMb2pIUFd5dzF3TzZBOU1pQlFXWkVxQjV3amJaTnZNbW5LNTF1N2czOGdxandIV2hIOXBKNnVyRDhhWl9oUV91SDlyN2tsOThxNUF5N05CVFNQakw3X0JMdlJBMlRwMmcxdzVxSEdXQWl0Q0hGeFdZdG81aEoyWXFPVmNQdXVHMjgtYWpEbDNGVDhNcEE?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Barbara Starr On Reporting From The Pentagon On 9/11 - CNN",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNY2V0N2JHUExhdDRscGpDQXNmODBMVzBOcXBuTEdCRDNUYWJKTkxqOWNpSW1ocENLRWg3MXBJNmJvc2JKaG5zRTZWYlFNRXYwZlk3dmNscFhZN1ZuSFBWS21wLURIMWJwT3JBQy0za1M1cFVrM1RmcDlQS0ZEWkNQSjN4bGpQTXdCdGtQdlFuWWVfO…",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY2V0N2JHUExhdDRscGpDQXNmODBMVzBOcXBuTEdCRDNUYWJKTkxqOWNpSW1ocENLRWg3MXBJNmJvc2JKaG5zRTZWYlFNRXYwZlk3dmNscFhZN1ZuSFBWS21wLURIMWJwT3JBQy0za1M1cFVrM1RmcDlQS0ZEWkNQSjN4bGpQTXdCdGtQdlFuWWVfOEdzQ2Vz?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE9wY2VSNGY4a1NxNGlhSHBxYXN3eTRXbGJGNEcwRm5RTnNhM2s5SHlEMEtfVU5QRzJfT3R3MjdXUHdFTGFGcDZxQWo4MTdnOVVoXzZxSDVIQm9QN3JwQlhUbmpFUFU3WHhSQWxjc2w0WlJWc1d5dEJVUkxn?oc=5\" target=\"_blank\">Google Gem…",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9wY2VSNGY4a1NxNGlhSHBxYXN3eTRXbGJGNEcwRm5RTnNhM2s5SHlEMEtfVU5QRzJfT3R3MjdXUHdFTGFGcDZxQWo4MTdnOVVoXzZxSDVIQm9QN3JwQlhUbmpFUFU3WHhSQWxjc2w0WlJWc1d5dEJVUkxn?oc=5"
     },
     {
       "category": "si",
-      "title": "Anthropic ex-employees allege AI safety risks in superintelligence race - Asianet Newsable",
+      "title": "News Wrap: Newsom signs order for AI safety in California - THIRTEEN - New York Public Media",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE5aMXN1UmVUVlFoSUtDd0F5NG1OVkxtQWxfd2tpcTVqUm1Sa2VGVzJtQ1BNbWRHQmpGaGRtRm8xZEJ4NFhzQXViS0g1RElWTWRtZDdkUVZzRTR2ckpfSzBlbXJZU1RDNHRxaWZUalRFdHEzNExONW9n?oc=5\" target=\"_blank\">News Wrap: New…",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aMXN1UmVUVlFoSUtDd0F5NG1OVkxtQWxfd2tpcTVqUm1Sa2VGVzJtQ1BNbWRHQmpGaGRtRm8xZEJ4NFhzQXViS0g1RElWTWRtZDdkUVZzRTR2ckpfSzBlbXJZU1RDNHRxaWZUalRFdHEzNExONW9n?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "'DISGUSTING and FAKE': Hegseth Rages Over New Report On U.S. Military Casualties - Yahoo",
+      "region": "Global",
+      "severity": "high",
+      "confidence": "Corroborated",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpTVmZ2TmdPR1RpMkdxT0hFYUhfbHNGWHhjX3hiTURBTWpFNk9ZNjNiYTZyR3oxb0Q5N2JabzlVREtYQzZhcmlrLWZRNUVBUmRhbkdneVFhRjN3bUR0aDl3WTMySEdBOUdKUVk2QjAxN0tQRGljaWZ0cXlnbDl6NnRlNnFhWi1N?oc=5\" target…",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpTVmZ2TmdPR1RpMkdxT0hFYUhfbHNGWHhjX3hiTURBTWpFNk9ZNjNiYTZyR3oxb0Q5N2JabzlVREtYQzZhcmlrLWZRNUVBUmRhbkdneVFhRjN3bUR0aDl3WTMySEdBOUdKUVk2QjAxN0tQRGljaWZ0cXlnbDl6NnRlNnFhWi1N?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Broward begins sending ballots to military, overseas voters for November election - Caribbean National Weekly",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNcGJCZEpDZ1p4bXJab0YxSThUT0NMMFdaQzZHNlhmRWR3TW5kdEhncEVNLVY5cGxmVElrTHZtdTgySU5IZ01OSmxYM3hSekxfX0hKdmN4WlBDTVN2bDNUa05NRHBDUWJoRlQtNkFyRnpDdUhnUjJvQUhybkVoTmtXTkxXY1ZPSGtaNnUtWFFFTVJPd…",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcGJCZEpDZ1p4bXJab0YxSThUT0NMMFdaQzZHNlhmRWR3TW5kdEhncEVNLVY5cGxmVElrTHZtdTgySU5IZ01OSmxYM3hSekxfX0hKdmN4WlBDTVN2bDNUa05NRHBDUWJoRlQtNkFyRnpDdUhnUjJvQUhybkVoTmtXTkxXY1ZPSGtaNnUtWFFFTVJPdDVzRE45UkJrMkhjYkMwd05HY2xpb2NsUmJWc3FoSlpPaFpCa1ZUSHNmLXFEV0gzRnFW?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Iran war’s cost grows to $43.6 billion in new US military estimate - WPLG Local 10",
+      "region": "Middle East",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOUXI4NHdQRlJTQ3pMUjJUUEZESVNJSFM1U2J1UnZsZ2dzajZ3QW9xQ0JDV0VlMUl6Ym1nTXFkc2tGM0pQdjdHMHYtZXRaS3VtUExZVllscTdnX015ZVlhdm04SDR6VE5uTlB2Z3Vvd2xmT1llM29FUVVHcWxsZHRFREs3VDQ4WGZ4eXVCM0ZDYVpqT…",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUXI4NHdQRlJTQ3pMUjJUUEZESVNJSFM1U2J1UnZsZ2dzajZ3QW9xQ0JDV0VlMUl6Ym1nTXFkc2tGM0pQdjdHMHYtZXRaS3VtUExZVllscTdnX015ZVlhdm04SDR6VE5uTlB2Z3Vvd2xmT1llM29FUVVHcWxsZHRFREs3VDQ4WGZ4eXVCM0ZDYVpqTHhsRUgzYW5hY0l0SzBYTTBHcGJvalVsOTVSUkow?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Better Artificial Intelligence Stock: Aehr Test Systems vs. Super Micro Computer - The Motley Fool",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQdHZTYmduMmowNnpSVVdtbWUzWTFBcW1felBwSUVCWGhuODVGZHpJNjVaR3FvREltUThIRS15SkRteHJGQlNhQ2tPY01EUHBtV3EzdGoyRUloR2JvTmItWGNsTGxmdHYxa2U1aWh4RjI0STBtb09nUlpKNmszc2tab21uV1MtQ19MMy1tN1pTeXBPd…",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdHZTYmduMmowNnpSVVdtbWUzWTFBcW1felBwSUVCWGhuODVGZHpJNjVaR3FvREltUThIRS15SkRteHJGQlNhQ2tPY01EUHBtV3EzdGoyRUloR2JvTmItWGNsTGxmdHYxa2U1aWh4RjI0STBtb09nUlpKNmszc2tab21uV1MtQ19MMy1tN1pTeXBPdU9NZmRQNTJmVGYtMkxKeTR2eXZCdk45NVkwZjBCTkd0SG94NlEyR2tyNGJ4VFFQNGk4MHgtVWU3bw?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "‘We need to shape AI, rather than allow it to shape us’: Albanese - afr.com",
       "region": "Global / Frontier Labs",
       "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxOVWRkeE44NFp1LWdaUjhwOFpjU2lIbldJdEl5d2NGYWZTM3pmYnN1QkdHUW9lMHNMUlk2VllDZjJSeDFZdEZKckRiQUlqRzFXTy04Qk1xZkc4UENUTUhLNENNRHAwTTN0M3F6OG1WQWRPTm5IbHhNQldoN015Sks4elBWRGlrYTBUX1p5bEhtaHVKS…",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVWRkeE44NFp1LWdaUjhwOFpjU2lIbldJdEl5d2NGYWZTM3pmYnN1QkdHUW9lMHNMUlk2VllDZjJSeDFZdEZKckRiQUlqRzFXTy04Qk1xZkc4UENUTUhLNENNRHAwTTN0M3F6OG1WQWRPTm5IbHhNQldoN015Sks4elBWRGlrYTBUX1p5bEhtaHVKSFNOSms1UFlTQU81Z1NjaGhScjVYT3BDT3c4OGZYUXVTd19aczYwckE5UDRUYmhsTVg3YmtMbkxKN2J6d9IB0wFBVV95cUxQa19pZ0xBQTlWc0Z6dFRBb0c1NHhPWUNoUWtpTnhUay1UV2k3Nk93UDAxNnlabTgzOURzTzdaYl9UblFsUVQyNHlDbHZXYjNsTjByLWozVkI4d242WEJaWFZlVzFTWnNuQTFOOU1XUmc5MUZTaHBSZlJnX2I0b0xrWk80SXVva3FBa2hEdDR2NVo2LTd2OV91aHJfQ1VQQ0s5dm5DNFYzYlctZDV1UE9nQ20tMlRqNS1oRGs0dVZsSzV4VlFMNElrT2F0Y3JOYmJHSUtz?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQR0tvelBya0VJa0V2dzV6a3k3NG9SWlBKdnlyRk1keEhsR0ttU0tndjl6RHAxbTRvTjY4ZHlTWkVtcm82XzdpOEg2OEpaaWt0OEw1LU5HcjJ5QXkyMXNwVEZpUXFHS0R2dWpzWVJOeFhwcjVveFBpRlh5UGtuLXhfQkJPUHVNelNDWGJjTG5UVThfR…",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQR0tvelBya0VJa0V2dzV6a3k3NG9SWlBKdnlyRk1keEhsR0ttU0tndjl6RHAxbTRvTjY4ZHlTWkVtcm82XzdpOEg2OEpaaWt0OEw1LU5HcjJ5QXkyMXNwVEZpUXFHS0R2dWpzWVJOeFhwcjVveFBpRlh5UGtuLXhfQkJPUHVNelNDWGJjTG5UVThfRmdCTy1TelNEcWhOZUdSZkJhang2ajEzTkxRdHR0cmVmVXk?oc=5"
     },
     {
-      "category": "si",
-      "title": "Apple researchers unveil SimpleDesign, a new AI model for protein design - 9to5Mac",
-      "region": "Global / Frontier Labs",
+      "category": "military",
+      "title": "Trump has a deal to build US military presence in Greenland while leaving island in Denmark's hands - Union-Bulletin",
+      "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOcUhWNFltbFhUSGx6Vkl2OWNpM2xVQmdRS3ZBR053RUVlYVZINlBOVWlrRGdhc2ZaaFU1R29qbDhDSFUza2tsSm50LXIxMXpvMzRPYVZta1VIbHg5emhONzZUR05tbUpncjc2VnY0M1NDUXlwcDU2Z0ZDdlkzaElKT29PTDBHSHlIQVpINmR6dTJrc…",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcUhWNFltbFhUSGx6Vkl2OWNpM2xVQmdRS3ZBR053RUVlYVZINlBOVWlrRGdhc2ZaaFU1R29qbDhDSFUza2tsSm50LXIxMXpvMzRPYVZta1VIbHg5emhONzZUR05tbUpncjc2VnY0M1NDUXlwcDU2Z0ZDdlkzaElKT29PTDBHSHlIQVpINmR6dTJrcGRRbEV0RVBObWJxTFFqbjRseHhn?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigJBVV95cUxQVGxfb0Y2ZXl6dnE5Q1N4dEJ0MGktOUY4Y2RXU2RDellQMkVQdldjTDdzY1g1TnFEN3dKUnlDaENwejdvWUxJTUZ1Wm85dUJMODlsNDlfbDlkVG5WLU9sQllzXzZ6WUxPakVmcWdocUloVlZiS0doUmxvVmpiWVJ1c0ZlWS1pbjBnNXBPSlU4Ri1DU…",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQVGxfb0Y2ZXl6dnE5Q1N4dEJ0MGktOUY4Y2RXU2RDellQMkVQdldjTDdzY1g1TnFEN3dKUnlDaENwejdvWUxJTUZ1Wm85dUJMODlsNDlfbDlkVG5WLU9sQllzXzZ6WUxPakVmcWdocUloVlZiS0doUmxvVmpiWVJ1c0ZlWS1pbjBnNXBPSlU4Ri1DUDFPb3pzeTNhRkkwS0psQ1BjWFdod2M0c0FrMjNpNGd3YVd2eEF0ZUJobVU1Z1BBNzdnMkJPTWNuVVduMG9aN1JxVnpKZGViazFuXzN0UXdaXzhsUE40SUxiQ2hTdW9JbmhLYXZiU0Z2YW9Gb1ZwQk1BNzFEcndBZw?oc=5"
     },
     {
-      "category": "si",
-      "title": "3 AI Safety Stocks Worth Watching as Cybersecurity Spending Gets a Fresh Look - simplywall.st",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
+      "category": "military",
+      "title": "Conifer’s defense grabs five interceptions in victory over Standley Lake at NAAC - Colorado Preps",
+      "region": "Global",
+      "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQek1DdldfQVM1YUhvYTQxQWQ0Tk9kbk1DVzhjZ2JaQnZiTU80cEg4VVBnQThMekFVYzNJc0w5akcxZ2V0aDdLOXZvYThNQmJ5aFlpME1YRTVBbENJSGJuZlBGV0hsdTVjZVNRbkxhdTlDb2lvQTJwZXRYaXJSV0tQbjR3S2x3d05TUFFHeF9kcEtFa…",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQek1DdldfQVM1YUhvYTQxQWQ0Tk9kbk1DVzhjZ2JaQnZiTU80cEg4VVBnQThMekFVYzNJc0w5akcxZ2V0aDdLOXZvYThNQmJ5aFlpME1YRTVBbENJSGJuZlBGV0hsdTVjZVNRbkxhdTlDb2lvQTJwZXRYaXJSV0tQbjR3S2x3d05TUFFHeF9kcEtFazlVWWktanFKZUVpQzBYd09pWlR6UnEtTENjN3d2Y1pEWnp0cWIyRFVSOTcwQXBxVkpDcmM0RFE0MNIB0AFBVV95cUxPZmNpV0t4eHFMWnNUZzJXY0IwZEVZNTBiLUtpVFRkb2czOU5RWWtoMGxINkRQZWdDblRpUHdOMnd1NzZackYyZFJObVVsaVk1T3o0bkx1bl9oZkh3TVBwcGkwOGJPWl84WmhWS01ZOEcxMEs5aGpIaERTV2NTUE5QWU9pYmxjeVZ6SDVybGwzZHBaWVJhY18xQmc5Wk51NFpHcUx2b0tyVWVWUWxrNVVuNUM3QWtkanBWRGxOZWQ3NXBRdGN5YmRRanVleE1TZHQ0?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Children need interaction, not AI | Letters - The Guardian",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZU5hZGIxM2xCU3MwRTN3STlKN05PM1gxNXhiVEg4YnNuQXVRMW5kTXB4U2xIVC1lNW5LdHg3d1ZYSkw5MVVvV3RZN0d3Mzk5TzJxQVV3V0FnZDU2X19KcDdyM0wzR2tNRmNwZ1BXcFRPQm9DbFIya0JSX0RfcTVtSFYxTk5JTXhoMVhn?oc=5\" ta…",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZU5hZGIxM2xCU3MwRTN3STlKN05PM1gxNXhiVEg4YnNuQXVRMW5kTXB4U2xIVC1lNW5LdHg3d1ZYSkw5MVVvV3RZN0d3Mzk5TzJxQVV3V0FnZDU2X19KcDdyM0wzR2tNRmNwZ1BXcFRPQm9DbFIya0JSX0RfcTVtSFYxTk5JTXhoMVhn?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaldfVUg5QVNzWmFCcE5PempWQTM0YnJvYW15THJhN2dmYWZiekgwOGZEQ3F2RHZvNXVSc2xNVW1ud2dzajQyckJfc295QmcxUmpZNld6bzA2MDE2SHRXaUcza3lzNUhUS1Y3cWw3c2dpRTdoN2NwdEJnSmc0NmlYOUxWWVkwcEpmSTRhal9fWEdra…",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaldfVUg5QVNzWmFCcE5PempWQTM0YnJvYW15THJhN2dmYWZiekgwOGZEQ3F2RHZvNXVSc2xNVW1ud2dzajQyckJfc295QmcxUmpZNld6bzA2MDE2SHRXaUcza3lzNUhUS1Y3cWw3c2dpRTdoN2NwdEJnSmc0NmlYOUxWWVkwcEpmSTRhal9fWEdrazdKR29mQTRNbmc2ZE9NUGRkdGV4QXNrdw?oc=5"
     }
   ],
   "newsTracker": [
@@ -233,7 +233,6 @@
   ],
   "history": {
     "labels": [
-      "Jul 12",
       "Jul 13",
       "Jul 14",
       "Jul 15",
@@ -248,7 +247,8 @@
       "Aug 22",
       "Aug 29",
       "Sep 5",
-      "Sep 12"
+      "Sep 12",
+      "Sep 19"
     ],
     "defcon": [
       3,
@@ -256,7 +256,7 @@
       3,
       3,
       3,
-      3,
+      1,
       1,
       1,
       1,
