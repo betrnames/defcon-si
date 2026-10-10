@@ -1,97 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-10-04 12:00 UTC",
+  "lastUpdated": "2026-10-11 12:00 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "Elon Musk's new Pentagon role overlaps with businesses that work with the Defense Department: SpaceX's 2026 defense a…",
+      "title": "Troops loitering near D.C. ballot box were not guarding it, National Guard says - The Washington Post",
       "region": "Global",
       "severity": "low",
       "confidence": "Corroborated",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWNlMjBVeW4xYlVxTTJZSDJUNDE0b3daWUwyYmpEcDJ5OFkwSUtjV2hVbmlYWEpBdnJwQ3BsaVMyWlBTazlTY0ItMXpvZ1lWeXRsT01QUUhkM1gwejRwRkhRME5NOEZQcFRPMHVKbndfQXVadWhTRVMzdlVSbE5fUTRpTWRyUUFzREJ1YzJTU2xQT…",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWNlMjBVeW4xYlVxTTJZSDJUNDE0b3daWUwyYmpEcDJ5OFkwSUtjV2hVbmlYWEpBdnJwQ3BsaVMyWlBTazlTY0ItMXpvZ1lWeXRsT01QUUhkM1gwejRwRkhRME5NOEZQcFRPMHVKbndfQXVadWhTRVMzdlVSbE5fUTRpTWRyUUFzREJ1YzJTU2xQT2txdTBrblZkaHpxRGVSVURKZWpkb1RQQVhSU3luMl9EdkdXSVlweWRyS2JIbWpQYTdDc0JOT0Nkanp6Y0t2RXdBOFExSnliaVRCNk9kdU42TQ?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "A timeline of developments in AI safety since the attack on Hugging Face - The Star",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb2l2ckd1SS1aMWs4dVpjSURRUHBCMzQ1M19KaDU5STJoMlQ5cUprNHZjR3BMTHNXQ3lTeVNGVGUydGVCUWw1TWVDYUJzcWxuYzAzY0tkZjRhV2FrOEowZDA0MHh1TTMzVFRlTGlqMWV3RW54NVl0bElEUF9ybFdVaThVVWtHZmV5YjdkeTg2WDVQa…",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb2l2ckd1SS1aMWs4dVpjSURRUHBCMzQ1M19KaDU5STJoMlQ5cUprNHZjR3BMTHNXQ3lTeVNGVGUydGVCUWw1TWVDYUJzcWxuYzAzY0tkZjRhV2FrOEowZDA0MHh1TTMzVFRlTGlqMWV3RW54NVl0bElEUF9ybFdVaThVVWtHZmV5YjdkeTg2WDVQaE1wQUVFVklDU19xNkx1OHQyUmVhREFFeDlYV1gwLUxhQU1uYlpPU212TVo3R2ktclU?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Better Artificial Intelligence Stock: NVIDIA vs. SK Hynix - The Motley Fool",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOWFNBNnF5aXl2SkY3cThubkkxcDNzLWRqeWJkM183eFI2Z2hRX1NlUTlVTFh6YkNUQ2E4RmJVcGNJR2o3V2JISFFBUzh4SVo4RjVjbHBwU1c2UVkzUUVuaDZQY0ZRbXZsSUhtaW5lLVdXUEYzcDI1MXFaWXc1QnE2bFdOb25iU1p6Z0NOM0FMQ2drS…",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWFNBNnF5aXl2SkY3cThubkkxcDNzLWRqeWJkM183eFI2Z2hRX1NlUTlVTFh6YkNUQ2E4RmJVcGNJR2o3V2JISFFBUzh4SVo4RjVjbHBwU1c2UVkzUUVuaDZQY0ZRbXZsSUhtaW5lLVdXUEYzcDI1MXFaWXc1QnE2bFdOb25iU1p6Z0NOM0FMQ2drSFdIVzVuc3J2MTliQzBXVUxKcF92RjZCOHA1?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNOUwxcXdVUmt3NzRJMF9xLWI1NzRVRkkwZk43TlM4aExsYlVYYk02bE0xcGR0ZFhvRllKSkdsbmRranlqcV9fU2NOUGVZSlNUaHMyTURPUEZ0bmwyQXFPc00ycUtzcV90cjZZb21nTnBIN0dzb3IzMnBJV2VrX1Y4N1RPaEJHWG41b0ZYNEFNZElYa…",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOUwxcXdVUmt3NzRJMF9xLWI1NzRVRkkwZk43TlM4aExsYlVYYk02bE0xcGR0ZFhvRllKSkdsbmRranlqcV9fU2NOUGVZSlNUaHMyTURPUEZ0bmwyQXFPc00ycUtzcV90cjZZb21nTnBIN0dzb3IzMnBJV2VrX1Y4N1RPaEJHWG41b0ZYNEFNZElYaDNZTWp6WVpCbXpOWmY2MEsxemt2RWxJYWNJWVZ2bUQ2NDdZQWYxWEdiWDJ3?oc=5"
     },
     {
       "category": "military",
-      "title": "Massabesic football’s defense stymies Noble - Portland Press Herald - Maine Sunday Telegram",
+      "title": "Football: Waynesfield-Goshen tightens up run defense in win over Hardin Northern - LimaOhio.com",
       "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOMGdQR3pKcHBuUmZIbU92dXg3YXNlYVlvVmNNaWY2RXBNYVFGZGFXQllodHQyTkVHUTF2X1VKTGFtenFZeFo1THU2amZIYWhVY2JRYnpSMGtTRTVRUzNwTzQ4VFc5SlRpNGl2aTlsNHdnTnNfcGFTYXpPS2lKWUpac09TRTIxZHljQ3c?oc=5\" tar…",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMGdQR3pKcHBuUmZIbU92dXg3YXNlYVlvVmNNaWY2RXBNYVFGZGFXQllodHQyTkVHUTF2X1VKTGFtenFZeFo1THU2amZIYWhVY2JRYnpSMGtTRTVRUzNwTzQ4VFc5SlRpNGl2aTlsNHdnTnNfcGFTYXpPS2lKWUpac09TRTIxZHljQ3c?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxObW9YbFRFclZsWHlkWTJrMzV5Y0M5Nm9TTW9rV2RyZXB0WnVGcVg4cFFYTHVOc2dFaTNNX01hYlIxQjl6eGFqS0RSUXMzY1ZySUZtX3c5RTZOTTRkcUpNWkFHZ2d3S0VkMUxEVHJuNkJTLWpCMGZfMDVFNlFHZlpUWFRXTmF1X20wLVEtSHFqQVJ0Q…",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObW9YbFRFclZsWHlkWTJrMzV5Y0M5Nm9TTW9rV2RyZXB0WnVGcVg4cFFYTHVOc2dFaTNNX01hYlIxQjl6eGFqS0RSUXMzY1ZySUZtX3c5RTZOTTRkcUpNWkFHZ2d3S0VkMUxEVHJuNkJTLWpCMGZfMDVFNlFHZlpUWFRXTmF1X20wLVEtSHFqQVJ0QWdyOUowZWFUck15TUxHWXg3Y1ZJUWpSVy1wZng5ZWMwV2U1NzR1dTNpcFFGRjduaF9wU2pJ?oc=5"
     },
     {
       "category": "military",
-      "title": "Trump administration sends aircraft carrier and up to 10,000 troops toward Iran, threatens to resume bombing - World …",
-      "region": "Middle East",
-      "severity": "high",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qcW1uUlJ5ZVhSRklJYnJUUVJGV2tyRjZsa1FHa0tSNU81NG5rLWRTWXk4bV9QVXNhcFZMWS1aVjZ5VUVrUnNJdGQ0ZVRIOEpnNUZtWHMxZV9tQ1JINDhxc2ZuUVl3WHJx?oc=5\" target=\"_blank\">Trump administration sends aircraf…",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qcW1uUlJ5ZVhSRklJYnJUUVJGV2tyRjZsa1FHa0tSNU81NG5rLWRTWXk4bV9QVXNhcFZMWS1aVjZ5VUVrUnNJdGQ0ZVRIOEpnNUZtWHMxZV9tQ1JINDhxc2ZuUVl3WHJx?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "North Korea test-fires ballistic missile as tensions grow over border mine blasts - chronicleonline.com",
-      "region": "Indo-Pacific",
-      "severity": "high",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxPS3pnLXdDVUMxb3Iyb0oyWXdTSXNtTl81TUJnVVFvNjYwSkV3OGNRZ2pkc1VyYTNTTEJPcWNUZTFiWVUySllhRHA3ek1hU2ZpQ19qb0NGSk5iQlY3ZWRhVS1VeEtMczAwSk83RTZYb1pNYThXWXZNRE5WNTMtWGp1ZTJmNXRIem9rSEo1U0RXVUthd…",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPS3pnLXdDVUMxb3Iyb0oyWXdTSXNtTl81TUJnVVFvNjYwSkV3OGNRZ2pkc1VyYTNTTEJPcWNUZTFiWVUySllhRHA3ek1hU2ZpQ19qb0NGSk5iQlY3ZWRhVS1VeEtMczAwSk83RTZYb1pNYThXWXZNRE5WNTMtWGp1ZTJmNXRIem9rSEo1U0RXVUthdzRNMEZpdThXaTNrTzF4bmEydWltNS1MN3RnRmhVREI3RUtWa3lZSDQ1MEFuTGV2ZnduS0stcWJrWGFSY2hRc1dsa01pZHFqeHBpeGJoOHgzLS1LbnFoRFRvRXFVczI4ZkVUV1JxT2sxRlNyQnA1Rm5wcQ?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Why Anthropic Invited A Hindu Monk To Discuss AI Ethics - ndtv.com",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxNYk1NOTlaYlNJY0ZwbTRPVE5TcnhlNlN1cVdXR2hLNmF6TnJmcFE2LU01TVV0X3hLWmJFRkFXWmNnXzUwOVEwbDB1bUw4Q2ZmNDI0WmJfWEgtUU81alB0X1RmMW5kNE9jQ2dleEs0WGdUWHVhR3hTbWZUS0s5REd0OUk2ZFlrUXZ4bFdkTFB1RnNkU…",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYk1NOTlaYlNJY0ZwbTRPVE5TcnhlNlN1cVdXR2hLNmF6TnJmcFE2LU01TVV0X3hLWmJFRkFXWmNnXzUwOVEwbDB1bUw4Q2ZmNDI0WmJfWEgtUU81alB0X1RmMW5kNE9jQ2dleEs0WGdUWHVhR3hTbWZUS0s5REd0OUk2ZFlrUXZ4bFdkTFB1RnNkUlYtUGV5LVNKNDdoc2dUcnFDQVpBMTl1SzlVMFNVaExOQkxZbUNWN290VENsdlVjYnhDdmfSAc4BQVVfeXFMTW1WZldBRVVWM1cxYUxPaWJkQThHM0JZUU9ZcFhwMkNEczhQY3ZrenRidlA5NHI0TjA3U1FnMW12TnlBRFhDTjNVR05GcEVaZ2xPcUFuMldHdG5nV2RWOWZvZHRXUk04OFFDT0IxNFNGQjBzOVllU0RDVmUwVTF4bEUwemxPeWE1bnZpNzRlSUdiS2lVODVWUW5NN0EzS0o1Rm1IaEJwYlNjR21xbV9KSktyTmUtOGdOc1Z2TERBbVVQRk9RQXJha0tJWDczS2c?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Eagle defense clamps down on Mustangs, 24-8 - pmg-ky1.com",
+      "title": "Red Raiders' defense stands tall in win over Hilltoppers - Northeast Mississippi Daily Journal",
       "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxQX3U3TzRmN3JDakNjNU1BRHYzLVotZm8wY2FmZHFWZ01MUkRReWp3Mzk4WjlObEZ0UlB2eGdVaGthYzdSQnFYcGJtdDVoTy05VXRiaDlJTWFCUHpqWFRDV1d4YjBhUHVVM3FpMXRxLUpRVUh3ZDhHQUlQYzhncWhrTFJ2OTRscUw4dzFPZG1kRVZmU…",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQX3U3TzRmN3JDakNjNU1BRHYzLVotZm8wY2FmZHFWZ01MUkRReWp3Mzk4WjlObEZ0UlB2eGdVaGthYzdSQnFYcGJtdDVoTy05VXRiaDlJTWFCUHpqWFRDV1d4YjBhUHVVM3FpMXRxLUpRVUh3ZDhHQUlQYzhncWhrTFJ2OTRscUw4dzFPZG1kRVZmUHl0NWR4anVwdEt5UEJ2clNQQVZGWmNnbm92cFN6RndzX2t2R3RBZFNpcHNfOHZJUkZiNG5MeA?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYjJrNlo5QUZlREVHR0N2aXBQTkUzUGJ1cWYxU01ianF1OXkxeW9tMUlhVG1FWnhDSnpnazJITTFhWUJwU0tXNjdGbTRuYlV6b3RXRk1NaEtoUExFOTNJZEVDbmEzdDRSWUZFeVVOWFk0WllMM1NrNC1XelR6UUM4eS1sSVdtek5DWk93QWhQcmZuO…",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYjJrNlo5QUZlREVHR0N2aXBQTkUzUGJ1cWYxU01ianF1OXkxeW9tMUlhVG1FWnhDSnpnazJITTFhWUJwU0tXNjdGbTRuYlV6b3RXRk1NaEtoUExFOTNJZEVDbmEzdDRSWUZFeVVOWFk0WllMM1NrNC1XelR6UUM4eS1sSVdtek5DWk93QWhQcmZuOTNZb3d3ZHh1VlU1TXEzckg5NEhXQXJuaWg2TmVqUm5uWWhqQ0xmNmUzcFBuRjlSSXlUTmswZGlLaTZiUTJBeUV4MVlTQVFGYnJ2ck9iNF9vcw?oc=5"
     },
     {
       "category": "si",
-      "title": "Sam Altman Discusses the Development of Artificial Intelligence and Its Impact on Daily Life - Nacionale",
+      "title": "AI system submits false homicide tip to Philadelphia police - The Washington Post",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Corroborated",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPWnNQNmNTNVdsTjFlRHpYcmhLN2pZQjZQdFB6ZWEyUkt0OTZ6R1dUSlR2SnV4VWxIMm1vOURfUnM0SnJiSXI3N3R4bDBqTjYyQmdSaDFUVXJmM1Y1c29INVRJVTBPRGkwZUdrTTdJTVI4RkFQb1Q1bFRudFJwdFpsc2p2SFVuaHBxNE5mR3BHZzl4d…",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWnNQNmNTNVdsTjFlRHpYcmhLN2pZQjZQdFB6ZWEyUkt0OTZ6R1dUSlR2SnV4VWxIMm1vOURfUnM0SnJiSXI3N3R4bDBqTjYyQmdSaDFUVXJmM1Y1c29INVRJVTBPRGkwZUdrTTdJTVI4RkFQb1Q1bFRudFJwdFpsc2p2SFVuaHBxNE5mR3BHZzl4d2VsdG5Hd2xocURSbVlxQnJGN1BYM1B0d0g5QVBj?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police, went undetected for months- Moneycontrol.com - LinkedIn",
       "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxOVFQ4ckxScGNTTXQ2cnVTaU5IMHZTSTNrdm9zeTRWY1JPbEdCd3NjamtBS01hVVM4VndaeThnUW1pcHhYeG1ub3JrWFJqc3JNajJwY2VyMzV4TG8xcEoxb2xieHIxT1E2d3lqNmtvbGFhS25rWFVVckhnYjNYWkwtVjU1NDZSdWRLTWRYdlY5Zmo?o…",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVFQ4ckxScGNTTXQ2cnVTaU5IMHZTSTNrdm9zeTRWY1JPbEdCd3NjamtBS01hVVM4VndaeThnUW1pcHhYeG1ub3JrWFJqc3JNajJwY2VyMzV4TG8xcEoxb2xieHIxT1E2d3lqNmtvbGFhS25rWFVVckhnYjNYWkwtVjU1NDZSdWRLTWRYdlY5Zmo?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOUnZRSm8zMzloaERRSm5sTnBDUUhmMlFnQ2ZTNXlFT3dXdmJVckl4ZTljVVFYMkU0UUlUN09kLVNpNktod2M5SDZpdGEzQlRlUUJDLVlGbTFzLXFRd3JuLUFiLWNRUmRxamZDeEt1X1duS0tsbXZUaklheVZ1WDUzWjdNOFJuc0dOZ0FnbEhBOUotZ…",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUnZRSm8zMzloaERRSm5sTnBDUUhmMlFnQ2ZTNXlFT3dXdmJVckl4ZTljVVFYMkU0UUlUN09kLVNpNktod2M5SDZpdGEzQlRlUUJDLVlGbTFzLXFRd3JuLUFiLWNRUmRxamZDeEt1X1duS0tsbXZUaklheVZ1WDUzWjdNOFJuc0dOZ0FnbEhBOUotZHdrYkJiMlZvbU1yU1hoZGZqdlFGb0lTMXBUTzMtWGVZX3p1MGk4RU4tVw?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "Defense Dominates Against Western Colorado - Colorado School of Mines Athletics",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbVN0emVMNE44aXdURV9BYmNxV0ljRnZBZjZrS2l6SkhWWWd5TVJWckd6c2M1bHVYWnc2OS1wanFweTRvWXpiVmNIWTQ3Um5VYXpaVk9pVEFuQThOTHYwc0luci02bkFENGFuWFBOMktuWU9XblBtSmZQRDk4WmFrNTl4TDJySGFYUk53QWJZUnI4R…",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbVN0emVMNE44aXdURV9BYmNxV0ljRnZBZjZrS2l6SkhWWWd5TVJWckd6c2M1bHVYWnc2OS1wanFweTRvWXpiVmNIWTQ3Um5VYXpaVk9pVEFuQThOTHYwc0luci02bkFENGFuWFBOMktuWU9XblBtSmZQRDk4WmFrNTl4TDJySGFYUk53QWJZUnI4RnZvZ3JyTVRjM25kZURoZ211YkZKSTFLWXc?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "AI Model Predicts Survival in Parkinson’s Patients with New Web Tool - Bioengineer.org",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNcVpIWHpEUTl6ZEg5MkJKMDVBb1ZDZ2k4M1RjSV85Z1hhRGUzb3N4T0ZheHlwWVp6TjFJLUViSGV3UndsT210NG5lTzczRkhKdks3YWRpSFZIU0FnNXlpODVHcWZ0TFZEUnVnQzJyNUtSUEZxaThEY0w5elVwY0loTEtYQTVKMFBUb2ViamNxcXk3U…",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcVpIWHpEUTl6ZEg5MkJKMDVBb1ZDZ2k4M1RjSV85Z1hhRGUzb3N4T0ZheHlwWVp6TjFJLUViSGV3UndsT210NG5lTzczRkhKdks3YWRpSFZIU0FnNXlpODVHcWZ0TFZEUnVnQzJyNUtSUEZxaThEY0w5elVwY0loTEtYQTVKMFBUb2ViamNxcXk3UHVPQXFj?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "‘Justice demands something must be done’: Douglas Carter’s defense team files motion to dismiss murder case over misc…",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFBCbE9Wd1F4TE9ON1lEaU54eXQ1cnBTRmxkR04yOWZJUzVWYXNUUUFnVW5aV0RQb3VXWUdzSXIyQk9Hc3VyeUJsbDk0cXA1T1Z6QUo5eTd4WVd4ckRDd1JaSjRpVV9OWWVFamJwV0VrdE1aaW9adThSadIBfkFVX3lxTE1abkluTFEtVzVieG5sUWVaM…",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCbE9Wd1F4TE9ON1lEaU54eXQ1cnBTRmxkR04yOWZJUzVWYXNUUUFnVW5aV0RQb3VXWUdzSXIyQk9Hc3VyeUJsbDk0cXA1T1Z6QUo5eTd4WVd4ckRDd1JaSjRpVV9OWWVFamJwV0VrdE1aaW9adThSadIBfkFVX3lxTE1abkluTFEtVzVieG5sUWVaMF9fYXIxMnhkRm1vQWFYQk56SUlPRFRDWVl1MFYzaTZ6d01TeVVkWlc0Wkc0S0d3QXhTZnduYldEWlg0SUtlNi1STzJiQlU4bF9YckFfWlowLWNvT2VhY2NnMTVDUWJVRHlxb2l6dw?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "On artificial intelligence, taxation and oversight - Santa Fe New Mexican",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSllPczNlQW9HT1hKZUJWeWNxNDNTalN6NkRuVHZ2M1d0bnMxRzVXN1Q3NXZ2Z01XZFl3dWtNWnNkNGdXSUlibGFiS2pnLTBFUEpUMTR1a19pek9SbTc2bS1ZQXREM3poc0hPYlQ0S2Jwd1RsdFhhTFdIUjdkaU95aWJ1VVVJQ2cxU1FLM0hBeXY2R…",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSllPczNlQW9HT1hKZUJWeWNxNDNTalN6NkRuVHZ2M1d0bnMxRzVXN1Q3NXZ2Z01XZFl3dWtNWnNkNGdXSUlibGFiS2pnLTBFUEpUMTR1a19pek9SbTc2bS1ZQXREM3poc0hPYlQ0S2Jwd1RsdFhhTFdIUjdkaU95aWJ1VVVJQ2cxU1FLM0hBeXY2RlhzWk02SHp4X3pMd00wV1g0T1pmNmphUWo4OWxYQnk5QmtvblRtcy1tUzFsTXRYNVh3WFF3ZVdxWGd0SVN2MWo1QTNfVDZ2dHl2MmpuMmZEWQ?oc=5"
     }
   ],
   "newsTracker": [
@@ -233,7 +233,6 @@
   ],
   "history": {
     "labels": [
-      "Jul 15",
       "Jul 16",
       "Jul 17",
       "Jul 18",
@@ -248,12 +247,13 @@
       "Sep 12",
       "Sep 19",
       "Sep 26",
-      "Oct 3"
+      "Oct 3",
+      "Oct 10"
     ],
     "defcon": [
       3,
       3,
-      3,
+      1,
       1,
       1,
       1,
