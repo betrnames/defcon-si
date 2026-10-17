@@ -1,97 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-10-11 12:00 UTC",
+  "lastUpdated": "2026-10-18 12:00 UTC",
   "signals": [
     {
-      "category": "military",
-      "title": "Troops loitering near D.C. ballot box were not guarding it, National Guard says - The Washington Post",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNOUwxcXdVUmt3NzRJMF9xLWI1NzRVRkkwZk43TlM4aExsYlVYYk02bE0xcGR0ZFhvRllKSkdsbmRranlqcV9fU2NOUGVZSlNUaHMyTURPUEZ0bmwyQXFPc00ycUtzcV90cjZZb21nTnBIN0dzb3IzMnBJV2VrX1Y4N1RPaEJHWG41b0ZYNEFNZElYa…",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOUwxcXdVUmt3NzRJMF9xLWI1NzRVRkkwZk43TlM4aExsYlVYYk02bE0xcGR0ZFhvRllKSkdsbmRranlqcV9fU2NOUGVZSlNUaHMyTURPUEZ0bmwyQXFPc00ycUtzcV90cjZZb21nTnBIN0dzb3IzMnBJV2VrX1Y4N1RPaEJHWG41b0ZYNEFNZElYaDNZTWp6WVpCbXpOWmY2MEsxemt2RWxJYWNJWVZ2bUQ2NDdZQWYxWEdiWDJ3?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Football: Waynesfield-Goshen tightens up run defense in win over Hardin Northern - LimaOhio.com",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxObW9YbFRFclZsWHlkWTJrMzV5Y0M5Nm9TTW9rV2RyZXB0WnVGcVg4cFFYTHVOc2dFaTNNX01hYlIxQjl6eGFqS0RSUXMzY1ZySUZtX3c5RTZOTTRkcUpNWkFHZ2d3S0VkMUxEVHJuNkJTLWpCMGZfMDVFNlFHZlpUWFRXTmF1X20wLVEtSHFqQVJ0Q…",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObW9YbFRFclZsWHlkWTJrMzV5Y0M5Nm9TTW9rV2RyZXB0WnVGcVg4cFFYTHVOc2dFaTNNX01hYlIxQjl6eGFqS0RSUXMzY1ZySUZtX3c5RTZOTTRkcUpNWkFHZ2d3S0VkMUxEVHJuNkJTLWpCMGZfMDVFNlFHZlpUWFRXTmF1X20wLVEtSHFqQVJ0QWdyOUowZWFUck15TUxHWXg3Y1ZJUWpSVy1wZng5ZWMwV2U1NzR1dTNpcFFGRjduaF9wU2pJ?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Red Raiders' defense stands tall in win over Hilltoppers - Northeast Mississippi Daily Journal",
-      "region": "Global",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYjJrNlo5QUZlREVHR0N2aXBQTkUzUGJ1cWYxU01ianF1OXkxeW9tMUlhVG1FWnhDSnpnazJITTFhWUJwU0tXNjdGbTRuYlV6b3RXRk1NaEtoUExFOTNJZEVDbmEzdDRSWUZFeVVOWFk0WllMM1NrNC1XelR6UUM4eS1sSVdtek5DWk93QWhQcmZuO…",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYjJrNlo5QUZlREVHR0N2aXBQTkUzUGJ1cWYxU01ianF1OXkxeW9tMUlhVG1FWnhDSnpnazJITTFhWUJwU0tXNjdGbTRuYlV6b3RXRk1NaEtoUExFOTNJZEVDbmEzdDRSWUZFeVVOWFk0WllMM1NrNC1XelR6UUM4eS1sSVdtek5DWk93QWhQcmZuOTNZb3d3ZHh1VlU1TXEzckg5NEhXQXJuaWg2TmVqUm5uWWhqQ0xmNmUzcFBuRjlSSXlUTmswZGlLaTZiUTJBeUV4MVlTQVFGYnJ2ck9iNF9vcw?oc=5"
-    },
-    {
       "category": "si",
-      "title": "AI system submits false homicide tip to Philadelphia police - The Washington Post",
+      "title": "Anthropic secretly lobbies Congress to advance legislation on frontier AI regulation - 富途牛牛",
       "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Corroborated",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPWnNQNmNTNVdsTjFlRHpYcmhLN2pZQjZQdFB6ZWEyUkt0OTZ6R1dUSlR2SnV4VWxIMm1vOURfUnM0SnJiSXI3N3R4bDBqTjYyQmdSaDFUVXJmM1Y1c29INVRJVTBPRGkwZUdrTTdJTVI4RkFQb1Q1bFRudFJwdFpsc2p2SFVuaHBxNE5mR3BHZzl4d…",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWnNQNmNTNVdsTjFlRHpYcmhLN2pZQjZQdFB6ZWEyUkt0OTZ6R1dUSlR2SnV4VWxIMm1vOURfUnM0SnJiSXI3N3R4bDBqTjYyQmdSaDFUVXJmM1Y1c29INVRJVTBPRGkwZUdrTTdJTVI4RkFQb1Q1bFRudFJwdFpsc2p2SFVuaHBxNE5mR3BHZzl4d2VsdG5Hd2xocURSbVlxQnJGN1BYM1B0d0g5QVBj?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "Anthropic AI model sent fake murder tip to Philadelphia police, went undetected for months- Moneycontrol.com - LinkedIn",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
+      "severity": "high",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOUnZRSm8zMzloaERRSm5sTnBDUUhmMlFnQ2ZTNXlFT3dXdmJVckl4ZTljVVFYMkU0UUlUN09kLVNpNktod2M5SDZpdGEzQlRlUUJDLVlGbTFzLXFRd3JuLUFiLWNRUmRxamZDeEt1X1duS0tsbXZUaklheVZ1WDUzWjdNOFJuc0dOZ0FnbEhBOUotZ…",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUnZRSm8zMzloaERRSm5sTnBDUUhmMlFnQ2ZTNXlFT3dXdmJVckl4ZTljVVFYMkU0UUlUN09kLVNpNktod2M5SDZpdGEzQlRlUUJDLVlGbTFzLXFRd3JuLUFiLWNRUmRxamZDeEt1X1duS0tsbXZUaklheVZ1WDUzWjdNOFJuc0dOZ0FnbEhBOUotZHdrYkJiMlZvbU1yU1hoZGZqdlFGb0lTMXBUTzMtWGVZX3p1MGk4RU4tVw?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxOYkVFdXBMYS1HbllodjNYNHdJQTE0cDVIQU01YjgtOWh3NVRVN01xOGVjTVdtMUI1SXBKa0Y1SDBLVjZpQTZKdXVfTjFVUG8zNHZxZHlSMWVVeFI1UU9Cd3BrODdqdnBfTVVEZkdOQmp3SXFoYTFtTmhLck85U2RuTzdCYzA4TW1uUWRhUkhWbG5oW…",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYkVFdXBMYS1HbllodjNYNHdJQTE0cDVIQU01YjgtOWh3NVRVN01xOGVjTVdtMUI1SXBKa0Y1SDBLVjZpQTZKdXVfTjFVUG8zNHZxZHlSMWVVeFI1UU9Cd3BrODdqdnBfTVVEZkdOQmp3SXFoYTFtTmhLck85U2RuTzdCYzA4TW1uUWRhUkhWbG5oWkJlYVVjck02bWZFeUhsUHMxVk1zN0hfNFNrOVdfQktwWFhCWVk?oc=5"
     },
     {
       "category": "military",
-      "title": "Defense Dominates Against Western Colorado - Colorado School of Mines Athletics",
+      "title": "Pequea Valley rides its defense to streak-breaking football victory over Lancaster Catholic - LancasterOnline",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Developing",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogJBVV95cUxNRC1VbU84X2dfUG1SUndzc2FJb3RQUEhOR0tZTFc2TzhVY0I5dV9JTDA2WTNaaEhUT3ctUzJMQzd4UVdUeVlCTDJyTU05VGUtYUFpXzl0TEpDNXd1U2pRRGtlZV9ub2ZtWFJ4ZThYaUp3dHJaUFlqZUhQS0dXQTNpazBIMDhvS05iOFR6RUVvcUlvR…",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNRC1VbU84X2dfUG1SUndzc2FJb3RQUEhOR0tZTFc2TzhVY0I5dV9JTDA2WTNaaEhUT3ctUzJMQzd4UVdUeVlCTDJyTU05VGUtYUFpXzl0TEpDNXd1U2pRRGtlZV9ub2ZtWFJ4ZThYaUp3dHJaUFlqZUhQS0dXQTNpazBIMDhvS05iOFR6RUVvcUlvRU9pcnJvQU9uMU0wOVRWQXE1TGNYNEtGcDUza043bktRclp5alZiekVYbDlnTWNNek1sbDdUQWZvYWtlbGsxbE1aektMTWtza2p2V0JoT2JXQ2k0UC04clZrNUkwY3FHR0RlQWo5Wmp2QmN5ZklTSzd6aGFlSWg2d09uVVRnZzJ0LV9yMUdoWFpkampwT0M5UQ?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "In defense of Zac Taylor - Cincy Jungle",
       "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbVN0emVMNE44aXdURV9BYmNxV0ljRnZBZjZrS2l6SkhWWWd5TVJWckd6c2M1bHVYWnc2OS1wanFweTRvWXpiVmNIWTQ3Um5VYXpaVk9pVEFuQThOTHYwc0luci02bkFENGFuWFBOMktuWU9XblBtSmZQRDk4WmFrNTl4TDJySGFYUk53QWJZUnI4R…",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbVN0emVMNE44aXdURV9BYmNxV0ljRnZBZjZrS2l6SkhWWWd5TVJWckd6c2M1bHVYWnc2OS1wanFweTRvWXpiVmNIWTQ3Um5VYXpaVk9pVEFuQThOTHYwc0luci02bkFENGFuWFBOMktuWU9XblBtSmZQRDk4WmFrNTl4TDJySGFYUk53QWJZUnI4RnZvZ3JyTVRjM25kZURoZ211YkZKSTFLWXc?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "AI Model Predicts Survival in Parkinson’s Patients with New Web Tool - Bioengineer.org",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNcVpIWHpEUTl6ZEg5MkJKMDVBb1ZDZ2k4M1RjSV85Z1hhRGUzb3N4T0ZheHlwWVp6TjFJLUViSGV3UndsT210NG5lTzczRkhKdks3YWRpSFZIU0FnNXlpODVHcWZ0TFZEUnVnQzJyNUtSUEZxaThEY0w5elVwY0loTEtYQTVKMFBUb2ViamNxcXk3U…",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcVpIWHpEUTl6ZEg5MkJKMDVBb1ZDZ2k4M1RjSV85Z1hhRGUzb3N4T0ZheHlwWVp6TjFJLUViSGV3UndsT210NG5lTzczRkhKdks3YWRpSFZIU0FnNXlpODVHcWZ0TFZEUnVnQzJyNUtSUEZxaThEY0w5elVwY0loTEtYQTVKMFBUb2ViamNxcXk3UHVPQXFj?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NZWpUdnRwdFhQbDVQX0lwRVl1ckxNTGZiUlRoOTJSeGRFdmJCYm1xc2t2aUxTdmlXUGlZN3BTeDBWUGxwbEhNcmhxLWFvNTFlWTRtbmZMalo?oc=5\" target=\"_blank\">In defense of Zac Taylor</a>&nbsp;&nbsp;<font color=\"#6…",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NZWpUdnRwdFhQbDVQX0lwRVl1ckxNTGZiUlRoOTJSeGRFdmJCYm1xc2t2aUxTdmlXUGlZN3BTeDBWUGxwbEhNcmhxLWFvNTFlWTRtbmZMalo?oc=5"
     },
     {
       "category": "military",
-      "title": "‘Justice demands something must be done’: Douglas Carter’s defense team files motion to dismiss murder case over misc…",
+      "title": "Russian Ballistic Missile Threat Triggers Alerts Across Ukraine - Kyiv Post",
+      "region": "Europe / NATO",
+      "severity": "high",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFBOV1poWC00Um5pODZOSHZxQXFQRkpZeDQ4dTJ4ODNDRFdYNjVkajlXYUpVZkk3UEhPZFFZaHNOUlYtS3ZLaHlveXA1dw?oc=5\" target=\"_blank\">Russian Ballistic Missile Threat Triggers Alerts Across Ukraine</a>&nbsp…",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBOV1poWC00Um5pODZOSHZxQXFQRkpZeDQ4dTJ4ODNDRFdYNjVkajlXYUpVZkk3UEhPZFFZaHNOUlYtS3ZLaHlveXA1dw?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "VASJ’s ‘violent’ defense dominates Benedictine in 30-0 victory - Cleveland.com",
       "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFBCbE9Wd1F4TE9ON1lEaU54eXQ1cnBTRmxkR04yOWZJUzVWYXNUUUFnVW5aV0RQb3VXWUdzSXIyQk9Hc3VyeUJsbDk0cXA1T1Z6QUo5eTd4WVd4ckRDd1JaSjRpVV9OWWVFamJwV0VrdE1aaW9adThSadIBfkFVX3lxTE1abkluTFEtVzVieG5sUWVaM…",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCbE9Wd1F4TE9ON1lEaU54eXQ1cnBTRmxkR04yOWZJUzVWYXNUUUFnVW5aV0RQb3VXWUdzSXIyQk9Hc3VyeUJsbDk0cXA1T1Z6QUo5eTd4WVd4ckRDd1JaSjRpVV9OWWVFamJwV0VrdE1aaW9adThSadIBfkFVX3lxTE1abkluTFEtVzVieG5sUWVaMF9fYXIxMnhkRm1vQWFYQk56SUlPRFRDWVl1MFYzaTZ6d01TeVVkWlc0Wkc0S0d3QXhTZnduYldEWlg0SUtlNi1STzJiQlU4bF9YckFfWlowLWNvT2VhY2NnMTVDUWJVRHlxb2l6dw?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxPZFBpRm9PS1dNWGxHc0tRQ0NmWnpac3MxWUhwLUZrUkQ3SFE3QzhpYWd6VHpjaFB6c2xqcDdJSG5KOUtmNFlQUzV3N2htZ1YzZU05T3JUZ3pTNnNOZTRoaVdYMHJUeXZaUjVMeW00Z3E4d2U2d2FrcUFRODJ5NHJOVWg2U0JKUTg0Q2FRVUhwSjBGe…",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZFBpRm9PS1dNWGxHc0tRQ0NmWnpac3MxWUhwLUZrUkQ3SFE3QzhpYWd6VHpjaFB6c2xqcDdJSG5KOUtmNFlQUzV3N2htZ1YzZU05T3JUZ3pTNnNOZTRoaVdYMHJUeXZaUjVMeW00Z3E4d2U2d2FrcUFRODJ5NHJOVWg2U0JKUTg0Q2FRVUhwSjBGeU5SY3JEMUgwOEc4TXRtdUlHODc2a2k2aXE3S0h2X0JUSFRSQQ?oc=5"
+    },
+    {
+      "category": "military",
+      "title": "High school football: Keystone defense dominates in 6-0 win over Firelands - Morning Journal",
+      "region": "Global",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "1h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQWWFELVFLTk5JTW1JT2gwYU5qM1V6RGFZZ2JLSUE5WEgxOGh5dFk0UTN6bTRoWm9hMFpNT0dkY2hxb3ZSX2NIUi1XRXVLV1V1ckQtc2NkTENBN1hLS0ZBLTNMeS1DOTE5YTRWNmM3Q1YwVnlhaHlud1J4RExkWWVMbVhNU2UteGVOSUJwaENHajR0M…",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWWFELVFLTk5JTW1JT2gwYU5qM1V6RGFZZ2JLSUE5WEgxOGh5dFk0UTN6bTRoWm9hMFpNT0dkY2hxb3ZSX2NIUi1XRXVLV1V1ckQtc2NkTENBN1hLS0ZBLTNMeS1DOTE5YTRWNmM3Q1YwVnlhaHlud1J4RExkWWVMbVhNU2UteGVOSUJwaENHajR0MDhuSHdlR28xNUNLNkoxRzRkUnFvMHNlcFpuMUdJUzRrdEZUems?oc=5"
     },
     {
       "category": "si",
-      "title": "On artificial intelligence, taxation and oversight - Santa Fe New Mexican",
+      "title": "Anthropic pitches AI Safety Bill to lawmakers - Moneycontrol.com",
       "region": "Global / Frontier Labs",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSllPczNlQW9HT1hKZUJWeWNxNDNTalN6NkRuVHZ2M1d0bnMxRzVXN1Q3NXZ2Z01XZFl3dWtNWnNkNGdXSUlibGFiS2pnLTBFUEpUMTR1a19pek9SbTc2bS1ZQXREM3poc0hPYlQ0S2Jwd1RsdFhhTFdIUjdkaU95aWJ1VVVJQ2cxU1FLM0hBeXY2R…",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSllPczNlQW9HT1hKZUJWeWNxNDNTalN6NkRuVHZ2M1d0bnMxRzVXN1Q3NXZ2Z01XZFl3dWtNWnNkNGdXSUlibGFiS2pnLTBFUEpUMTR1a19pek9SbTc2bS1ZQXREM3poc0hPYlQ0S2Jwd1RsdFhhTFdIUjdkaU95aWJ1VVVJQ2cxU1FLM0hBeXY2RlhzWk02SHp4X3pMd00wV1g0T1pmNmphUWo4OWxYQnk5QmtvblRtcy1tUzFsTXRYNVh3WFF3ZVdxWGd0SVN2MWo1QTNfVDZ2dHl2MmpuMmZEWQ?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPNldXNEdqaGtsbHVjUHIyXzYwcy04T0NUa1Ixemg4OWJYaUctTHE5R2llLUtmX0VJaFh6cnAwbjAzNHdZSEhfbENjR2tZNFNXUlA3ODIwcjNsNDA0SnZabjU2N0NYeDVseTd1VWFvUFh1Y3VMYmdVZklGYlBYWEFhSWdVTS1SRkktMnRhb0ZQMkdNM…",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNldXNEdqaGtsbHVjUHIyXzYwcy04T0NUa1Ixemg4OWJYaUctTHE5R2llLUtmX0VJaFh6cnAwbjAzNHdZSEhfbENjR2tZNFNXUlA3ODIwcjNsNDA0SnZabjU2N0NYeDVseTd1VWFvUFh1Y3VMYmdVZklGYlBYWEFhSWdVTS1SRkktMnRhb0ZQMkdNMjloN3NTTXBVSTlUMDRZWG1temdjSDVTejVpTnZ2X0p1ZGkxRXNoVDQ2dtIBwgFBVV95cUxOSl95R2ZUeU1ZcUw1WEtacVlHbHRDTC12VWFyaXdzUUtVYkdacE5fYjlsVGpqS2xqTWxBeV8tWFVXaUhWYWZ1ODJqMDZDOXRlSGljYzNvSmlHRklGRVVpZ0NHTHU5MHNwTlA0czViUzZIdFJRbWJmeExEdlpLUG1jSDV5QTRidE10eFgtNkJBQ2xpVUNmMEhfUUhLQ19RQ2FvZW5IWTlubktPc0tnR2owanZyZGpJOEpHMUppWk5NQnVnZw?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Anthropic Pitches Congress a $1B AI Safety Bill [2026] - shattered.io",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "2h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE02TktqLWk5VDIzRnAxVjFGYV9SYkExcFE4dkhWVFZ4allka1VCOFpmYTlsZFVPMy1EajZTV0dkRFVzOEtabnFDLVdvckFWbmRBbjdLVmNpOFA3Q19CalNUUUVzMkdubWlaQVZYVQ?oc=5\" target=\"_blank\">Anthropic Pitches Congress a…",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02TktqLWk5VDIzRnAxVjFGYV9SYkExcFE4dkhWVFZ4allka1VCOFpmYTlsZFVPMy1EajZTV0dkRFVzOEtabnFDLVdvckFWbmRBbjdLVmNpOFA3Q19CalNUUUVzMkdubWlaQVZYVQ?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Quantum-Enhanced AI Model Flags Sitting Time and Age as Top Predictors of Male Infertility Risk - Bioengineer.org",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "2h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOTE8tMHBaazQ3UmJaX04yTTlhUVloUjRkMUpCQmd4Y0FFMDRNMmNrdVlJOWZzUkxXT25obDJWeUdyck5UNThuTWdnSFM3ZmZkM0RhdTAzN2pBT0M0WmtkV1ZEMm1JaThsOUN2NG5VOGFRWUxNblUxSHNrTkRwai03WDJCbHZqQl9BaDRvV2oydncxd…",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTE8tMHBaazQ3UmJaX04yTTlhUVloUjRkMUpCQmd4Y0FFMDRNMmNrdVlJOWZzUkxXT25obDJWeUdyck5UNThuTWdnSFM3ZmZkM0RhdTAzN2pBT0M0WmtkV1ZEMm1JaThsOUN2NG5VOGFRWUxNblUxSHNrTkRwai03WDJCbHZqQl9BaDRvV2oydncxdVBuOFYzZEgzT09BQUdON0IyOGtoN29OMnlKWXFoTEkxcmRXb1FMVVBnYw?oc=5"
     }
   ],
   "newsTracker": [
@@ -233,7 +233,6 @@
   ],
   "history": {
     "labels": [
-      "Jul 16",
       "Jul 17",
       "Jul 18",
       "Jul 25",
@@ -248,11 +247,12 @@
       "Sep 19",
       "Sep 26",
       "Oct 3",
-      "Oct 10"
+      "Oct 10",
+      "Oct 17"
     ],
     "defcon": [
       3,
-      3,
+      1,
       1,
       1,
       1,
