@@ -1,97 +1,97 @@
 {
   "defconLevel": 1,
   "siLevel": 5,
-  "lastUpdated": "2026-10-25 12:00 UTC",
+  "lastUpdated": "2026-11-01 12:00 UTC",
   "signals": [
     {
       "category": "military",
-      "title": "Saudi-led coalition intercepts Houthi missile fired toward Riyadh - Anadolu Ajansı",
-      "region": "Global",
-      "severity": "high",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOMWxQb1p2cG1HMDNjdFRwU3NBamhKUWk3Z0pjb3RhS3hHNWtfdGxSSDFuME5WQ09zdDRaX3FzbGZOa25ZNGpBZGhuRDBEOEFKcUo0a3FkMHo5b0VSZjdzeEFfWmhvNnpmSkFObjVCdzZ6WllTbXRKTFFPT3cydlNDYUtDNWg2WUpzOGZwTDBDdnQ1R…",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMWxQb1p2cG1HMDNjdFRwU3NBamhKUWk3Z0pjb3RhS3hHNWtfdGxSSDFuME5WQ09zdDRaX3FzbGZOa25ZNGpBZGhuRDBEOEFKcUo0a3FkMHo5b0VSZjdzeEFfWmhvNnpmSkFObjVCdzZ6WllTbXRKTFFPT3cydlNDYUtDNWg2WUpzOGZwTDBDdnQ1RExseUVKbUdGV1E1QzJrckFTTFBKMGJ0WjdHU1lB?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "El Salvador sends special forces to search for troops missing in Haiti - The Washington Post",
+      "title": "Alabama Football Bye Week Report Card: Defense - Roll 'Bama Roll",
       "region": "Global",
       "severity": "low",
       "confidence": "Corroborated",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQRF9KQW1CR1hkUXlEZTFrZFZrUGh4ZjdLTWxlR3p0cElTRnk4WGpzS2JpV2FqX2ktRWJrMmxWT1o1U2swWlRLXy0tRDQ5OFZ0Y2wxUk91eV9RMGVvX3FRU2JUWDVUczk0bjNnek1aQnRJbTNaQnRmZ2ZqdlljRTNyN3hSVmNtZkVlU0lVWGFHNldZS…",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRF9KQW1CR1hkUXlEZTFrZFZrUGh4ZjdLTWxlR3p0cElTRnk4WGpzS2JpV2FqX2ktRWJrMmxWT1o1U2swWlRLXy0tRDQ5OFZ0Y2wxUk91eV9RMGVvX3FRU2JUWDVUczk0bjNnek1aQnRJbTNaQnRmZ2ZqdlljRTNyN3hSVmNtZkVlU0lVWGFHNldZSTVST1RlWkFrcUVHclEzay1TYW05R3ExbGQtMkE?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPaFIwZ0t0dTlPbzgtaktXLWNqTlRERDlMVTNQcmp6ZnJYQUlFMmdXVHg3dzN3MW9uTHhQaU1wRXFEaEpLMFRsTjBIZFBRdFlOc1dZMG1WS0hQWDNxMXFHNTA0TDN3ZWJUWllCc29qQi1RQ0JFTGdyV3VscVd6YmViZHk4Y1g5MjZjWXRvVTZZUkhzZ…",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaFIwZ0t0dTlPbzgtaktXLWNqTlRERDlMVTNQcmp6ZnJYQUlFMmdXVHg3dzN3MW9uTHhQaU1wRXFEaEpLMFRsTjBIZFBRdFlOc1dZMG1WS0hQWDNxMXFHNTA0TDN3ZWJUWllCc29qQi1RQ0JFTGdyV3VscVd6YmViZHk4Y1g5MjZjWXRvVTZZUkhzZEZsMWxOVVR0WU11QVRGYldnRXl6TUV3em4tZVNF?oc=5"
     },
     {
       "category": "military",
-      "title": "Saudi-led coalition says it downed Houthi ballistic missile targeting Riyadh - The Times of Israel",
-      "region": "Middle East",
-      "severity": "high",
-      "confidence": "Single-source",
-      "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQUnllTTdQQ3BvY3E0Vm9rWl9MMElCdnZCZnlrMDhsaFhSMXRJTFM4YzZtUDlTUmxRSWxXdXloOVdYMlM0NlhfcHJ5V1BqZlotVlFjVC1sXzhJS1JuQmNrTWtrRml6M0R6X05iSzhRZUhZYjJCb180VkswWFZPY3pWcEI3cHNoelpaN2tpeTVYTU9ES…",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUnllTTdQQ3BvY3E0Vm9rWl9MMElCdnZCZnlrMDhsaFhSMXRJTFM4YzZtUDlTUmxRSWxXdXloOVdYMlM0NlhfcHJ5V1BqZlotVlFjVC1sXzhJS1JuQmNrTWtrRml6M0R6X05iSzhRZUhZYjJCb180VkswWFZPY3pWcEI3cHNoelpaN2tpeTVYTU9ESUxkVTJjRDh2R0NMQlcxYUlqNXlkc2ZsNUVQc0dwVXBrRTdJV2d6X1VfQm5tSQ?oc=5"
-    },
-    {
-      "category": "military",
-      "title": "Pentagon Calls Confucius Institutes a Threat to US Security — Channel NewsAsia - UA.NEWS",
+      "title": "UA Space Forum joins science, commerce and defense - KGUN 9",
       "region": "Global",
-      "severity": "high",
+      "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxOa01BOTZkaVM2R09WX0hCdVNVMTVsLU1XZGxDRDVha1c4R1QtWVVRSUxCNUdFX0FzSmFkNzh3cWpTV2s1U1RLQ1pCdGtCVnppS04tYmdGWGowamV1RGlBY3FXVUUxY2dfOGIyeDg1QnFHNmNMVmxiNjMteWxIVFJ0WlctMVFUUGQ2ZWFkblhQeEpoV…",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa01BOTZkaVM2R09WX0hCdVNVMTVsLU1XZGxDRDVha1c4R1QtWVVRSUxCNUdFX0FzSmFkNzh3cWpTV2s1U1RLQ1pCdGtCVnppS04tYmdGWGowamV1RGlBY3FXVUUxY2dfOGIyeDg1QnFHNmNMVmxiNjMteWxIVFJ0WlctMVFUUGQ2ZWFkblhQeEpoVVZzX1RUWG51Q2wtUkVRNVliRg?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQcW0yVFM2ZDJpbi1jQUNoa3BVd1RZeTZBcHdUdUZEbEw1YXFvWlRQZ3J5S3Zsa1VmZDY0SlVFaWp0ZHdQX1paR3hnWHV1dWYzLWIwMkpkNVJNa1BaR0ozTmsybEE3a3N5X3A4d29BU0RMUGF5OHFPalg3VHh2Y1NlQ2ZfUkl0R19KWUVXY3pEaFIxW…",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcW0yVFM2ZDJpbi1jQUNoa3BVd1RZeTZBcHdUdUZEbEw1YXFvWlRQZ3J5S3Zsa1VmZDY0SlVFaWp0ZHdQX1paR3hnWHV1dWYzLWIwMkpkNVJNa1BaR0ozTmsybEE3a3N5X3A4d29BU0RMUGF5OHFPalg3VHh2Y1NlQ2ZfUkl0R19KWUVXY3pEaFIxWFlKb21UYXB0a2NIMlNlcXlRUVE2MHNGbnV5SzhleTRkeTE?oc=5"
     },
     {
       "category": "military",
-      "title": "Nick Reiner may get to use trust fund for murder defense - The Washington Post",
+      "title": "Stocktwits Defense Watch: L3Harris, BA Report Record Backlogs, HII Raises FY2026 Shipbuilding Revenue Forecast - Yaho…",
       "region": "Global",
       "severity": "low",
       "confidence": "Corroborated",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDFDZ2NqYk4zQlZZOWVTTkFaRFpEVW1Fay1Ock5SVjZIMjZLUDMtLWVHOGhnQVBEeGo0N0s3LUNHdnJPTThKenZvRTVLaEpsMEktRFdWa1hKeWtSOUFlWTB6R0o0NkhPY3RjN3hIR1lpa0doUnZMb09JOTlveDhFeTh2ZVpzaU9NS2hmQ0VvM09BQ…",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDFDZ2NqYk4zQlZZOWVTTkFaRFpEVW1Fay1Ock5SVjZIMjZLUDMtLWVHOGhnQVBEeGo0N0s3LUNHdnJPTThKenZvRTVLaEpsMEktRFdWa1hKeWtSOUFlWTB6R0o0NkhPY3RjN3hIR1lpa0doUnZMb09JOTlveDhFeTh2ZVpzaU9NS2hmQ0VvM09BQkZkVm1heURiY2pXaWN0?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxQR2Y3dlFxT2tjUHJTUUpGdmczblFVWUtXNXN0aGNoSDg1MU9BNG1VNTRCOWNpQklhMzN3MVFMT0w0Q1JEUk44eFRsVzRsM0V0Q3lNR2JxLWNsSXF6RXU2QkhWcUlSbjhmZ1JpUG1SZGw1d3VvMFhTb2xmbGxmMkltekRMeFA5NlZuOFpMeHFIX0R0Z…",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQR2Y3dlFxT2tjUHJTUUpGdmczblFVWUtXNXN0aGNoSDg1MU9BNG1VNTRCOWNpQklhMzN3MVFMT0w0Q1JEUk44eFRsVzRsM0V0Q3lNR2JxLWNsSXF6RXU2QkhWcUlSbjhmZ1JpUG1SZGw1d3VvMFhTb2xmbGxmMkltekRMeFA5NlZuOFpMeHFIX0R0Z191S2UzT0Z2N1RxajY1aXdJ?oc=5"
     },
     {
-      "category": "si",
-      "title": "OpenAI and Anthropic Disclose AI Model Boundary Breaches on Same Day; Altman Says Flaws Can No Longer Be Fully Patche…",
-      "region": "Global / Frontier Labs",
+      "category": "military",
+      "title": "GET to offer free rides to veterans, active-duty military during November - KGET.com",
+      "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9hbjZXMG8tamhHaFVMT3lCbV9fODZ5YVZKb1pJLVJxLVFDWmhqYzBMaWI3WmIyRXI4cXNSVUZvWnRKSEhNN1QwX0lrRjBoOHU5VHo0cWRYMFZrQ1ZlUk5GSklLZEFtZGZpTVZ1LW5CZWdOSDJnN0E?oc=5\" target=\"_blank\">OpenAI and Anth…",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hbjZXMG8tamhHaFVMT3lCbV9fODZ5YVZKb1pJLVJxLVFDWmhqYzBMaWI3WmIyRXI4cXNSVUZvWnRKSEhNN1QwX0lrRjBoOHU5VHo0cWRYMFZrQ1ZlUk5GSklLZEFtZGZpTVZ1LW5CZWdOSDJnN0E?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOUkxtQmFsRk9EODV1RFJnQm5NNHdGeWhxV0ZkWklXT1F4TkFwRWlCMDNmbWd3VnVTN1ZUczJmOHlZVzR1ck9qd0xxc0NkN0pWVmJ5UnBTbkFKX042NmswUld6NjFuMXBLRDBWYjhoRmpsR2RvV2xCak5HSGpMYVVGckVwNTN3dWJVN1V6YWR5SWxRd…",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUkxtQmFsRk9EODV1RFJnQm5NNHdGeWhxV0ZkWklXT1F4TkFwRWlCMDNmbWd3VnVTN1ZUczJmOHlZVzR1ck9qd0xxc0NkN0pWVmJ5UnBTbkFKX042NmswUld6NjFuMXBLRDBWYjhoRmpsR2RvV2xCak5HSGpMYVVGckVwNTN3dWJVN1V6YWR5SWxRdW1BZWJBb1dSSnhhLUp1aHk0R1B5a0h6bXRtNE000gG0AUFVX3lxTFB0OENiZGdWX3pxZjl2Xy1IVHplMEU3LTROb05zc2FabzR3T0xveTV2S1BaZHdpcWxIelFMa2gzWHV0MzdfNjVzNV9naHFtcG1JQ05jVGpFTmE3bHF6T3R5QXJBd3pZcUZCYUZ2eTVYaWtYQ2NRQVM5NXUxVTRYRUFJMFdZRDNCODNlMXRBX3NrMGxKSHliUV90R21lSUtiMGZnNGxYMm1WWjM4aUg4SXVzZ2hPYw?oc=5"
     },
     {
-      "category": "si",
-      "title": "Guest commentary: Artificial intelligence is inflating medical bills - The Daily News | Texas' Oldest Newspaper",
-      "region": "Global / Frontier Labs",
+      "category": "military",
+      "title": "Dominance on defense enables the Packers to make up for their weaknesses elsewhere - WOWT",
+      "region": "Global",
       "severity": "low",
       "confidence": "Single-source",
       "time": "1h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwR…",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUVNaWEVWV0xBZ0hPakdURHBhSjV5ZDA0WEt3a0Q2VmNxY0p3c3ZwLUZmQ0hKQmw3YlhGdkwySlpnSzYxc1NwdDVyaWt1STRGMG1DNXNYZ2JrSEdQS1E0R1ZOV3VCWV9jN3hwOV9SbVZKUldLeWMwQnN1ZVlpVzNuMUloSXNON01kRHNVelV0RUM5U…",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUVNaWEVWV0xBZ0hPakdURHBhSjV5ZDA0WEt3a0Q2VmNxY0p3c3ZwLUZmQ0hKQmw3YlhGdkwySlpnSzYxc1NwdDVyaWt1STRGMG1DNXNYZ2JrSEdQS1E0R1ZOV3VCWV9jN3hwOV9SbVZKUldLeWMwQnN1ZVlpVzNuMUloSXNON01kRHNVelV0RUM5UWpaV1pOLURST2pPa0JvVXNUb25NbGUtRmc?oc=5"
     },
     {
       "category": "si",
-      "title": "AI Model Reads CT Scans to Flag Hidden Esophageal Cancer Spread - Bioengineer.org",
-      "region": "Global / Frontier Labs",
-      "severity": "low",
-      "confidence": "Single-source",
-      "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOV2p0M0h1RVZiZTd3QlZJODF4dXR5a3BjalU5aVFQdEVveXVVTGxVWlZJRTdJQ3V4QXJscDE1MGlPY3ppOGFyWEZ2MXpPOG83Z0M2UzA2UDBZY3k3ZTVBVE52U2NKU0x2RUFvSloyY25hX3NUeXc1UzV4OVhaTjBadHM4RGh4aGxxV3phVUYySmdMU…",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV2p0M0h1RVZiZTd3QlZJODF4dXR5a3BjalU5aVFQdEVveXVVTGxVWlZJRTdJQ3V4QXJscDE1MGlPY3ppOGFyWEZ2MXpPOG83Z0M2UzA2UDBZY3k3ZTVBVE52U2NKU0x2RUFvSloyY25hX3NUeXc1UzV4OVhaTjBadHM4RGh4aGxxV3phVUYySmdMUQ?oc=5"
-    },
-    {
-      "category": "si",
-      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software - TradingView",
+      "title": "Conversations on Central Banking: Macroeconomy in the Age of Artificial Intelligence - Federal Reserve Bank of Cleveland",
       "region": "Global / Frontier Labs",
       "severity": "high",
       "confidence": "Single-source",
       "time": "2h ago",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxNQTR1bWMwRlhXVElfUGg1Mm84bXQtYWJQVVdoem9sUDI3WC01LWVObUFUUXg2TTZJaG5KR2l0cTJNSmJmUHFuM0NPdV9Ja29qSHlDdl9la2JCR0JGV3BYZ0lqQ3loVkZOSmxYUF8tSzdTZjhobWN0YzB1ZnhLQVlLSm8zcXNDRnRweEtHUDhPWUtzV…",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNQTR1bWMwRlhXVElfUGg1Mm84bXQtYWJQVVdoem9sUDI3WC01LWVObUFUUXg2TTZJaG5KR2l0cTJNSmJmUHFuM0NPdV9Ja29qSHlDdl9la2JCR0JGV3BYZ0lqQ3loVkZOSmxYUF8tSzdTZjhobWN0YzB1ZnhLQVlLSm8zcXNDRnRweEtHUDhPWUtzVG9neEFaN1JSN1Y1QnY0U2RKNi1JR09JU2F2dlZnTmVmeXF4X25BMGotZXZJY1YzQTh2ZnhiWVBEZzlhUnJPUFU5N3d4emJTbDVJQm9raGtwcmhTdkpWOHUxLTJVQmtSaUNhT3R5b01vOFY?oc=5"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQVm1oSThFX2NDR1A1aFAzZDBwT1kwZWpnXzJHamNNVGNxcTZNZjBRckF6WTYtcWUyRGVELWtxLWhrOEhCdjZSVFc4dVFDamswMDdMd0lyN21GSTZacGw1dlRySjhUY3NxUFB3V3BnWkd6NGRVRXp3QjVoYW02aXUxLTJ4Tkd0QXNvZnc1Q05yYk1LS…",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVm1oSThFX2NDR1A1aFAzZDBwT1kwZWpnXzJHamNNVGNxcTZNZjBRckF6WTYtcWUyRGVELWtxLWhrOEhCdjZSVFc4dVFDamswMDdMd0lyN21GSTZacGw1dlRySjhUY3NxUFB3V3BnWkd6NGRVRXp3QjVoYW02aXUxLTJ4Tkd0QXNvZnc1Q05yYk1LSElGVDRpNlBlZFk2SXRYaGFWQ29EQjZFOEFZN2c3RXdjNA?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Biosecurity and Artificial Intelligence—Risk, Myths, and Opportunities - Nixon Peabody",
+      "region": "Global / Frontier Labs",
+      "severity": "low",
+      "confidence": "Single-source",
+      "time": "3h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQSWdDZGRhaFpXTGhSb2IwM2Zyb1lUdW9Rdmw4TkstendpVTNmY1E3VTh6bU9BdTAydHMxY2xjZVVzb1pvUm1qSDZyTE1PQzhXSGdYekI0UnlLUVJJb3g3dENWR3hxQ3FyaDhiLUFHdjc5dHhmMzVabmRtOGtWTTRqOVZJN3RabFpPbnVKYUdQS2RhZ…",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSWdDZGRhaFpXTGhSb2IwM2Zyb1lUdW9Rdmw4TkstendpVTNmY1E3VTh6bU9BdTAydHMxY2xjZVVzb1pvUm1qSDZyTE1PQzhXSGdYekI0UnlLUVJJb3g3dENWR3hxQ3FyaDhiLUFHdjc5dHhmMzVabmRtOGtWTTRqOVZJN3RabFpPbnVKYUdQS2RhZUFTcy1lT2U1YWl3aGxKUmpraDdEUQ?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "Senator Kristen Gonzalez Bans Unsafe Chatbot Feature for Minors, Leading AI Safety Bill Signed Into Law - The New Yor…",
+      "region": "Europe / NATO",
+      "severity": "high",
+      "confidence": "Single-source",
+      "time": "4h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbTF0SVdxTlFmUGhlQ2pXMFlYeTJsb2t2UUMwTlBuNkw4aUQxXzZ4bHRJRmpfYWszTHlOVUhObTlkdGFfTTNBckxwSzdLeGpDUXVYallrN0pOLVZReGNrNVdpQ3FBZGl6Q2t2NGVPTEs2bXAtZ09ZU0o5SzZmZGExRjgyQ3A2WXdjaVBtMk5hc3pfZ…",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbTF0SVdxTlFmUGhlQ2pXMFlYeTJsb2t2UUMwTlBuNkw4aUQxXzZ4bHRJRmpfYWszTHlOVUhObTlkdGFfTTNBckxwSzdLeGpDUXVYallrN0pOLVZReGNrNVdpQ3FBZGl6Q2t2NGVPTEs2bXAtZ09ZU0o5SzZmZGExRjgyQ3A2WXdjaVBtMk5hc3pfZVhOTXhDd1pZalpkdzlnZkJmMm9TY3YxdjZHWHdQOVhtMHY2TG4wcE9UR1lYRDg?oc=5"
+    },
+    {
+      "category": "si",
+      "title": "The dark side of AI regulation is unrestrained government control - The Washington Post",
+      "region": "Global / Frontier Labs",
+      "severity": "moderate",
+      "confidence": "Corroborated",
+      "time": "4h ago",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3U1ZHFUb0Y5cU9QOHF6OU1IUjA1MDFIMFptU1ZsUWlabHVfakNhaUdKRjZFNDBwUHZPc2w4NWdNdkJJMk8ydXlGSFhpb1ZSdU1SclcyaGw2Rm5Xd2ZTNURNRkpadHdtVGFNZlMwR19UX1ljcWx2V2FpU3ZxUDYxdXM2ZWZ4MFlUYnY4OTF1Q2Y0e…",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3U1ZHFUb0Y5cU9QOHF6OU1IUjA1MDFIMFptU1ZsUWlabHVfakNhaUdKRjZFNDBwUHZPc2w4NWdNdkJJMk8ydXlGSFhpb1ZSdU1SclcyaGw2Rm5Xd2ZTNURNRkpadHdtVGFNZlMwR19UX1ljcWx2V2FpU3ZxUDYxdXM2ZWZ4MFlUYnY4OTF1Q2Y0eGRtbjNHNTd6OUx3cFNqWmRoa3hiTmRqRG5G?oc=5"
     }
   ],
   "newsTracker": [
@@ -233,7 +233,6 @@
   ],
   "history": {
     "labels": [
-      "Jul 18",
       "Jul 25",
       "Jul 26",
       "Aug 1",
@@ -248,7 +247,8 @@
       "Oct 3",
       "Oct 10",
       "Oct 17",
-      "Oct 24"
+      "Oct 24",
+      "Oct 31"
     ],
     "defcon": [
       1,
